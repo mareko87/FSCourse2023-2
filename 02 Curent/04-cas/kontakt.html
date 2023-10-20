@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <h1>Kontakt strana</h1>
+    <a href="index.html">Naslovna</a>
+    <br /><br />
+    <p>Vase mislenje nam je vazno</p>
+    <form action="test.html">
+      <fieldset>
+        <legend>Osnovni podaci</legend>
+
+        <div>
+          <!-- uparivanje "for -> id" -->
+          <!-- "name" odredjuje pod kojim imenom ce se uneta vrednost poslati na server -->
+          <label for="imePrezime">Ime i prezime</label><br />
+          <input
+            type="text"
+            name="imePrezime"
+            id="imePrezime"
+            required
+            placeholder="Unesite ime i prezime"
+            autocomplete="off"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email adresa">Email adresa</label><br />
+          <input
+            type="email"
+            name=""
+            id="email adresa"
+            placeholder="Unesite email adresu" required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="poruka">Poruka</label><br />
+          <textarea
+            name="poruka"
+            id="poruka"
+            cols="30"
+            rows="10"
+            placeholder="Unesite poruku..."
+            autofocus
+          >
+Test za autofokus</textarea
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dodatni podaci</legend>
+        <div>
+          <label for="godine"></label>
+          <input
+            type="number"
+            name="godine"
+            id="godine"
+            placeholder="Vase godine"
+            min="18"
+            max="27"
+            step="1"
+          />
+        </div>
+        <div>
+          <p>Gde biste putovali?</p>
+          <input
+            type="radio"
+            name="zeljenaDestinacija"
+            id="evropa"
+            value="evropa"
+          />
+          <label for="evropa">Evropa</label><br />
+          <input
+            type="radio"
+            name="zeljenaDestinacija"
+            id="srbija"
+            value="srbija"
+          />
+          <label for="srbija">Srbija</label><br />
+          <input
+            type="radio"
+            name="zeljenaDestinacija"
+            id="amerika"
+            value="amerika"
+          />
+          <label for="amerika">Amerika</label>
+        </div>
+        <br />
+        <div>
+          <p>Gde ste putovali do sada?</p>
+          <!-- ne sme se ponovo koristiti amerika za id -->
+          <input
+            type="checkbox"
+            name="posecenaDestinacija"
+            id="usa"
+            value="usa"
+          />
+          <label for="usa">USA</label><br />
+          <input
+            type="checkbox"
+            name="posecenaDestinacija"
+            id="azija"
+            value="azija"
+          />
+          <label for="azija">Azija</label><br />
+          <input
+            type="checkbox"
+            name="posecenaDestinacija"
+            id="srbijaPosecena"
+            value="srbija"
+          />
+          <label for="srbijaPosecena">Srbija</label><br />
+        </div>
+      </fieldset>
+      <br />
+      <input type="submit" value="Posalji" />
+    </form>
+  </body>
+</html>

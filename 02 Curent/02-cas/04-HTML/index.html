@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-HTML</title>
+    <link rel="shortcut icon" href="img/html5-logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- razmak pomocu &nbsp; -->
+    <!-- <h2>Websites &nbsp;&nbsp;&nbsp; Workshop</h2> -->
+    <!-- Bolji nacin za razmak -->
+    <!-- <h2>Websites <span>Workshop</span></h2> -->
+    <h2>Websites Workshop</h2>
+    <!-- hr - ide celom sirinom roditeljskog elementa
+    siblinzi - isto koleno u hijerarhinji -->
+    <hr />
+
+    <!-- HERO DEO -->
+
+    <h1>Full Stack Development kurs</h1>
+
+    <p>
+      Za 5 meseci rada UŽIVO, naučićemo vas sve top alate potrebne jednom Full
+      stack developeru, kao i najtraženije tehnologije weba. Posle ove edukacije
+      posedovaćete veštine koje će vam omogućiti da lakše dođete do odlično
+      plaćenog posla, kako na domaćem, tako i na stranom tržištu.
+    </p>
+    <!-- relativna putanja -->
+    <!-- Slika je inline element. Potrebno odraditi kompresiju i resajzing. -->
+    <!-- U praksi se dimenzije slike zadaju u CSS-u -->
+    <!-- Ako se zna dimenzija slike, moze se inicijalno zadati u HTML-u, a CSS ce je svakako pregaziti. Ovo je zbog brzeg ucitavanja. Ovo utice na indeksaciju stranice -->
+    <!-- Google takodje ne voli kada nemamo "alt" -->
+    <!-- "title" je manje bitan, vise je ukras kad se hover-uje misem preko slike -->
+    <figure>
+        <img src="img/full-stack-kurs.jpg" alt="full-stack-kurs" width="500" height="auto" title="full-stack-kurs">
+        <!-- Los nacin -->
+        <!-- <p>Slika 1: Programer kuca kod</p> -->
+        <!-- Ovo je bolji nacin jer ima semantiku -->
+        <figcaption>Slika 1: Programer kuca kod</figcaption>
+    </figure>
+
+
+    <img src="./img/milos/predavaci-milos.jpg" alt="">
+    <hr />
+
+    <!-- apsolutna putanja kada znamo gde se neka slika stalno nalazi - u ovom slucaju na tudjem serveru -->
+    <img src="https://websitesworkshop.com/wp-content/uploads/2021/09/o-nama1-880x626.jpg" alt="">
+    <!-- HTML I CSS DEO -->
+
+    <h2>Uvod u web development</h2>
+
+    <p>U prvom delu kursa naucicemo osnove strukture stranica i stilizacije</p>
+
+    <h3>HTML</h3>
+    <p>
+      HTML, skraćenica od HyperText Markup Language, je standarizovani jezik
+      koji se koristi pri strukturiranju tekstova, medija i ugrađenih objekata u
+      web stranice i elektronsku poštu. Kao modifikovanu i pojednostavljenu
+      verziju SGML jezika, HTML standarizuje i održava World Wide Web Consortium
+      (W3C).
+    </p>
+
+    <figure>    
+        <img src="img/program-html-i-css.jpg" alt="HTML i CSS logo" width="400">
+        <figcaption>Slika 2: HTML i CSS logo</figcaption>
+    </figure>
+
+    <h3>CSS</h3>
+    <p>
+      pCSS (engl. Cascading Style Sheets) je jezik formatiranja pomoću kog se
+      definiše izgled elemenata veb-stranice. Prvobitno, HTML je služio da
+      definiše kompletan izgled, strukturu i sadržaj veb-stranice, ali je od
+      verzije 4.0 HTML-a uveden CSS koji bi definisao konkretan izgled, dok je
+      HTML ostao u funkciji definisanja strukture i sadržaja.
+    </p>
+    <figure>    
+        <img src="img/program-html-i-css.jpg" alt="HTML i CSS logo" width="400">
+        <figcaption>Slika 3: HTML i CSS logo</figcaption>
+    </figure>
+    <hr />
+
+    <!-- JS I REACT DEO -->
+    <h2>Web development - Front-end deo</h2>
+    <p>U drugom delu kursa naucicemo osnove Javascript-a i React-a</p>
+
+    <h3>JS</h3>
+    <p>
+      pJavaScript je skriptni programski jezik koji se prvenstveno koristi za
+      definisanje funkcionalnosti web stranica na klijentskoj strani. Dinamičan,
+      slabo tipiziran jezik, sa skromnom podrškom za objektno orijentirano
+      programiranje, on zapravo predstavlja implementaciju standarda
+      ECMAscipt-a.
+    </p>
+    <figure>    
+        <img src="img/tehnologije-js.jpg" alt="JS logo" width="400">
+        <figcaption>Slika 4: JS logo</figcaption>
+    </figure>
+    <h3>React</h3>
+    <p>
+      React (poznat i kao React.js ili ReactJS) je Javaskrpit biblioteka
+      otvorenog koda koja obezbeđuje pregled podataka zapisanih preko HTMLa.
+      React pregledi su obično obezbeđeni korišćenjem komponenti koje sadrže
+      dodatne komponente definisane kao prilagođene HTML oznake. React
+      obezbeđuje programeru model u kojem podkomponente ne mogu direktno da
+      utiču na spoljašnje komponente, efikasno ažuriranje HTML dokumenta pri
+      promeni podataka i jasno razdvajanje komponenti na današnjim
+      jednostraničnim aplikacijama.
+    </p>
+    <figure>    
+        <!-- loading="eager" je default -->
+        <img src="img/tehnologije-react.jpg" alt="React logo" width="400" loading="eager">
+        <figcaption>Slika 5: React logo</figcaption>
+    </figure>
+    <hr />
+
+    <!-- BACK-END DEO -->
+    <h2>Web development - Back-end deo</h2>
+    <p>
+        U trecem delu kursa naucicemo osnove PHP i MySQL
+
+    <h3>PHP</h3>
+    <p>
+        PHP (engl. Hypertext Preprocessor) specijalizovani je skriptni jezik prvenstveno namenjen za izradu dinamičnog veb sadržaja i izvodi se na strani servera. PHP je stekao popularnost zbog svoje jednostavnosti i sintakse nasleđene iz programskog jezika C. Tokom vremena jezik se proširivao i sticao mogućnosti za objektno orijentisano programiranje, naročito od verzije 5.0.
+    </p>
+    <figure>    
+        <!-- loading="lazy" znaci da ce se ucitati tek kada budemo blizu slike -->
+        <img src="img/tehnologije-ww-php-and-mysql.jpg" alt="PHP i MySQL logo" width="400" loading="lazy">
+        <figcaption>Slika 6: PHP i MySQL logo</figcaption>
+    </figure>
+    <h3>Laravel</h3>
+    <p>
+        SQL (engl. Structured Query Language) je relacioni upitni jezik (ANSI i ISO standard). Relacije se kreiraju jednom naredbom i odmah su dostupne, što ga čini jednostavnim za korišćenje. Uniforman je, jer se svi podaci i rezultati operacija prikazuju u vidu tabele i omogućava interaktivno i klasično programiranje. Sve do verzije SQL:1999 ovaj jezik je bio neproceduralan, odnosno njime se specificiralo ŠTA, a ne i KAKO nešto treba uraditi. MySQL je višenitni višekorisnički SQL sistem za upravljanje bazama podataka. Sistem radi kao server, obezbeđujući višekorisnički interfejs za pristup bazi podataka.
+    </p>
+    <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+    <!-- <p>dva &lt; tri &gt; jedan</p> -->
+    <hr>
+
+    <!-- FAQ deo -->
+    <h2>Najcesce postavljena pitanja</h2>
+    <details>
+        <summary>Za koga je ovaj kurs?</summary>
+        <p>Za sve koji zele da nauce Fullstack</p>
+        
+    </details>
+    <details>
+        <summary>Da li je potrebno predznanje?</summary>
+        <p>Ne</p>
+
+    </details>
+    <details>
+        <summary>Koliko traje kurs?</summary>
+        <p>Traje dok ne naucimo</p>
+
+    </details>
+
+    <hr>
+
+    <address>
+        <p>Krala Petra I 20 <br>
+        21000 Novi Sad</p>
+    </address>
+    <p>Ovaj sajt su napravili &copy; WW ekipa</p>
+  </body>
+</html>
+
+
+<!-- Pozeljno je kompresovati sliku pre upload-a na sajt kako bi ubrzali ucitavanje  poboljsati indeksiranje od strane Google-a -->

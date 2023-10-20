@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgb(132, 230, 26);
+}
+
+h2{
+    color: blueviolet;
+}
+
+img{
+    width: 100%;
+}
+
+/***************
+Basic
+***************/
+
+a{
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/***************
+Header deo
+***************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: antiquewhite;
+}
+
+.hero{
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    padding: 200px 50px;
+    color: white;
+    text-align: center;
+}
+
+.hero h3{
+    margin: 15px;
+}
+
+/***************
+Daleke destinacije sekcija
+***************/
+.dalekeDestinacije{
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+}
+
+.dalekeDestinacije div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dalekeDestinacije div article {
+    background-color: beige;
+    width: 48%;
+    border: 1x solid red;
+    padding: 10px;
+}
+
+.dalekeDestinacije div article h3{
+    color: red;
+    margin-bottom: 15px;
+}
+
+.dalekeDestinacije div article p{
+    margin-bottom: 15px;
+}
+
+.dalekeDestinacije div article figure figcaption{
+    background-color: blanchedalmond;
+    padding: 15px;
+}
+
+/***************
+Header deo
+***************/

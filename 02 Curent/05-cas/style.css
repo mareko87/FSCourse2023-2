@@ -1,0 +1,13 @@
+/* article + p {
+    background-color: yellow;
+}
+
+article + hr{
+    color: aqua;
+    background-color: bisque;
+    height: 20px;
+} */
+
+article ~ p {
+    background-color: blue;
+}

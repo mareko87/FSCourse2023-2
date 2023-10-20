@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.item1 {
+    background-color: antiquewhite;
+    /* font-size: 50px; */
+    /* flex-basis: 100px; */
+    /* flex-grow: 6; */
+}
+.item2 {
+    background-color: rgb(235, 203, 161);
+    /* font-size: 100px; */
+    /* flex-basis: 250px; */
+    /* flex-grow: 2; */
+    
+}
+.item3 {
+    background-color: rgb(161, 235, 165);
+    /* font-size: 25px; */
+}
+.item4 {
+    background-color: rgb(196, 161, 235);
+}
+.item5 {
+    background-color: rgb(235, 161, 167);
+}
+.item6 {
+    background-color: rgb(161, 233, 235);
+}
+.item7 {
+    background-color: rgb(60, 60, 119);
+}
+.item8 {
+    background-color: rgb(148, 60, 101);
+}
+
+.item{
+    padding: 10px;
+    /* pogledaj inspect */
+    /* anulira razmake od gepova 3 x 20px = 60px, a yatim 60px / 4 (itema) = 15px za lp;ilp treba da se smanji sirina itema */
+    /* width: calc(25% - 15px); */
+    /* width: 200px; */
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 5px solid red;
+    display: flex;
+
+    height: 250px;
+
+    /* flex-direction: row; */
+    /* direction: rtl; */
+    /* Krecem s desna */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
+    /* row-gap: 30px; */
+
+    /* default ponasanje */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* default */
+    /* align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline; */
+    align-items: center;
+
+
+    /* align-content: center;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: space-between; */
+}

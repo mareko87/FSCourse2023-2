@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+/************
+Basic
+************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #01cab6;
+    --primary: #363636;
+    --white: #fff;
+    --black: #000;
+
+    --padding: 100px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/************
+Tyography
+************/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 19px;
+}
+
+/* img{
+    width: 100%;
+} */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/************
+Header
+************/
+header{
+    background-color: rgb(190, 164, 164);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a{
+    text-transform: uppercase;
+    color: var(--green);
+    font-size: 25px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+header .logo a:hover{
+    color: var(--primary);
+}
+
+header nav ul{
+    display: flex;
+}
+
+/* header nav ul li{
+    padding: 10px;
+} */
+
+header nav ul li a{
+    color: var(--primary);
+    margin-left: 10px; 
+    /* padding-left: 10px; */
+}
+
+header nav ul li #home:active{
+    color: red;
+}
+header nav ul li #about:active{
+    color: blue;
+}
+
+/************
+Hero
+************/
+
+.hero{
+    color: var(--white);
+    background-color: antiquewhite;
+    /* padding: 200px 0; */
+    height: 60vh;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 0 50px; */
+
+    --lin-grad: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+    background-image: var(--lin-grad), url(img/pocket-watch-2569573_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    /* opacity: .5; */
+
+}
+
+
+
+/************
+Hero
+************/
+
+.blog{
+    background-color: var(--primary);
+    padding: 100px 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.blog .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .container article {
+    flex-basis: 23%;
+}
+
+.blog .container article h3{
+    margin: 15px 0;
+}
+
+/* .blog .container article img{
+    width: 40px;
+} */
+
+/************
+Info Section
+************/
+.info{ 
+    /* height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.info h3{
+    margin: 15px 0;
+}
+
+.info p{
+    margin-bottom: 15px;
+}
+
+.info button{
+    color: var(--white);
+    background-color: var(--green);
+    padding: 15px 30px;
+    transition: .3;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info button:hover{
+    color: var(--primary);
+}
+
+/************
+Footer
+************/
+footer{
+    background-color: var(--primary);
+    padding: 15px 0;
+    color: var(--white);
+    text-align: center;
+}

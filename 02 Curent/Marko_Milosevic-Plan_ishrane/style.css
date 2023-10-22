@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container h1{
+  text-transform: uppercase;
+  font-style: italic;
+  color: darkcyan
+}
+
+header .container nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.hero .container .recommendedGroceries h2{
+  text-transform: uppercase;
+  padding: 20px 20px 20px 0;
+}
+
+.darkBread img {
+  width: 30%;
+}

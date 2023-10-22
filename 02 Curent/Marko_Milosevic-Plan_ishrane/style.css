@@ -8,6 +8,18 @@ a{
   text-decoration: none;
 }
 
+h2{
+  background-color: aquamarine;
+}
+
+h3{
+  background-color: bisque;
+}
+
+h4{
+  background-color: honeydew;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;

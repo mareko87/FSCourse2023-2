@@ -51,3 +51,12 @@ a{
  Hero 
 ***************************/
 
+.hero{
+    background:linear-gradient(rgba($crna, 0.7), rgba($crna, 0.7));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .container{
+        
+    }
+}

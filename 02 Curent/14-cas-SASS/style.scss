@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    $tamnoPlava: rgb(29, 82, 124);
+    $svetloPlava: #459ad3;
+    $orange: rgb(253, 127, 69);
+    $tamnoSiva: #3c3b3c;
+    $svetloSiva: lightgray;
+    $bela: #fff;
+    $crna: #000;
+
+    $transition: .3s;
+    $padding: 100px 0;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: $bela;
+}
+
+h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $tamnoPlava;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: $tamnoPlava;
+}
+
+h4{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+hr{
+    width: 20%;
+    margin: 15px 0;
+    height: 1px;
+    border: none;
+    background-color: $tamnoPlava;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.dugme{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    background: $tamnoPlava;
+    border: 1px solid $tamnoPlava;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    color: $bela;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.dugme:hover{
+    background-color: $orange;
+    border: 1px solid $orange;
+}
+
+/**********************
+Header
+**********************/
+header{
+    background: linear-gradient(to right, $orange, $tamnoPlava);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    a{
+        text-transform: uppercase;
+        color: $bela;
+        font-weight: 500;
+        transition: $transition;
+    }
+    .logo {
+        a{
+            font-size: 30px;
+            font-style: italic;
+            // & - gledaj roditelja
+            &:hover{
+                color: $tamnoPlava;
+            }
+        }
+    }
+    nav ul{
+        display: flex;
+        li a{
+            margin-left: 20px;
+            &:hover{
+                color: $svetloSiva;
+            }
+        }
+    }
+}
+
+/**********************
+Hero section
+**********************/
+.hero{
+    background: linear-gradient(to top, rgba(253, 127, 69, 0.8), rgba(29, 81, 124, 0.8)), url(img/baloon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        span{
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+    p{
+        color: $bela;
+        font-size: 1.2rem;
+        margin: 1.3rem 0;
+    }
+    button{
+        background: transparent;
+        border: 1px solid $bela;
+        &:hover{
+            background-color: $bela;
+            color: $crna;
+            border: 1px solid $bela;
+        }
+    }
+}
+
+/**********************
+About section
+**********************/
+.about{
+    padding: $padding;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-tekst{
+        /* flex-basis: 40%; */
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &-slika{
+    width: 48%;
+    }
+}
+
+/**********************
+Services section
+**********************/
+.services{
+    background: linear-gradient(#1d517ccc, #1d517ccc), url(img/header.jpg);
+    padding: $padding;
+    background-attachment: fixed;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $bela;
+        .services-ikonice{
+            flex-basis: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            i{
+                color: $orange;
+                font-size: 50px;
+                width: 50%;
+            }
+        }
+        .services-tekst{
+            flex-basis: 48%;
+            h2{
+                color: $bela;
+            }
+            hr{
+                background-color: $orange;
+            }
+            p{
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
+/**********************
+Blog section
+**********************/
+.blog{
+    padding: $padding;
+    text-align: center;
+}
+
+/* POZICIONIRANJE */
+.blog h2 span{
+    background-color: rgb(234, 203, 162);
+    position: static;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.blog hr{
+    background-color: $orange;
+    margin: 15px auto;
+}
+
+.blog .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog .container article{
+    flex-basis: 32%;
+    background-color: rgb(196, 233, 246);
+    padding: 10px 10px 30px;
+}
+
+.blog .container article .blog-slika{
+    position: relative;
+}
+
+.blog .container article .blog-slika span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $orange;
+    padding: 10px 15px;
+    color: $bela;
+    margin: 10px;
+}
+
+.blog .container article .blog-meta{
+    display: flex;
+    justify-content: space-between;
+    background-color: $orange;
+    color: $bela;
+    padding: 10px;
+}
+
+
+/**********************
+Footer
+**********************/
+footer{
+    padding: $padding;
+    background: linear-gradient( rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
+    background-position: center;
+}
+
+footer .container{
+    color: $bela;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container article{
+    flex-basis: 32%;
+    /* text-align: center; */
+}
+
+
+/**********************
+Bottom-bar section
+**********************/
+.bottomBar{
+    text-align: center;
+    padding: 15px 0;
+    background-color: $tamnoPlava;
+    color: $bela;
+}
+
+.bottomBar p a{
+    color: $orange;
+    transition: $transition;
+}
+
+.bottomBar p a:hover{
+    color: $bela;
+}
+
+
+
+/**********************
+RESPONSIVE
+**********************/
+@media only screen and (max-width: 576px) {
+    h1, h2{
+        font-size: 2.5rem;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .hero{
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header nav ul li a{
+        margin: 0 20px;
+    }
+
+    .about .about-slika, .about .about-tekst{
+        width: 100%;
+    }
+
+    .about .about-tekst{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .services .container .services-ikonice, 
+    .services .container .services-tekst{
+        flex-basis: 100%;
+        text-align: center;
+        min-height: 50vh;
+    }
+
+    /* .services .container .services-ikonice{
+        min-height: 50vh;
+    } */
+
+    .services .container .services-tekst hr{
+        margin: 1rem auto;
+    }
+
+    .blog .container article{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    footer .container article{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        /* text-align: center; */
+    }
+}

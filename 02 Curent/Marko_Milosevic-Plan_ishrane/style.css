@@ -4,35 +4,54 @@
   box-sizing: border-box;
 }
 
-a{
-  text-decoration: none;
-}
-
-h2{
-  background-color: aquamarine;
-}
-
-h3{
-  background-color: bisque;
-}
-
-h4{
-  background-color: honeydew;
-}
-
-header .container {
+.header{
+  background-color: rgb(131, 217, 251);
+  border: 3px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .container h1{
+.main{
+  background-color: rgb(253, 211, 160);
+  border: 3px solid orangered;
+}
+
+.footer{
+  background-color: rgb(143, 181, 251);
+  border: 3px solid blueviolet;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover, nav li:hover {
+  rotate: -5deg;
+}
+
+h2{
+  background-color: rgb(127, 140, 255);
+  border: 1px dashed red;
+}
+
+h3{
+  background-color: rgb(227, 156, 208);
+  border: 1px dashed red;
+}
+
+h4{
+  background-color: rgb(143, 225, 143);
+  border: 1px dashed red;
+}
+
+.header h1{
   text-transform: uppercase;
   font-style: italic;
   color: darkcyan
 }
 
-header .container nav ul{
+.header nav ul{
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -41,11 +60,20 @@ header .container nav ul{
   text-transform: uppercase;
 }
 
-.hero .container .recommendedGroceries h2{
+.hero .main h2{
   text-transform: uppercase;
   padding: 20px 20px 20px 0;
 }
 
-.darkBread img {
-  width: 30%;
+.hero .main img {
+  width: 320px;
+  height: auto;
+  transition: .4s;
+}
+
+.hero .main img:hover{
+  width: 640px;
+  height: auto;
+  rotate: -5deg;
+  
 }

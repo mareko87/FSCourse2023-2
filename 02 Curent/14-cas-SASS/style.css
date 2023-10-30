@@ -1,1 +1,426 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: rgb(29, 82, 124);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: rgb(29, 82, 124);
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+hr {
+  width: 20%;
+  margin: 15px 0;
+  height: 1px;
+  border: none;
+  background-color: rgb(29, 82, 124);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.dugme {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  background: rgb(29, 82, 124);
+  border: 1px solid rgb(29, 82, 124);
+  padding: 1rem 3rem;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dugme:hover {
+  background-color: rgb(253, 127, 69);
+  border: 1px solid rgb(253, 127, 69);
+}
+
+/**********************
+Header
+**********************/
+header {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(253, 127, 69)), to(rgb(29, 82, 124)));
+  background: linear-gradient(to right, rgb(253, 127, 69), rgb(29, 82, 124));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 100px;
+}
+header a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .logo a {
+  font-size: 30px;
+  font-style: italic;
+}
+header .logo a:hover {
+  color: rgb(29, 82, 124);
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav ul li a {
+  margin-left: 20px;
+}
+header nav ul li a:hover {
+  color: lightgray;
+}
+
+/**********************
+Hero section
+**********************/
+.hero {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(253, 127, 69, 0.8)), to(rgba(29, 81, 124, 0.8))), url(img/baloon.jpg);
+  background: linear-gradient(to top, rgba(253, 127, 69, 0.8), rgba(29, 81, 124, 0.8)), url(img/baloon.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero h1 span {
+  font-style: italic;
+  font-weight: 600;
+}
+.hero p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 1.3rem 0;
+}
+.hero button {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.hero button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+/**********************
+About section
+**********************/
+.about {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-tekst {
+  /* flex-basis: 40%; */
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about-slika {
+  width: 48%;
+}
+
+/**********************
+Services section
+**********************/
+.services {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 81, 124, 0.8)), to(rgba(29, 81, 124, 0.8))), url(img/header.jpg);
+  background: linear-gradient(rgba(29, 81, 124, 0.8), rgba(29, 81, 124, 0.8)), url(img/header.jpg);
+  padding: 100px 0;
+  background-attachment: fixed;
+}
+.services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+}
+.services .container .services-ikonice {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+.services .container .services-ikonice i {
+  color: rgb(253, 127, 69);
+  font-size: 50px;
+  width: 50%;
+}
+.services .container .services-tekst {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+.services .container .services-tekst h2 {
+  color: #fff;
+}
+.services .container .services-tekst hr {
+  background-color: rgb(253, 127, 69);
+}
+.services .container .services-tekst p {
+  margin: 1rem 0;
+}
+
+/**********************
+Blog section
+**********************/
+.blog {
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* POZICIONIRANJE */
+.blog h2 span {
+  background-color: rgb(234, 203, 162);
+  position: static;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+.blog hr {
+  background-color: rgb(253, 127, 69);
+  margin: 15px auto;
+}
+
+.blog .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog .container article {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  background-color: rgb(196, 233, 246);
+  padding: 10px 10px 30px;
+}
+
+.blog .container article .blog-slika {
+  position: relative;
+}
+
+.blog .container article .blog-slika span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(253, 127, 69);
+  padding: 10px 15px;
+  color: #fff;
+  margin: 10px;
+}
+
+.blog .container article .blog-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(253, 127, 69);
+  color: #fff;
+  padding: 10px;
+}
+
+/**********************
+Footer
+**********************/
+footer {
+  padding: 100px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 82, 124, 0.8)), to(rgba(29, 82, 124, 0.8))), url(img/baloon.jpg);
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
+  background-position: center;
+}
+
+footer .container {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container article {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  /* text-align: center; */
+}
+
+/**********************
+Bottom-bar section
+**********************/
+.bottomBar {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgb(29, 82, 124);
+  color: #fff;
+}
+
+.bottomBar p a {
+  color: rgb(253, 127, 69);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.bottomBar p a:hover {
+  color: #fff;
+}
+
+/**********************
+RESPONSIVE
+**********************/
+@media only screen and (max-width: 576px) {
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+  .container {
+    width: 95%;
+  }
+  .hero {
+    padding: 0 20px;
+    text-align: center;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li a {
+    margin: 0 20px;
+  }
+  .about .about-slika, .about .about-tekst {
+    width: 100%;
+  }
+  .about .about-tekst {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .services .container .services-ikonice,
+  .services .container .services-tekst {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    min-height: 50vh;
+  }
+  /* .services .container .services-ikonice{
+      min-height: 50vh;
+  } */
+  .services .container .services-tekst hr {
+    margin: 1rem auto;
+  }
+  .blog .container article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  footer .container article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 50px;
+    /* text-align: center; */
+  }
+}/*# sourceMappingURL=style.css.map */

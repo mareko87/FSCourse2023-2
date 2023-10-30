@@ -11,6 +11,12 @@ $bela: #fff;
 $transition: .3s;
 $padding: 100px 0;
 
+// $promenljiva: #770;
+
+// @mixin test($parametar: $promenljiva){
+//     color: $parametar;
+// }
+
 *{
     padding: 0;
     margin: 0;
@@ -29,6 +35,7 @@ h1{
     font-size: 3rem;
     font-weight: 300;
     color: $bela;
+    // @include test();
 }
 
 h2{
@@ -382,3 +389,4 @@ RESPONSIVE
         /* text-align: center; */
     }
 }
+

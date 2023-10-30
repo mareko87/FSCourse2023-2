@@ -1,0 +1,22 @@
+Google Drive Link: https://docs.google.com/document/d/1yWi5xSd8TDpnYyH9R4h9RyO11TYfbkcJejLBaaJ9L30/edit?pli=1
+
+Lessons Links:
+
+Fullstack 4 spisak lekcija
+
+1. Upoznavanje https://www.youtube.com/watch?v=Z7JBz7wzTzk 
+2. HTML 1 - Uvod, tagovi, naslovi, paragrafi -  https://www.youtube.com/watch?v=e-dZLDMjscw 
+3. HTML 2 - tagovi, HTML entiteti, tekst, slike -  https://www.youtube.com/watch?v=KMv6RRf8J00 
+4. HTML 3 - Liste, linkovi, semantika, tabele - https://www.youtube.com/watch?v=Svnw4lgMWuA 
+5. HTML 4 - Projekat -  https://www.youtube.com/watch?v=UOOA5j11geI 
+6. CSS 1- Uvod, boje, selektori - https://www.youtube.com/watch?v=K8rocsllNLM 
+7. CSS 2  - linkovi i velicine - https://www.youtube.com/watch?v=5WB088rdiZY
+8. CSS 3 - Typography i Box model - https://www.youtube.com/watch?v=u9CXOUeyURI
+9. CSS 4 - Display settings i zadatak 1 - https://www.youtube.com/watch?v=gjLTgMSuLVk
+10. CSS 5 - Flex - https://www.youtube.com/watch?v=AfphOefdS10
+11. CSS 6 - Zadatak 2.1 - https://www.youtube.com/watch?v=yHIKC3wiyGU
+12. CSS 7 - Zadatak 2.2 - https://www.youtube.com/watch?v=kGWTlnLjJk0
+13. CSS 8 - Zadatak 3.1 - https://www.youtube.com/watch?v=5ihNTBrSTuM 
+14. CSS - Zadatak 3.2 - position 1. deo, responsive - https://www.youtube.com/watch?v=yk0Fd_Drrf0
+15. CSS - SaSS - Zadatak 4.1 - https://www.youtube.com/watch?v=lGkjhozFpNg
+16. CSS - Zadatak 4.1 - SaSS + Fixed position -  https://www.youtube.com/watch?v=NpoXw1y9WrM

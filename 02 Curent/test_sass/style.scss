@@ -1,0 +1,31 @@
+body {
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 3px solid orangered;
+    .naslov{
+        background-color: aquamarine;
+        padding: 10px;
+        border: 3px solid orangered;
+        h1{
+            background-color: burlywood;
+            padding: 10px;
+            border: 3px solid orangered;
+        }
+        .podnaslov{
+            background-color: aqua;
+            padding: 10px;
+            border: 3px solid orangered;
+            h2{
+                background-color: chartreuse;
+                padding: 10px;
+                border: 3px solid orangered;
+            }
+            p{
+                background-color: cornflowerblue;
+                padding: 10px;
+                border: 3px solid orangered;
+            }
+        }
+    }
+
+}

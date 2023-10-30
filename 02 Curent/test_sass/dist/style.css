@@ -1,0 +1,30 @@
+body {
+  background-color: antiquewhite;
+  padding: 10px;
+  border: 3px solid orangered;
+}
+body .naslov {
+  background-color: aquamarine;
+  padding: 10px;
+  border: 3px solid orangered;
+}
+body .naslov h1 {
+  background-color: burlywood;
+  padding: 10px;
+  border: 3px solid orangered;
+}
+body .naslov .podnaslov {
+  background-color: aqua;
+  padding: 10px;
+  border: 3px solid orangered;
+}
+body .naslov .podnaslov h2 {
+  background-color: chartreuse;
+  padding: 10px;
+  border: 3px solid orangered;
+}
+body .naslov .podnaslov p {
+  background-color: cornflowerblue;
+  padding: 10px;
+  border: 3px solid orangered;
+}

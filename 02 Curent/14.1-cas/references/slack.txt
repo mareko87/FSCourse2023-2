@@ -1,0 +1,158 @@
+Friday, October 27th
+
+Boban Nalic
+2:12 PM
+Pozdrav, evo linka za veceras, vidimo se u 8 :slightly_smiling_face:
+2:12
+Boban Nalic is inviting you to a scheduled Zoom meeting.
+Topic: Fullstack kurs - 27.10.2023.
+Time: Oct 27, 2023 08:00 PM Budapest
+Join Zoom Meeting
+https://us02web.zoom.us/j/83334955099?pwd=eDBCaFUyTi9kZlcrd0hyN0ZlM2ZnUT09
+Meeting ID: 833 3495 5099
+Passcode: 974352
+---
+One tap mobile
++16694449171,,83334955099#,,,,*974352# US
++16699006833,,83334955099#,,,,*974352# US (San Jose)
+
+
+Boban Nalic
+8:30 PM
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+8:32
+<!-- Section dishes -->
+    <section class="dishes container">
+        <h2>dishes</h2>
+        <hr>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+        <div class="dishes-articles">
+            <article>
+                <img src="img/image1.jpg" alt="">
+                <h3>a bagel is newer just a begel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque quis laborum quisquam hic optio perferendis sequi est ipsa ipsum!</p>
+                <button>Read more</button>
+            </article>
+
+            <article>
+                <img src="img/image2.jpg" alt="">
+                <h3>a bagel is newer just a begel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque quis laborum quisquam hic optio perferendis sequi est ipsa ipsum!</p>
+                <button>Read more</button>
+            </article>
+
+            <article>
+                <img src="img/image3.jpg" alt="">
+                <h3>a bagel is newer just a begel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque quis laborum quisquam hic optio perferendis sequi est ipsa ipsum!</p>
+                <button>Read more</button>
+            </article>
+        </div>
+    </section>
+
+
+Boban Nalic
+8:46 PM
+.dugme {
+    padding: 10px 20px;
+    border: none;
+    background-color: $crna;
+    color: $bela;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: $transition;
+
+    &:hover {
+        background-color: $karminCrvena;
+    }
+}
+8:48
+/*******************
+Dishes section
+********************/
+.dishes {
+    padding: $padding;
+    text-align: center;
+
+    &-articles {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        article {
+            flex: 0 0 32%;
+            background-color: $svetloPlava;
+            padding: 10px;
+
+            button {
+                @extend .dugme;
+            }
+        }
+    }
+}
+
+
+Boban Nalic
+  8:57 PM
+<!-- Gallery section -->
+    <section class="gallery">
+        <img src="img/image1.jpg" alt="">
+        <img src="img/image2.jpg" alt="">
+        <img src="img/image3.jpg" alt="">
+        <img src="img/image4.jpg" alt="">
+
+        <img class="manjaSlika" src="img/resturant1.jpg" alt="">
+        <img class="manjaSlika" src="img/resturant2.jpg" alt="">
+        <img class="manjaSlika" src="img/resturant3.jpg" alt="">
+        <img class="manjaSlika" src="img/specialities1.jpg" alt="">
+        <img class="manjaSlika" src="img/specialities2.jpg" alt="">
+        <img class="manjaSlika" src="img/specialities3.jpg" alt="">
+    </section>
+9:00
+/*******************
+Gallery section
+********************/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        width: 25%;
+    }
+    .manjaSlika{
+        width: 16.66%;
+    }
+}
+9:04
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+9:05
+Who we are
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+
+Boban Nalic
+  9:33 PM
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+9:33
+<a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+9:35
+<!-- Social icons -->
+    <div class="socialIcons">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+    </div>
+
+
+Boban Nalic
+  9:56 PM
+Zip
+ 
+15. CSS - Zadatak 4.2.zip
+Zip
+
+
+

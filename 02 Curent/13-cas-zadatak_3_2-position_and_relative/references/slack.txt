@@ -1,0 +1,179 @@
+Boban Nalic
+  4:28 PM
+Pozdarv ekipa, vidimo se u 8
+4:28
+Boban Nalic is inviting you to a scheduled Zoom meeting.
+Topic: Fullstack kurs - 23.10.2023.
+Time: Oct 23, 2023 08:00 PM Budapest
+Join Zoom Meeting
+https://us02web.zoom.us/j/89594098006?pwd=cWkzYjJqTDFNTGZvcm0rUHhQcHRGdz09
+Meeting ID: 895 9409 8006
+Passcode: 407109
+
+
+Boban Nalic
+  8:24 PM
+<!-- Blog section -->
+    <section class="blog">
+        <h2>Latests posts</h2>
+        <hr>
+        <div class="container">
+            <article>
+                <img src="img/blog1.jpg" alt="">
+                <div class="blog-meta">
+                    <p>Autor: Sima Simic</p>
+                    <p>Datum: 23.10.2023.</p>
+                </div>
+                <div class="blog-tekst">
+                    <h3>Blog post 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat assumenda, vero animi
+                        deserunt ab provident officiis ad aut ullam.</p>
+                    <button class="dugme">read more</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="img/blog2.jpg" alt="">
+                <div class="blog-meta">
+                    <p>Autor: Sima Simic</p>
+                    <p>Datum: 23.10.2023.</p>
+                </div>
+                <div class="blog-tekst">
+                    <h3>Blog post 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat assumenda, vero animi
+                        deserunt ab provident officiis ad aut ullam.</p>
+                    <button class="dugme">read more</button>
+                </div>
+            </article>
+
+            <article>
+                <img src="img/blog3.jpg" alt="">
+                <div class="blog-meta">
+                    <p>Autor: Sima Simic</p>
+                    <p>Datum: 23.10.2023.</p>
+                </div>
+                <div class="blog-tekst">
+                    <h3>Blog post 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat assumenda, vero animi deserunt ab provident officiis ad aut ullam.</p>
+                    <button class="dugme">read more</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+Boban Nalic
+  8:39 PM
+/**********************
+Blog section
+**********************/
+.blog{
+    padding: var(--padding);
+    text-align: center;
+}
+
+.blog hr{
+    background-color: var(--orange);
+    margin: 15px auto;
+}
+
+.blog .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .container article{
+    flex-basis: 32%;
+    background-color: rgb(196, 233, 246);
+    padding: 10px 10px 30px;
+}
+
+.blog .container article .blog-meta{
+    display: flex;
+    background-color: var(--orange);
+    color: var(--bela);
+    padding: 10px;
+}
+
+
+Boban Nalic
+  8:46 PM
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <article>
+               <h4>O nama</h4>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque corrupti commodi explicabo vel voluptatibus incidunt necessitatibus provident at veritatis sapiente!</p> 
+            </article>
+
+            <article>
+                <h4>Kontakt</h4>
+                <p>Kralja Petra I 22</p>
+                <p>021123456789</p>
+                <p>21000 Novi Sad</p>
+            </article>
+
+            <article>
+                <h4>Pratite nas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facere obcaecati minima eum ab provident dolore earum fuga velit doloribus.</p>
+            </article>
+        </div>
+    </footer>
+
+    <!-- Bottom bar -->
+    <section class="bottomBar">
+        <p>Sajt napravili &copy; <a href="">Websites Workshop</a> ekipa</p>
+    </section>
+
+
+Boban Nalic
+  8:53 PM
+/**********************
+Footer
+**********************/
+footer{
+    padding: var(--padding);
+    background: linear-gradient( rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
+    background-position: center;
+}
+
+footer .container{
+    color: var(--bela);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container article{
+    flex-basis: 32%;
+    /* text-align: center; */
+}
+8:55
+/**********************
+Bottom-bar section
+**********************/
+.bottomBar{
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--tamnoPlava);
+    color: var(--bela);
+}
+
+.bottomBar p a{
+    color: var(--orange);
+    transition: var(--transition);
+}
+
+.bottomBar p a:hover{
+    color: var(--bela);
+}
+Saved for later
+
+
+Boban Nalic
+  9:02 PM
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+developer.mozilla.orgdeveloper.mozilla.org
+position - CSS: Cascading Style Sheets | MDN
+The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements. (24 kB)
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+

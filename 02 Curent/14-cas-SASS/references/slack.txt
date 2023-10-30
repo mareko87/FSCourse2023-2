@@ -1,0 +1,88 @@
+Boban Nalic
+  12:55 PM
+Pozdrav ekipa, vidimo se u 8 :slightly_smiling_face:
+12:55
+Boban Nalic is inviting you to a scheduled Zoom meeting.
+Topic: Fullstack kurs - 25.10.2023.
+Time: Oct 25, 2023 08:00 PM Budapest
+Join Zoom Meeting
+https://us02web.zoom.us/j/84917316499?pwd=Q1dUQ1NkSTBVU1RDV05USnI0aWZRQT09
+Meeting ID: 849 1731 6499
+Passcode: 449245
+
+
+Boban Nalic
+  8:15 PM
+Zip
+ 
+13.2 CSS - Zadatak 3.2 - SaSS.zip
+Zip
+
+
+9:05
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+$crna: #000;
+$bela: #fff;
+
+$padding: 80px 0;
+
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+Boban Nalic
+  9:15 PM
+<!-- Hero section -->
+    <section class="hero">
+        <div class="container">
+            <nav>
+                <div>
+                    <a class="logo" href="">My blog</a>
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1>perfect kitchen</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet totam dolor facere, enim saepe obcaecati illo consequuntur rerum fuga modi suscipit ab corporis unde quas ullam voluptatum minus reiciendis nobis, illum iste laborum ex tenetur? Accusamus, fugit ab excepturi numquam libero perferendis quis non repellendus ipsum, voluptatum cumque sequi odit?</p>
+        </div>
+    </section>

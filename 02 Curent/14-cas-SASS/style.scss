@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
 
+// Promenljive
 $tamnoPlava: rgb(29, 82, 124);
 $svetloPlava: #459ad3;
 $orange: rgb(253, 127, 69);
@@ -124,12 +125,14 @@ header{
             }
         }
     }
-    nav ul{
-        display: flex;
-        li a{
-            margin-left: 20px;
-            &:hover{
-                color: $svetloSiva;
+    nav {
+        ul{
+            display: flex;
+            li a{
+                margin-left: 20px;
+                &:hover{
+                    color: $svetloSiva;
+                }
             }
         }
     }
@@ -139,7 +142,7 @@ header{
 Hero section
 **********************/
 .hero{
-    background: linear-gradient(to top, rgba(253, 127, 69, 0.8), rgba(29, 81, 124, 0.8)), url(img/baloon.jpg);
+    background: linear-gradient(to top, $orange, $tamnoPlava), url(img/baloon.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -177,6 +180,9 @@ About section
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    // na neki nacin "&" zahvata ime roditelja, kao da ovde radi konkatenaciju sa sufiksom koji smo dodali
+    // kada trazimo "Ctrl+F" opcijom, u tekst editoru nece naci ".about-text", vec "&-tekst"
+    // "about-text" ce se prikazivati pri primeni "Inspect-a" u brauzeru
     &-tekst{
         /* flex-basis: 40%; */
         width: 48%;
@@ -237,51 +243,49 @@ Blog section
 }
 
 /* POZICIONIRANJE */
-.blog h2 span{
-    background-color: rgb(234, 203, 162);
-    position: static;
-    position: relative;
-    top: -10px;
-    left: -10px;
-}
-
-.blog hr{
-    background-color: $orange;
-    margin: 15px auto;
-}
-
-.blog .container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.blog .container article{
-    flex-basis: 32%;
-    background-color: rgb(196, 233, 246);
-    padding: 10px 10px 30px;
-}
-
-.blog .container article .blog-slika{
-    position: relative;
-}
-
-.blog .container article .blog-slika span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $orange;
-    padding: 10px 15px;
-    color: $bela;
-    margin: 10px;
-}
-
-.blog .container article .blog-meta{
-    display: flex;
-    justify-content: space-between;
-    background-color: $orange;
-    color: $bela;
-    padding: 10px;
+.blog {
+    h2 {
+        span{
+            background-color: rgb(234, 203, 162);
+            position: static;
+            position: relative;
+            top: -10px;
+            left: -10px;
+        }
+    }
+    hr{
+        background-color: $orange;
+        margin: 15px auto;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        article{
+            flex-basis: 32%;
+            background-color: rgb(196, 233, 246);
+            padding: 10px 10px 30px;
+            .blog-slika{
+                position: relative;
+                span{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $orange;
+                    padding: 10px 15px;
+                    color: $bela;
+                    margin: 10px;
+                }
+            }
+            .blog-meta{
+                display: flex;
+                justify-content: space-between;
+                background-color: $orange;
+                color: $bela;
+                padding: 10px;
+            }
+        }
+    }
 }
 
 
@@ -290,20 +294,18 @@ Footer
 **********************/
 footer{
     padding: $padding;
-    background: linear-gradient( rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
+    background: linear-gradient( $tamnoPlava, $tamnoPlava), url(img/baloon.jpg);
     background-position: center;
-}
-
-footer .container{
-    color: $bela;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer .container article{
-    flex-basis: 32%;
-    /* text-align: center; */
+    .container{
+        color: $bela;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        article{
+            flex-basis: 32%;
+            /* text-align: center; */
+        }
+    }
 }
 
 
@@ -315,18 +317,16 @@ Bottom-bar section
     padding: 15px 0;
     background-color: $tamnoPlava;
     color: $bela;
+    p {
+        a{
+            color: $orange;
+            transition: $transition;
+            &:hover{
+                color: $bela;
+            }
+        }
+    }
 }
-
-.bottomBar p a{
-    color: $orange;
-    transition: $transition;
-}
-
-.bottomBar p a:hover{
-    color: $bela;
-}
-
-
 
 /**********************
 RESPONSIVE

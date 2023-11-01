@@ -129,8 +129,8 @@ header nav ul li a:hover {
 Hero section
 **********************/
 .hero {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(253, 127, 69, 0.8)), to(rgba(29, 81, 124, 0.8))), url(img/baloon.jpg);
-  background: linear-gradient(to top, rgba(253, 127, 69, 0.8), rgba(29, 81, 124, 0.8)), url(img/baloon.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(253, 127, 69)), to(rgb(29, 82, 124))), url(img/baloon.jpg);
+  background: linear-gradient(to top, rgb(253, 127, 69), rgb(29, 82, 124)), url(img/baloon.jpg);
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -268,12 +268,10 @@ Blog section
   top: -10px;
   left: -10px;
 }
-
 .blog hr {
   background-color: rgb(253, 127, 69);
   margin: 15px auto;
 }
-
 .blog .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,18 +282,15 @@ Blog section
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .blog .container article {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
   background-color: rgb(196, 233, 246);
   padding: 10px 10px 30px;
 }
-
 .blog .container article .blog-slika {
   position: relative;
 }
-
 .blog .container article .blog-slika span {
   position: absolute;
   top: 0;
@@ -305,7 +300,6 @@ Blog section
   color: #fff;
   margin: 10px;
 }
-
 .blog .container article .blog-meta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,11 +317,10 @@ Footer
 **********************/
 footer {
   padding: 100px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 82, 124, 0.8)), to(rgba(29, 82, 124, 0.8))), url(img/baloon.jpg);
-  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(29, 82, 124)), to(rgb(29, 82, 124))), url(img/baloon.jpg);
+  background: linear-gradient(rgb(29, 82, 124), rgb(29, 82, 124)), url(img/baloon.jpg);
   background-position: center;
 }
-
 footer .container {
   color: #fff;
   display: -webkit-box;
@@ -339,7 +332,6 @@ footer .container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 footer .container article {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
@@ -355,13 +347,11 @@ Bottom-bar section
   background-color: rgb(29, 82, 124);
   color: #fff;
 }
-
 .bottomBar p a {
   color: rgb(253, 127, 69);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .bottomBar p a:hover {
   color: #fff;
 }

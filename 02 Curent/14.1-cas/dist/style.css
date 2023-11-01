@@ -21,11 +21,16 @@ h4,
 h5,
 h6 {
   font-family: "IBM Plex Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
 }
 
 h2 {
   font-size: 40px;
-  text-transform: uppercase;
 }
 
 img {
@@ -35,14 +40,57 @@ img {
 
 a {
   text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
 }
 
 /***************************
  Hero 
 ***************************/
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+}
+.hero .container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero .container nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero .container nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .container nav div .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.hero .container nav div .logo:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.hero .container nav div ul {
+  display: flex;
+}
+.hero .container nav div ul li {
+  padding: 2rem 1rem;
+}
+.hero .container p {
+  color: #fff;
+  width: 75%;
+  text-align: center;
+  margin-top: 1.5rem;
 }

@@ -20,3 +20,4 @@ Fullstack 4 spisak lekcija
 14. CSS - Zadatak 3.2 - position 1. deo, responsive - https://www.youtube.com/watch?v=yk0Fd_Drrf0
 15. CSS - SaSS - Zadatak 4.1 - https://www.youtube.com/watch?v=lGkjhozFpNg
 16. CSS - Zadatak 4.1 - SaSS + Fixed position -  https://www.youtube.com/watch?v=NpoXw1y9WrM
+17. CSS - Zadatak 4.3 - Mixin - https://www.youtube.com/watch?v=teLBR0duLiM

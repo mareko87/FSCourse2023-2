@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.dugme, .dishes-articles article button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+.dugme:hover, .dishes-articles article button:hover {
+  background-color: crimson;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  width: 200px;
+  margin: 15px auto;
+}
+
+/***************************
+ Hero 
+***************************/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero .container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero .container nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero .container nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .container nav div .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.hero .container nav div .logo:hover {
+  opacity: 0.5;
+}
+.hero .container nav div ul {
+  display: flex;
+}
+.hero .container nav div ul li {
+  padding: 2rem 1rem;
+  transition: 0.5s;
+}
+.hero .container nav div ul li:hover {
+  opacity: 0.5;
+}
+.hero .container p {
+  color: #fff;
+  width: 75%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/***************************
+ Social Icons
+***************************/
+.socialIcons {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  width: 50px;
+  position: fixed;
+  top: calc(50% - 75px);
+}
+.socialIcons i {
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
+.socialIcons i:hover {
+  opacity: 0.5;
+}
+
+/***************************
+ Dishes 
+***************************/
+.dishes {
+  padding: 80px 0;
+  text-align: center;
+}
+.dishes-articles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.dishes-articles article {
+  flex: 0 0 32%;
+  background-color: #d7edf5;
+  padding: 10px;
+}
+/***************************
+ Gallery
+***************************/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 25%;
+}
+.gallery .manjaSlika {
+  width: 16.66%;
+}
+
+/***************************
+ About
+***************************/
+.about {
+  padding: 80px 0;
+  text-align: center;
+}
+.about > p {
+  width: 60%;
+  margin: 0 auto;
+}
+.about article {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.about article .about-slika {
+  flex: 2;
+}
+.about article .about-text {
+  flex: 3;
+  text-align: left;
+  padding-left: 20px;
+}
+.about article .about-text h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.about article .about-text p {
+  margin: 15px 0;
+}

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.dugme, .dishes-articles article button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.dugme:hover, .dishes-articles article button:hover {
+  background-color: crimson;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  width: 200px;
+  margin: 15px auto;
+}
+
+/***************************
+ Hero 
+***************************/
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/banner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero .container {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.hero .container nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero .container nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .container nav div .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hero .container nav div .logo:hover {
+  opacity: 0.5;
+}
+.hero .container nav div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero .container nav div ul li {
+  padding: 2rem 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hero .container nav div ul li:hover {
+  opacity: 0.5;
+}
+.hero .container p {
+  color: #fff;
+  width: 75%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/***************************
+ Social Icons
+***************************/
+.socialIcons {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 50px;
+  position: fixed;
+  top: calc(50% - 75px);
+}
+.socialIcons i {
+  font-size: 1.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.socialIcons i:hover {
+  opacity: 0.5;
+}
+
+/***************************
+ Dishes 
+***************************/
+.dishes {
+  padding: 80px 0;
+  text-align: center;
+}
+.dishes-articles {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dishes-articles article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  background-color: rgb(215, 237, 245);
+  padding: 10px;
+}
+/***************************
+ Gallery
+***************************/
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery img {
+  width: 25%;
+}
+.gallery .manjaSlika {
+  width: 16.66%;
+}
+
+/***************************
+ About
+***************************/
+.about {
+  padding: 80px 0;
+  text-align: center;
+}
+.about > p {
+  width: 60%;
+  margin: 0 auto;
+}
+.about article {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about article .about-slika {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.about article .about-text {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  text-align: left;
+  padding-left: 20px;
+}
+.about article .about-text h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.about article .about-text p {
+  margin: 15px 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,3 @@
-Title:
+Title: FS4 - CSS - Zadatak 4.1 - Mixin - 30.10.2023.
 Date: 30.10.2023.
-Video Link: 
+Video Link: https://www.youtube.com/watch?v=teLBR0duLiM&list=PLRsFPJEu7BdzTGWvTXgTFh0KwSEjczWRP&index=16&t=1133s

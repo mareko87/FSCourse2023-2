@@ -133,9 +133,9 @@ hr{
                 .logo{
                     font-size: 1.5rem;
                     font-weight: 600;
+                    transition: $transition;
                     &:hover{
-                        opacity: .7;
-                        transition: $transition;
+                        opacity: .5;
                     }
                 }
                 ul{
@@ -143,6 +143,10 @@ hr{
                     li{
                         // gore i dole po 2, a levo i desno po 1
                         padding: 2rem 1rem;
+                        transition: $transition;
+                        &:hover{
+                            opacity: .5;
+                        }
                     }
                 }
             }
@@ -153,6 +157,34 @@ hr{
             text-align: center;
             margin-top: 1.5rem;
         }
+    }
+}
+
+/***************************
+ Social Icons
+***************************/
+.socialIcons{
+    background-color: $crna;
+    display: flex;
+    // da idu jedna ispod druge
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 50px;
+    // fiksiram poziciju
+    position: fixed;
+    // sada treba da ga namestim gde ce biti fiksirano. Zakucavam
+    // preracunavaj 50% vidljive visine umanjene za pola visine socijalnih ikonica. Tad ce biti tacno na pola visine.
+    top: calc(50% - 75px);
+    i{
+        // malo povecavam ikonice
+        font-size: 1.4rem;
+        transition: $transition;
+        &:hover{
+            opacity: .5;
+        }
+
     }
 }
 

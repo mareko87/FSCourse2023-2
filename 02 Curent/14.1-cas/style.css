@@ -121,11 +121,11 @@ hr {
 .hero .container nav div .logo {
   font-size: 1.5rem;
   font-weight: 600;
-}
-.hero .container nav div .logo:hover {
-  opacity: 0.7;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.hero .container nav div .logo:hover {
+  opacity: 0.5;
 }
 .hero .container nav div ul {
   display: -webkit-box;
@@ -134,12 +134,49 @@ hr {
 }
 .hero .container nav div ul li {
   padding: 2rem 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hero .container nav div ul li:hover {
+  opacity: 0.5;
 }
 .hero .container p {
   color: #fff;
   width: 75%;
   text-align: center;
   margin-top: 1.5rem;
+}
+
+/***************************
+ Social Icons
+***************************/
+.socialIcons {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 50px;
+  position: fixed;
+  top: calc(50% - 75px);
+}
+.socialIcons i {
+  font-size: 1.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.socialIcons i:hover {
+  opacity: 0.5;
 }
 
 /***************************

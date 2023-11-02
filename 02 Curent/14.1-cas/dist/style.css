@@ -10,6 +10,20 @@
   margin: auto;
 }
 
+.dugme, .dishes-articles article button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+.dugme:hover, .dishes-articles article button:hover {
+  background-color: crimson;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -33,6 +47,10 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  margin: 10px 0;
+}
+
 img {
   width: 100%;
   display: block;
@@ -46,6 +64,14 @@ a {
 
 ul {
   list-style: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  width: 200px;
+  margin: 15px auto;
 }
 
 /***************************
@@ -93,4 +119,67 @@ ul {
   width: 75%;
   text-align: center;
   margin-top: 1.5rem;
+}
+
+/***************************
+ Dishes 
+***************************/
+.dishes {
+  padding: 80px 0;
+  text-align: center;
+}
+.dishes-articles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.dishes-articles article {
+  flex: 0 0 32%;
+  background-color: #d7edf5;
+  padding: 10px;
+}
+/***************************
+ Gallery
+***************************/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 25%;
+}
+.gallery .manjaSlika {
+  width: 16.66%;
+}
+
+/***************************
+ About
+***************************/
+.about {
+  padding: 80px 0;
+  text-align: center;
+}
+.about > p {
+  width: 60%;
+  margin: 0 auto;
+}
+.about article {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.about article .about-slika {
+  flex: 2;
+}
+.about article .about-text {
+  flex: 3;
+  text-align: left;
+  padding-left: 20px;
+}
+.about article .about-text h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.about article .about-text p {
+  margin: 15px 0;
 }

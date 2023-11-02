@@ -9,6 +9,9 @@
 
 $crna: #000;
 $bela: #fff;
+$svetloPlava: rgb(215, 237, 245);
+$karminCrvena: crimson;
+
 
 $padding: 80px 0;
 $transition: .5s;
@@ -17,6 +20,20 @@ $transition: .5s;
 .container {
     max-width: 1140px;
     margin: auto;
+}
+
+.dugme{
+    padding: 10px 20px;
+    border: none;
+    background-color: $crna;
+    color: $bela;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: $transition;
+    &:hover{
+        background-color: $karminCrvena;
+    }
 }
 
 body {
@@ -42,6 +59,10 @@ h2 {
     font-size: 40px;
 }
 
+h3{
+    margin: 10px 0;
+
+}
 
 img {
     width: 100%;
@@ -57,6 +78,14 @@ a{
 ul{
     // izbacivanje tackica
     list-style: none;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: $crna;
+    width: 200px;
+    margin: 15px auto;
 }
 
 
@@ -123,6 +152,85 @@ ul{
             width: 75%;
             text-align: center;
             margin-top: 1.5rem;
+        }
+    }
+}
+
+/***************************
+ Dishes 
+***************************/
+.dishes{
+    padding: $padding;
+    text-align: center;
+    &-articles{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        article{
+            // ovo znaci da ce izmedju artikala biti po 3% (dva gepa)
+            // prva cifra je grow (def: 0): koliko ce flex element relativno rasti u odnosu na ostale flex elemente
+            // druga cifra je shrink (def: 0): koliko ce se flex element skupiti relativno u odnosu na druge flex elemente
+            // treca cifra je basis (def: 0): kolika je inicijalna duzina flex elementa
+            flex: 0 0 32%;
+            background-color: $svetloPlava;
+            padding: 10px;
+            button{
+                // primeni sve atribute klase dugme
+                @extend .dugme;
+            }
+        }
+    }
+}
+
+/***************************
+ Gallery
+***************************/
+.gallery{
+    display: flex;
+    // prelamanje elemenata (ako im treba prostora)
+    flex-wrap: wrap;
+    img{
+        // sve slike
+        width: 25%;
+    }
+    .manjaSlika{
+        // gazim prethodnu sirinu kod drugih 6 fotki
+        width: 16.66%;
+    }
+}
+
+/***************************
+ About
+***************************/
+.about{
+    padding: $padding;
+    text-align: center;
+    // koji je direktan potomak
+    & > p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    article{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        // odnos duzina 40:60
+        .about-slika{
+            // flex-basis: 40%;
+            flex: 2;
+        }
+        .about-text{
+            // flex-basis: 60%;
+            flex: 3;
+            text-align: left;
+            padding-left: 20px;
+            h3{
+                text-transform: capitalize;
+                font-size: 1.5rem;
+            }
+            p{
+                margin: 15px 0;
+            }
         }
     }
 }

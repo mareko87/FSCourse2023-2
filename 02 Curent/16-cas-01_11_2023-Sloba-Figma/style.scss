@@ -1,3 +1,46 @@
 @import 'vars';
 @import 'mixins';
 @import 'globals';
+
+nav{
+    // gore i desmo
+    padding: 27px 60px 0 0;
+    ul{
+        @include flex($justify: flex-end);
+        a{
+            font-weight: 500;
+            font-size: 20px;
+            color: $black;
+            margin-left: 35px;
+            &:hover{
+                color: $accents;
+            }
+        }
+    }
+}
+
+.mainHeader{
+    padding: 140px 0 70px 0;
+    @include flex;
+    .text{
+        flex: 0 0 55%;
+        h1{
+            font-size: 44px;
+            line-height: 60px;
+        }
+        p{
+            padding: 40px 0;
+        }
+    }
+    .img{
+        flex: 0 0 40%;
+        @include flex($justify: flex-end);
+        // ovo nece uticati na sliku posto je ona vec sredjena
+        img{
+            width: 243px;
+            height: 243px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

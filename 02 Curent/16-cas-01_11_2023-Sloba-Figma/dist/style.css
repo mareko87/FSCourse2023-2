@@ -7,4 +7,82 @@
 
 body {
   font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  color: #21243D;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.btn {
+  background: #FF6464;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+  display: inline-block;
+}
+
+nav {
+  padding: 27px 60px 0 0;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  margin-left: 35px;
+}
+nav ul a:hover {
+  color: #FF6464;
+}
+
+.mainHeader {
+  padding: 140px 0 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHeader .text {
+  flex: 0 0 55%;
+}
+.mainHeader .text h1 {
+  font-size: 44px;
+  line-height: 60px;
+}
+.mainHeader .text p {
+  padding: 40px 0;
+}
+.mainHeader .img {
+  flex: 0 0 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainHeader .img img {
+  width: 243px;
+  height: 243px;
+  object-fit: cover;
+  border-radius: 50%;
 }

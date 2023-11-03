@@ -179,3 +179,28 @@ nav ul a:hover {
   margin-left: 35px;
   font-size: 30px;
 }
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  margin: 0 15px;
+  font-size: 30px;
+}
+footer ul li a {
+  color: #21243D;
+}
+footer ul li a:hover {
+  color: #FF6464;
+}
+footer p {
+  margin-top: 25px;
+}

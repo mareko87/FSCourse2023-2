@@ -86,3 +86,96 @@ nav ul a:hover {
   object-fit: cover;
   border-radius: 50%;
 }
+
+.posts {
+  background: #EDF7FA;
+  padding: 30px 0;
+}
+.posts .viewAll {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+}
+.posts .viewAll h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.posts .viewAll a {
+  color: #00A8CC;
+}
+.posts .listPosts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.posts .listPosts article {
+  flex: 0 0 49%;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+  padding: 24px;
+}
+.posts .listPosts article h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+.posts .listPosts article span {
+  font-size: 18px;
+  padding: 25px 0 15px 0;
+  display: inline-block;
+}
+
+.works {
+  padding-top: 80px;
+}
+.works h4 {
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.works article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.works article .img {
+  flex: 0 0 30%;
+}
+.works article .img img {
+  width: 100%;
+  border-radius: 6px;
+}
+.works article .text {
+  flex: 0 0 67%;
+}
+.works article .text h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.works article .text p {
+  margin-top: 22px;
+}
+.works article .text .date {
+  font-size: 18px;
+  font-weight: 900;
+  background: #21243D;
+  border-radius: 16px;
+  padding: 5px 10px;
+  color: #FFF;
+}
+.works article .text .cat {
+  margin-left: 35px;
+  font-size: 30px;
+}

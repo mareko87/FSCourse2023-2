@@ -21,8 +21,13 @@ a {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
 }
 
 .btn {
@@ -62,8 +67,20 @@ nav ul a:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .mainHeader {
+    flex-direction: column-reverse;
+    padding-top: 70px;
+  }
+}
 .mainHeader .text {
   flex: 0 0 55%;
+}
+@media screen and (max-width: 768px) {
+  .mainHeader .text {
+    text-align: center;
+    padding-top: 50px;
+  }
 }
 .mainHeader .text h1 {
   font-size: 44px;

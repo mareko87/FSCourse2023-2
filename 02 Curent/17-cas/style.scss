@@ -23,8 +23,16 @@ nav{
 // main header
 .mainHeader{
     padding: 140px 0 70px 0;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        padding-top: 70px;
+    }
     @include flex;
     .text{
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            padding-top: 50px;
+        }
         flex: 0 0 55%;
         h1{
             font-size: 44px;

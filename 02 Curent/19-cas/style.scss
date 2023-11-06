@@ -59,18 +59,108 @@ a {
 
 
 // MIKSINI
+@mixin flex($justify, $align, $direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
 
+
+@mixin dugme($txtColor, $bgColor, $border, $txtHover, $bgHover) {
+    padding: 1rem 2rem;
+    border: 2px solid $border;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: $transition;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: $bgColor;
+    color: $txtColor;
+    &:hover {
+        background-color: $bgHover;
+        color: $txtHover;
+    }
+}
 
 
 
 // Header
+header {
+    //  rem na header i dole na linkove
+    @include flex(space-between, center);
+    padding: 1rem 2rem;
+    background-color: $black;
+    color: $white;
 
+    .logo {
+        // ovaj flex kaze da se slicica siri koliko god moze
+        // posto sva 3 diva imaju flex:1, zauzece po trecinu
+        flex: 1;
+        @include flex(flex-start, center);
 
+        img {
+            width: 80px;
+        }
+
+        a {
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: $transition;
+
+            &:hover {
+                color: $lightgray;
+            }
+        }
+    }
+
+    .workingHours {
+        flex: 1;
+        @include flex(space-around, center);
+        text-transform: uppercase;
+    }
+
+    .callToAction {
+        flex: 1;
+        text-align: right;
+        // na dugmetu su takodje re-ovi
+        button {
+            @include dugme($white,transparent ,$white ,$black ,$white );
+        }
+    }
+}
 
 
 // Hero section
+.hero {
+    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(img/header.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    @include flex(center, center);
+    text-align: center;
 
+    .hero-text {
+        width: 60%;
+        color: $white;
+        p {
+            margin: 1rem 0;
+        }
+        div {
+            button:first-child {
+                @include dugme($white,$tertiary ,$tertiary ,$tertiary ,transparent );
+                margin-right: 1rem;
+            }
 
+            button:last-child {
+                @include dugme($white,transparent ,$white ,$black ,$white );
+            }
+        }
+    }
+}
 
 
 // Prices section

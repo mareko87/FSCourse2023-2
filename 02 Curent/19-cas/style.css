@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -36,4 +37,165 @@ a {
 .container {
   max-width: 1140px;
   margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  color: #fff;
+}
+header .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .logo img {
+  width: 80px;
+}
+header .logo a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+header .logo a:hover {
+  color: #d3d3d3;
+}
+header .workingHours {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+}
+header .callToAction {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+header .callToAction button {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #fff;
+}
+header .callToAction button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/header.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+.hero .hero-text {
+  width: 60%;
+  color: #fff;
+}
+.hero .hero-text p {
+  margin: 1rem 0;
+}
+.hero .hero-text div button:first-child {
+  padding: 1rem 2rem;
+  border: 2px solid #506df5;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: #506df5;
+  color: #fff;
+  margin-right: 1rem;
+}
+.hero .hero-text div button:first-child:hover {
+  background-color: transparent;
+  color: #506df5;
+}
+.hero .hero-text div button:last-child {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #fff;
+}
+.hero .hero-text div button:last-child:hover {
+  background-color: #fff;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

@@ -61,6 +61,13 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 nav ul a {
   font-weight: 500;
   font-size: 20px;
@@ -166,6 +173,11 @@ nav ul a:hover {
           align-items: center;
   padding-bottom: 22px;
 }
+@media screen and (max-width: 768px) {
+  .posts .viewAll {
+    padding: 0 20px 22px;
+  }
+}
 .posts .viewAll h4 {
   font-size: 22px;
   font-weight: 400;
@@ -199,6 +211,14 @@ nav ul a:hover {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
           box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
   padding: 24px;
+}
+@media screen and (max-width: 768px) {
+  .posts .listPosts article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
 }
 .posts .listPosts article h3 {
   font-size: 26px;
@@ -239,6 +259,14 @@ nav ul a:hover {
   padding-top: 30px;
   border-bottom: 1px solid #E0E0E0;
 }
+@media screen and (max-width: 768px) {
+  .works article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .works article .img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
@@ -248,10 +276,21 @@ nav ul a:hover {
   width: 100%;
   border-radius: 6px;
 }
+@media screen and (max-width: 768px) {
+  .works article .img img {
+    display: block;
+    margin: auto;
+  }
+}
 .works article .text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 67%;
           flex: 0 0 67%;
+}
+@media screen and (max-width: 768px) {
+  .works article .text {
+    padding: 35px;
+  }
 }
 .works article .text h2 {
   font-size: 30px;

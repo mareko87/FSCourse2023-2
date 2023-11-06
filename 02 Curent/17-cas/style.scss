@@ -8,6 +8,9 @@ nav{
     padding: 27px 60px 0 0;
     ul{
         @include flex($justify: flex-end);
+        @media screen and (max-width: 768px){
+            justify-content: space-evenly;
+        }
         a{
             font-weight: 500;
             font-size: 20px;
@@ -24,6 +27,7 @@ nav{
 .mainHeader{
     padding: 140px 0 70px 0;
     @media screen and (max-width: 768px) {
+        // kako bih postavio sliku pre naslova
         flex-direction: column-reverse;
         padding-top: 70px;
     }
@@ -62,6 +66,10 @@ nav{
     .viewAll{
         @include flex;
         padding-bottom: 22px;
+        @media screen and (max-width: 768px) {
+            // gore 0, levo i desno po 20px i dole 22px
+            padding: 0 20px 22px;
+        }
         h4{
             font-size: 22px;
             font-weight: 400;
@@ -74,6 +82,11 @@ nav{
         @include flex;
         article{
             flex: 0 0 49%;
+            @media screen and (max-width:768px) {
+                // da postovi idu jedan ispod drugog
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
             border-radius: 4px;
             background: $white;
             box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
@@ -102,6 +115,10 @@ nav{
     }
     article{
         @include flex;
+        @media screen and (max-width: 768px) {
+            // da bi svaki element u okviru artikla isao jedan ispod drugog
+            flex-direction: column;
+        }
         padding-bottom: 15px;
         padding-top: 30px;
         border-bottom: 1px solid $borders;
@@ -110,10 +127,21 @@ nav{
             img{
                 width: 100%;
                 border-radius: 6px;
+                @media screen and (max-width: 768px) {
+                    // posto su slike vec sredjene, necu smanjivati na 75%
+                    // width: 75%;
+                    // postavljanje slike na sredinu kontejnera slike
+                    display: block;
+                    margin: auto;
+                }
             }
         }
         .text{
             flex: 0 0 67%;
+            // malo da prodise tekst
+            @media screen and (max-width: 768px) {
+                padding: 35px;
+            }
             h2{
                 font-size: 30px;
                 font-weight: 700;

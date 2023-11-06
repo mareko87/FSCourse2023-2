@@ -17,6 +17,28 @@ $bez: bisque;
 $padding: 80px 0;
 $transition: .5s;
 
+@mixin flex($justufy: space-between, $align: center){
+    display: flex;
+    // prelom reda
+    flex-wrap: wrap;
+    justify-content: $justufy;
+    align-items: $align;
+}
+
+@mixin responsive($device){
+    @if $device == tablet {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    } @else if $device == phone {
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    } @else {
+        @error "Invalid parameter: '#{$device}'."; 
+    }
+}
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -34,6 +56,9 @@ h6 {
 h1{
     color: $bela;
     font-size: 3.5rem;
+    @include responsive(phone){
+        font-size: 2.5rem;
+    }
 }
 
 h2 {
@@ -72,6 +97,10 @@ hr{
 .container {
     max-width: 1140px;
     margin: auto;
+    // {} => @content
+    @include responsive(tablet){
+        width: 96%;
+    }
 }
 
 .dugme{
@@ -87,15 +116,6 @@ hr{
         background-color: $karminCrvena;
     }
 }
-
-@mixin flex($justufy: space-between, $align: center){
-    display: flex;
-    // prelom reda
-    flex-wrap: wrap;
-    justify-content: $justufy;
-    align-items: $align;
-}
-
 
 /***************************
  Hero 
@@ -138,6 +158,13 @@ hr{
                 justify-content: space-between;
                 // po vertikali
                 align-items: center;
+                @include responsive(tablet){
+                    padding: 0 20px;
+                }
+                @include responsive(phone){
+                    flex-direction: column;
+                    padding: 20px;
+                }
                 .logo{
                     font-size: 1.5rem;
                     font-weight: 600;
@@ -155,6 +182,9 @@ hr{
                         &:hover{
                             opacity: .5;
                         }
+                        @include responsive(phone){
+                            padding: 1rem;
+                        }
                     }
                 }
             }
@@ -162,6 +192,9 @@ hr{
         p{
             color: $bela;
             width: 75%;
+            @include responsive(phone){
+                width: 100%;
+            }
             text-align: center;
             margin-top: 1.5rem;
         }
@@ -194,6 +227,12 @@ hr{
         }
 
     }
+    @include responsive(tablet){
+        display: none;
+        // razlika izmedju "display: none" i "visibility: hidden"
+        // u prvom slucaju kao da iscupamo element iz kontenta (susedi ce yauyeti njegovo mesto)
+        // u drugom slucaju element se samo ne prikazuje, ali i dalje zauzima prostor
+    }
 }
 
 /***************************
@@ -206,12 +245,17 @@ hr{
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         article{
             // ovo znaci da ce izmedju artikala biti po 3% (dva gepa)
             // prva cifra je grow (def: 0): koliko ce flex element relativno rasti u odnosu na ostale flex elemente
             // druga cifra je shrink (def: 0): koliko ce se flex element skupiti relativno u odnosu na druge flex elemente
             // treca cifra je basis (def: 0): kolika je inicijalna duzina flex elementa
             flex: 0 0 32%;
+            @include responsive(phone){
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
             background-color: $svetloPlava;
             padding: 10px;
             button{
@@ -232,10 +276,24 @@ hr{
     img{
         // sve slike
         width: 25%;
+        // vece slike po dva u redu
+        @include responsive(tablet){
+            width: 50%;
+        }
+        @include responsive(phone){
+            width: 100%;
+        }
     }
     .manjaSlika{
         // gazim prethodnu sirinu kod drugih 6 fotki
         width: 16.66%;
+        // manje po 3
+        @include responsive(tablet){
+            width: 33.3333%;
+        }
+        @include responsive(phone){
+            width: 50%;
+        }
     }
 }
 
@@ -248,12 +306,19 @@ hr{
     // koji je direktan potomak
     & > p{
         width: 60%;
+        @include responsive(tablet){
+            width: 80%;
+        }
         margin: 0 auto;
     }
     article{
         margin-top: 50px;
         display: flex;
         align-items: center;
+        //  da idu artikli jedan ispod drugog
+        @include responsive(phone){
+            flex-direction: column;
+        }
         // odnos duzina 40:60
         .about-slika{
             // flex-basis: 40%;
@@ -289,9 +354,14 @@ hr{
         padding-top: 50px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         article{
             // article ima sirinu contenta, a sa flex-om koji sledi zauzece svaki po 25% od roditelja
             flex: 0 0 25%;
+            @include responsive(phone){
+                flex: 0 0 50%;
+                margin-bottom: 20px;
+            }
             span{
                 font-size: 60px;
                 font-weight: 600;
@@ -322,6 +392,12 @@ hr{
         // align-items: center;
         article{
             flex: 0 0 32%;
+            @include responsive(tablet){
+                flex: 0 0 48%;
+            }
+            @include responsive(phone){
+                flex: 0 0 100%;
+            }
             margin-bottom: 25px;
             h3{
                 font-size: 30px;
@@ -345,6 +421,17 @@ hr{
         // potrebno je ograniciti sirinu child elementata pomocu flex-a
         article{
             flex: 0 0 48%;
+            @include responsive(tablet){
+                flex: 0 0 100%;
+                align-items: center;
+            }
+            // posto je ukljucen mixun flex koji sadrzi i prelom (wrap), ovde je dovoljno promeniti glavnu osu
+            // u mnogim slucajevima sirih ekrana se raspored resava sa "flex: 0 0 50%" (neki procenat)
+            // kod uzih ekrana je dovoljno promeniti osu i preci iz hozizontalnog redjanja u vertikalno "flex-direction: column"
+            @include responsive(phone){
+                flex-direction: column;
+                text-align: center;
+            }
             // zato sto imamo i slike i tekst
             // flex-start poravnjava sadrzaj na jednu stranu u odnosu na pomocnu osu
             @include flex($align: flex-start);
@@ -366,6 +453,15 @@ hr{
                 }
             }
         }
+        // svaki drugi razk=licit. Moze i 2n, ili 2n+1 umesto odd
+        article:nth-child(even){
+            @include responsive(tablet){
+                flex-direction: row-reverse;
+            }
+            @include responsive(phone){
+                flex-direction: column;
+            }
+        }
     }
 }
 
@@ -382,6 +478,10 @@ hr{
         article{
             // trebaju nam artikli u jednom redu
             flex: 0 0 32%;
+            @include responsive(phone){
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
             border: 1px solid $crna;
             .blog-slika{
                 position: relative;
@@ -421,6 +521,15 @@ footer{
         @include flex($align: flex-start);
         article{
             flex: 0 0 22%;
+            @include responsive(tablet){
+                flex: 0 0 48%;
+                margin-bottom: 20px;
+            }
+            @include responsive(phone){
+                flex: 0 0 100%;
+                align-items: center;
+                text-align: center;
+            }
             i{
                 font-size: 25px;
                 // da ih razmaknem

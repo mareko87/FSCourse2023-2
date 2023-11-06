@@ -24,6 +24,11 @@ h1 {
   color: #fff;
   font-size: 3.5rem;
 }
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 h2 {
   font-size: 40px;
@@ -59,6 +64,11 @@ hr {
 .container {
   max-width: 1140px;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 96%;
+  }
 }
 
 .dugme, .blog .container article button, .dishes-articles article button {
@@ -118,6 +128,20 @@ hr {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .hero .container nav div {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero .container nav div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
 .hero .container nav div .logo {
   font-size: 1.5rem;
   font-weight: 600;
@@ -140,11 +164,21 @@ hr {
 .hero .container nav div ul li:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 576px) {
+  .hero .container nav div ul li {
+    padding: 1rem;
+  }
+}
 .hero .container p {
   color: #fff;
   width: 75%;
   text-align: center;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+  .hero .container p {
+    width: 100%;
+  }
 }
 
 /***************************
@@ -178,6 +212,11 @@ hr {
 .socialIcons i:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 768px) {
+  .socialIcons {
+    display: none;
+  }
+}
 
 /***************************
  Dishes 
@@ -194,6 +233,8 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .dishes-articles article {
   -webkit-box-flex: 0;
@@ -201,6 +242,14 @@ hr {
           flex: 0 0 32%;
   background-color: rgb(215, 237, 245);
   padding: 10px;
+}
+@media screen and (max-width: 576px) {
+  .dishes-articles article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
 }
 /***************************
  Gallery
@@ -215,8 +264,28 @@ hr {
 .gallery img {
   width: 25%;
 }
+@media screen and (max-width: 768px) {
+  .gallery img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery img {
+    width: 100%;
+  }
+}
 .gallery .manjaSlika {
   width: 16.66%;
+}
+@media screen and (max-width: 768px) {
+  .gallery .manjaSlika {
+    width: 33.3333%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery .manjaSlika {
+    width: 50%;
+  }
 }
 
 /***************************
@@ -230,6 +299,11 @@ hr {
   width: 60%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .about > p {
+    width: 80%;
+  }
+}
 .about article {
   margin-top: 50px;
   display: -webkit-box;
@@ -238,6 +312,14 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .about article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .about article .about-slika {
   -webkit-box-flex: 2;
@@ -278,11 +360,21 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .numbers .container article {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
+}
+@media screen and (max-width: 576px) {
+  .numbers .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin-bottom: 20px;
+  }
 }
 .numbers .container article span {
   font-size: 60px;
@@ -321,6 +413,20 @@ hr {
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .menu .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 .menu .container article h3 {
   font-size: 30px;
@@ -366,6 +472,25 @@ hr {
           align-items: flex-start;
   margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+  .testimonials .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .testimonials .container article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
 .testimonials .container article .slika {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
@@ -383,6 +508,22 @@ hr {
 .testimonials .container article .tekst h5 {
   text-transform: capitalize;
   font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .testimonials .container article:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 576px) {
+  .testimonials .container article:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /***************************
@@ -412,6 +553,14 @@ hr {
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
   border: 1px solid #000;
+}
+@media screen and (max-width: 576px) {
+  .blog .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
 }
 .blog .container article .blog-slika {
   position: relative;
@@ -460,6 +609,25 @@ footer .container article {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 22%;
           flex: 0 0 22%;
+}
+@media screen and (max-width: 768px) {
+  footer .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 footer .container article i {
   font-size: 25px;

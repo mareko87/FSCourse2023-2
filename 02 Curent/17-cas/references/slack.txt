@@ -1,93 +1,11 @@
-slobamiric
-  11:40 AM
-Ceo ekipice, Boban je bolestan pa ga ja menjam danas, radicemo projekat Figma to HTML naravno i CSS tj SASS :slightly_smiling_face: VIdimo se u 8, evo invite za zoom ovde https://us02web.zoom.us/j/81772074048?pwd=cGlTRzFRSWJEcytKbi9TM2ZTc0t2Zz09
-Meeting ID: 817 7207 4048
-Passcode: 365592 (edited) 
-:+1:
-3
-
-slobamiric
-  8:06 PM
-https://www.figma.com/file/gKZoWoleFgP35xvYu83Y2l/Portfolio-UI---Web-%26-Mobile?node-id=6%3A97&mode=dev
-FigmaFigma
-Portfolio UI - Web & Mobile
-Created with Figma (71 kB)
-https://www.figma.com/file/gKZoWoleFgP35xvYu83Y2l/Portfolio-UI---Web-%26-Mobile?node-id=6%3A97&mode=dev
-
- 
-portfolio.zip
-Zip
-
-8:24
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Portfolio</h1>
-</body>
-</html>
-8:25
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap');
-
-$fontFamily: 'Heebo', sans-serif;
-$text: #21243D;
-$white: white;
-$accents: #FF6464;
-$bg: #EDF7FA;
-$gray: #8695A4;
-$fontSize: 16px;
-$transition: .3s linear;
-8:25
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: $fontFamily;
-    font-size: $fontSize;
-}
-
-slobamiric
-  8:32 PM
-@mixin flex($direction: row, $justify: space-between, $align: center) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-
-slobamiric
-  9:46 PM
-Home gotov, probajte sami ostale stranice, ako ne ide, jedan dan cemo dodatni cas i odraditi te dve stranice :slightly_smiling_face:
-Zip
+Boban Nalic
+  9:47 PM
+2 files
  
 
-portfolio.zip
-Zip
+18-1. CSS portfolio Sloba - responsive.zip
+Download Zip
 
 
-slobamiric
-  10:03 PM
-Evo ovde imate jos jedan projekat fimga to hml i css, a na kraju imate isti dizajn uradjen i u WordPressu https://www.youtube.com/watch?v=VhZ5eZ3PGwc
-YouTubeYouTube | slobodan miric
-Web dizajn radionica 
 
-slobamiric
-  10:19 PM
-U opisu videa imate linkove sta treba
-
-slobamiric
-  6:35 AM
-Snimak od sinoc Portfolio projekat Figma to HTML https://www.youtube.com/watch?v=VMGMUCcDW3c
-
-slobamiric
-  6:47 AM
-Vama je ostalo da zavrsite 2 stranice, works je ista kao home bez header sekcije i posts sekcije, a stranica blog je prelaka bukvalno nema kolona, posto ipsod posta sa podvucenom linijom ili donjim borderom, pa probajte to sami napraviti, ako imate problem pisite.
+18-2. CSS - Zadatak 4.3 - responsive.zip

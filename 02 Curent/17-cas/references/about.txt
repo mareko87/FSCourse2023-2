@@ -1,3 +1,3 @@
-Title: FS4 Figma to HTML, SASS - Portfolio projekat - Sloba
-Date: 30.10.2023.
-Video Link: https://www.youtube.com/watch?v=VMGMUCcDW3c&list=PLRsFPJEu7BdzTGWvTXgTFh0KwSEjczWRP&index=17
+Title:  FS4 - CSS - Zadaci 4 i portfolio - Responsive (FS4 Figma to HTML, SASS - Portfolio projekat) - Boban
+Date: 03.11.2023.
+Video Link: https://www.youtube.com/watch?v=RgQkz1vhACg&list=PLRsFPJEu7BdzTGWvTXgTFh0KwSEjczWRP&index=18

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+$crna: #000;
+$bela: #fff;
+$svetloPlava: rgb(215, 237, 245);
+$karminCrvena: crimson;
+$bez: bisque;
+
+
+$padding: 80px 0;
+$transition: .5s;
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+h1{
+    color: $bela;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3{
+    margin: 10px 0;
+
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: $bela;
+    text-transform: uppercase;
+}
+
+ul{
+    // izbacivanje tackica
+    list-style: none;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: $crna;
+    width: 200px;
+    margin: 15px auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.dugme{
+    padding: 10px 20px;
+    border: none;
+    background-color: $crna;
+    color: $bela;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: $transition;
+    &:hover{
+        background-color: $karminCrvena;
+    }
+}
+
+@mixin flex($justufy: space-between, $align: center){
+    display: flex;
+    // prelom reda
+    flex-wrap: wrap;
+    justify-content: $justufy;
+    align-items: $align;
+}
+
+
+/***************************
+ Hero 
+***************************/
+
+.hero{
+    background:linear-gradient(rgba($crna, 0.7), rgba($crna, 0.7)), url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    // height: 100vh;
+    // container nema visinu, a hero ima. 
+    // Da bi flex radio, ja mogu istu visinu staviti i u container.
+    // Kako ne bih nepotrebno duplirao, dovoljno je da stavim visinu na container, i to 80vh
+    .container{
+        height: 80vh;
+        display: flex;
+        // glavna osa po koloni (vertikalno)
+        flex-direction: column;
+        // postavi na sredinu glavne ose
+        justify-content: center;
+        // centriraj u odnosu na glavnu osu (po horizontali)
+        align-items: center;
+        // sam tekst bih centrirao standardnim atributom
+        // text-align: center;
+        // ako se nav pozicionira apsolutno, moramo postaviti container da se pozicionira relativno
+        position: relative;
+        nav{
+            // apsolutnim pozicioniranjem navigacije smo je "iscupali" iz konteksta
+            position: absolute;
+            // postavimo je na vrh
+            top: 0;
+            // postavimo navigaciju flaksibilnom (glavna osa je podrazumevano horizontalna)
+            // da bi se primenilo rasporedjivanje po glavnoj osi, moramo na roditelju da postavimo sirinu
+            width: 100%;
+            // jos jedan nacin postavljanja sirine na 100%
+            // left: 0;
+            // right: 0;
+            div{
+                display: flex;
+                justify-content: space-between;
+                // po vertikali
+                align-items: center;
+                .logo{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    transition: $transition;
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+                ul{
+                    display: flex;
+                    li{
+                        // gore i dole po 2, a levo i desno po 1
+                        padding: 2rem 1rem;
+                        transition: $transition;
+                        &:hover{
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+        p{
+            color: $bela;
+            width: 75%;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+/***************************
+ Social Icons
+***************************/
+.socialIcons{
+    background-color: $crna;
+    display: flex;
+    // da idu jedna ispod druge
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 50px;
+    // fiksiram poziciju
+    position: fixed;
+    // sada treba da ga namestim gde ce biti fiksirano. Zakucavam
+    // preracunavaj 50% vidljive visine umanjene za pola visine socijalnih ikonica. Tad ce biti tacno na pola visine.
+    top: calc(50% - 75px);
+    i{
+        // malo povecavam ikonice
+        font-size: 1.4rem;
+        transition: $transition;
+        &:hover{
+            opacity: .5;
+        }
+
+    }
+}
+
+/***************************
+ Dishes 
+***************************/
+.dishes{
+    padding: $padding;
+    text-align: center;
+    &-articles{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        article{
+            // ovo znaci da ce izmedju artikala biti po 3% (dva gepa)
+            // prva cifra je grow (def: 0): koliko ce flex element relativno rasti u odnosu na ostale flex elemente
+            // druga cifra je shrink (def: 0): koliko ce se flex element skupiti relativno u odnosu na druge flex elemente
+            // treca cifra je basis (def: 0): kolika je inicijalna duzina flex elementa
+            flex: 0 0 32%;
+            background-color: $svetloPlava;
+            padding: 10px;
+            button{
+                // primeni sve atribute klase dugme
+                @extend .dugme;
+            }
+        }
+    }
+}
+
+/***************************
+ Gallery
+***************************/
+.gallery{
+    display: flex;
+    // prelamanje elemenata (ako im treba prostora)
+    flex-wrap: wrap;
+    img{
+        // sve slike
+        width: 25%;
+    }
+    .manjaSlika{
+        // gazim prethodnu sirinu kod drugih 6 fotki
+        width: 16.66%;
+    }
+}
+
+/***************************
+ About
+***************************/
+.about{
+    padding: $padding;
+    text-align: center;
+    // koji je direktan potomak
+    & > p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    article{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        // odnos duzina 40:60
+        .about-slika{
+            // flex-basis: 40%;
+            flex: 2;
+        }
+        .about-text{
+            // flex-basis: 60%;
+            flex: 3;
+            text-align: left;
+            padding-left: 20px;
+            h3{
+                text-transform: capitalize;
+                font-size: 1.5rem;
+            }
+            p{
+                margin: 15px 0;
+            }
+        }
+    }
+}
+
+/***************************
+ Numbers
+***************************/
+.numbers{
+    padding: $padding;
+    background: linear-gradient(rgba($crna, .5), rgba($crna, .5)), url(img/numbers.jpg);
+    // fiksirana pri skrolovanju
+    background-attachment: fixed;
+    color: $bela;
+    text-align: center;
+    .container{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        article{
+            // article ima sirinu contenta, a sa flex-om koji sledi zauzece svaki po 25% od roditelja
+            flex: 0 0 25%;
+            span{
+                font-size: 60px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+/***************************
+ Menu
+***************************/
+.menu{
+    padding: $padding;
+    text-align: center;
+    &-text{
+        padding: 0 40px;
+    }
+    .container{
+        padding-top: 50px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // mixin umesto prethodna dva reda
+        @include flex();
+        // justify-content: space-between;
+        // align-items: center;
+        article{
+            flex: 0 0 32%;
+            margin-bottom: 25px;
+            h3{
+                font-size: 30px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/***************************
+ Testimonials
+***************************/
+.testimonials{
+    padding: $padding;
+    h2{
+        text-align: center;
+    }
+    .container{
+        @include flex();
+        // ovde deluje da se mixin nije primenio. On zapravo radi, ali zbog flex-wrap se artikli sire koliko mogu, a to je 100% .
+        // potrebno je ograniciti sirinu child elementata pomocu flex-a
+        article{
+            flex: 0 0 48%;
+            // zato sto imamo i slike i tekst
+            // flex-start poravnjava sadrzaj na jednu stranu u odnosu na pomocnu osu
+            @include flex($align: flex-start);
+            margin-top: 50px;
+            // primenimo flex na child elemente artikla da im podesimo odnos sirina
+            .slika{
+                flex: 0 0 25%;
+                // zaobljivanje slike
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .tekst{
+                flex: 0 0 75%;
+                padding-left: 10px;
+                h5{
+                    text-transform: capitalize;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/***************************
+ Blog
+***************************/
+.blog{
+    padding: $padding;
+    background-color: $bez;
+    text-align: center;
+    .container{
+        padding-top: 25px;
+        @include flex();
+        article{
+            // trebaju nam artikli u jednom redu
+            flex: 0 0 32%;
+            border: 1px solid $crna;
+            .blog-slika{
+                position: relative;
+                span{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: $karminCrvena;
+                    padding: 10px 20px;
+                    color: $bela;
+                    // da ga odmaknem od desnog gornjeg ugla
+                    margin: 10px;
+                }
+            }
+            h3{
+                text-transform: capitalize;
+            }
+            p{
+                padding: 0 10px;
+            }
+            button{
+                @extend .dugme;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+/***************************
+ Footer
+***************************/
+footer{
+    padding: $padding;
+    background-color: $crna;
+    color: $bela;
+    .container{
+        @include flex($align: flex-start);
+        article{
+            flex: 0 0 22%;
+            i{
+                font-size: 25px;
+                // da ih razmaknem
+                margin-right: 10px;
+            }
+        }
+    }
+}

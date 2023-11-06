@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
+
+$primary: #313131;
+$secondary: #fde21c;
+$tertiary: #506df5;
+$darkblue: #012f5b;
+$lightgray: #d3d3d3;
+$text: #585858;
+$white: #fff;
+$black: #000000;
+$orange: #fd830f;
+
+$fontSize: 16px;
+$fontFamily: 'Montserrat', sans-serif;
+$transition: .4s ease;
+$padding: 4rem 0;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    color: $black;
+}
+
+h1 {
+    font-size: 50px;
+    color: $white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+// MIKSINI
+
+
+
+
+// Header
+
+
+
+
+// Hero section
+
+
+
+
+// Prices section
+
+
+
+
+// Advantages section
+
+
+
+
+// Team section
+
+
+
+
+// Repair section
+
+
+
+
+// Dugmici section
+
+
+
+
+// Info section
+
+
+
+
+// Footer

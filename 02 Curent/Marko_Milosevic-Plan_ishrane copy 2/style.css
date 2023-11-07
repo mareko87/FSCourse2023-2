@@ -1,66 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Playpen+Sans:wght@100;300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.header{
+body {
+  font-family: "Playpen Sans", cursive;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(10, 10, 10, 0.8);
+}
+
+header {
   background-color: rgb(131, 217, 251);
   border: 3px solid green;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.main{
-  background-color: rgb(253, 211, 160);
-  border: 3px solid orangered;
+ul {
+  list-style: none;
 }
 
-.footer{
-  background-color: rgb(143, 181, 251);
-  border: 3px solid blueviolet;
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-a{
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+a {
   text-decoration: none;
 }
 
-a:hover, nav li:hover {
-  rotate: -5deg;
-}
-
-h2{
+h2 {
   background-color: rgb(127, 140, 255);
   border: 1px dashed red;
 }
 
-h3{
+h3 {
   background-color: rgb(227, 156, 208);
   border: 1px dashed red;
 }
 
-h4{
+h4 {
   background-color: rgb(143, 225, 143);
   border: 1px dashed red;
 }
 
-.header h1{
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header h1 {
   text-transform: uppercase;
   font-style: italic;
-  color: darkcyan
+  color: darkcyan;
 }
-
-.header nav ul{
-  list-style: none;
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 300px;
   padding-left: 20px;
   text-transform: uppercase;
 }
+.header nav ul li:hover {
+  scale: 1.2;
+}
 
-.hero .main h2{
+.main {
+  background-color: rgb(253, 211, 160);
+  border: 3px solid orangered;
+}
+
+.footer {
+  background-color: rgb(143, 181, 251);
+  border: 3px solid blueviolet;
+}
+
+/***************************************************/
+/***************************************************/
+.hero .main h2 {
   text-transform: uppercase;
   padding: 20px 20px 20px 0;
 }
@@ -68,12 +120,16 @@ h4{
 .hero .main img {
   width: 320px;
   height: auto;
-  transition: .4s;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.hero .main img:hover{
+.hero .main img:hover {
   width: 640px;
   height: auto;
-  rotate: -5deg;
-  
 }
+
+/***************************************************/
+/***************************************************/
+/***************************************************/
+/***************************************************//*# sourceMappingURL=style.css.map */

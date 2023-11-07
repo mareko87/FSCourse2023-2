@@ -1,29 +1,9 @@
-@import 'vars';
-@import 'mixins';
 @import 'globals';
 
 
 /***************************************************/
 // index.html
 /***************************************************/
-
-// HEADER
-.header h1{
-    text-transform: uppercase;
-    font-style: italic;
-    color: darkcyan
-}
-  
-  .header nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    padding-left: 20px;
-    text-transform: uppercase;
-}
-
-// navbar
 
 
 // HERO
@@ -35,13 +15,13 @@
 .hero .main img {
     width: 320px;
     height: auto;
-    transition: .4s;
+    transition: $transition;
 }
   
 .hero .main img:hover{
     width: 640px;
     height: auto;
-    rotate: -5deg;
+    // scale: 0.8;
 }
 
 // SECTION RECOMMENDED GROCERIES
@@ -125,17 +105,9 @@
 // Article Other in section Forbidden Groceries
 
 
-// FOOTER
-
-
 /***************************************************/
 // hutrition.html
 /***************************************************/
-
-// HEADER
-
-
-// navbar
 
 
 // HERO
@@ -213,8 +185,6 @@
 // Articles / Nutriments in section Other
 
 
-// FOOTER
-
 
 /***************************************************/
 // contact.html
@@ -229,5 +199,5 @@
 // HERO
 
 
-// FOOTER
+
 

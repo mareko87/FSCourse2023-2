@@ -1,3 +1,5 @@
+@import 'vars';
+
 // flex mixin
 @mixin flex($justufy: space-between, $align: center){
     display: flex;

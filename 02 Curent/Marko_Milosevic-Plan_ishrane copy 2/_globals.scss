@@ -1,77 +1,98 @@
-@import 'vars';
-@import 'mixins';
+@import "mixins";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $fontWeight;
-    color: $textDark;
+    color: $txtDark;
 }
 
-ul{
+header {
+    background-color: rgb(131, 217, 251);
+    border: 3px solid green;
+}
+
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     transition: $transition;
 }
 
-.container{
+.container {
     max-width: 80%;
     margin: auto;
-    @include responsive(tablet){
+    @include responsive(tablet) {
         max-width: 90%;
     }
-    @include responsive(phone){
+    @include responsive(phone) {
         max-width: 100%;
     }
 }
 
-.header{
-    background-color: rgb(131, 217, 251);
-    border: 3px solid green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .main{
-    background-color: rgb(253, 211, 160);
-    border: 3px solid orangered;
-  }
-  
-  .footer{
-    background-color: rgb(143, 181, 251);
-    border: 3px solid blueviolet;
-  }
-  
-  a{
+a {
     text-decoration: none;
-  }
-  
-  a:hover, nav li:hover {
-    rotate: -5deg;
-  }
-  
-  h2{
+}
+
+h2 {
     background-color: rgb(127, 140, 255);
     border: 1px dashed red;
-  }
-  
-  h3{
+}
+
+h3 {
     background-color: rgb(227, 156, 208);
     border: 1px dashed red;
-  }
-  
-  h4{
+}
+
+h4 {
     background-color: rgb(143, 225, 143);
     border: 1px dashed red;
-  }
+}
 
+
+// HEADER
+.header{
+    @include flex;
+    h1{
+        text-transform: uppercase;
+        font-style: italic;
+        color: darkcyan
+    }
+// navbar
+    nav {
+        ul{
+            @include flex;
+            width: 300px;
+            padding-left: 20px;
+            text-transform: uppercase;
+            li{
+                &:hover{
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+}
+
+
+//MAIN
+.main {
+    background-color: rgb(253, 211, 160);
+    border: 3px solid orangered;
+}
+
+
+
+// FOOTER
+.footer {
+    background-color: rgb(143, 181, 251);
+    border: 3px solid blueviolet;
+}

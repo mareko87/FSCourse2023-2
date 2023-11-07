@@ -1,0 +1,233 @@
+@import 'vars';
+@import 'mixins';
+@import 'globals';
+
+
+/***************************************************/
+// index.html
+/***************************************************/
+
+// HEADER
+.header h1{
+    text-transform: uppercase;
+    font-style: italic;
+    color: darkcyan
+}
+  
+  .header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+// navbar
+
+
+// HERO
+.hero .main h2{
+    text-transform: uppercase;
+    padding: 20px 20px 20px 0;
+}
+  
+.hero .main img {
+    width: 320px;
+    height: auto;
+    transition: .4s;
+}
+  
+.hero .main img:hover{
+    width: 640px;
+    height: auto;
+    rotate: -5deg;
+}
+
+// SECTION RECOMMENDED GROCERIES
+
+
+// Article Cereals and Flour in section Recommended Groceries
+
+
+// Article Milk Products in section Recommended Groceries
+
+
+// Article Meat in section Recommended Groceries
+
+
+// Article Vegetables in section Recommended Groceries
+
+
+// Article Fruits in section Recommended Groceries
+
+
+// Article Drinks in section Recommended Groceries
+
+
+// Article Spices in section Recommended Groceries
+
+
+// Article Other in section Recommended Groceries
+
+
+// SECTION ALLOWED GROCERIES
+
+
+// Article Cereals and Flour in section Allowed Groceries
+
+
+// Article Milk Products in section Allowed Groceries
+
+
+// Article Meat in section Allowed Groceries
+
+
+// Article Vegetables in section Allowed Groceries
+
+
+// Article Fruits in section Allowed Groceries
+
+
+// Article Drinks in section Allowed Groceries
+
+
+// Article Spices in section Allowed Groceries
+
+
+// Article Other in section Allowed Groceries
+
+
+// SECTION FORBIDDEN GROCERIES
+
+
+// Article Cereals and Flour in section Forbidden Groceries
+
+
+// Article Milk Products in section Forbiden Groceries
+
+
+// Article Meat in section Forbidden Groceries
+
+
+// Article Vegetables in section Forbidden Groceries
+
+
+// Article Fruits in section Forbidden Groceries
+
+
+// Article Drinks in section Forbidden Groceries
+
+
+// Article Spices in section Forbidden Groceries
+
+
+// Article Other in section Forbidden Groceries
+
+
+// FOOTER
+
+
+/***************************************************/
+// hutrition.html
+/***************************************************/
+
+// HEADER
+
+
+// navbar
+
+
+// HERO
+
+
+// SECTION CEREALS AND FLUOR
+
+
+// Headiong in section Cereals and Flour
+
+
+// Articles / Nutriments in section Cereals and Flour
+
+
+// SECTION MILK PRODUCTS 
+
+
+// Heading in section Milk Products
+
+
+// Articles / Nutriments in section Milk Products
+
+
+// SECTION MEAT
+
+
+// Heading in section Meat
+
+
+// Articles / Nutriments in section Meat
+
+
+// SECTION VEGETABLES
+
+
+// Heading in section Vegetables
+
+
+// Articles / Nutriments in section Vegetables
+
+
+// SECTION FRUITS
+
+
+// Heading in section Fruits
+
+
+// Articles / Nutriments in section Fruits
+
+
+// SECTION SPICES
+
+
+// Heading
+
+
+// Heading
+
+
+// SECTION DRINKS
+
+
+// Heading in section Drinks
+
+
+// Articles / Nutriments in section Drinks
+
+
+// SECTION OTHER
+
+
+// Heading in section Other
+
+
+// Articles / Nutriments in section Other
+
+
+// FOOTER
+
+
+/***************************************************/
+// contact.html
+/***************************************************/
+
+// HEADER
+
+
+// navbar
+
+
+// HERO
+
+
+// FOOTER
+

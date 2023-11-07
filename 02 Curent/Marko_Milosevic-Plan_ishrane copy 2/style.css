@@ -7,15 +7,24 @@
 }
 
 body {
+  background-color: rgba(40, 240, 160, 0.5);
   font-family: "Playpen Sans", cursive;
   font-size: 16px;
   font-weight: 300;
-  color: rgba(10, 10, 10, 0.8);
+  color: rgb(20, 120, 80);
 }
 
-header {
-  background-color: rgb(131, 217, 251);
-  border: 3px solid green;
+header,
+footer {
+  background-color: rgb(10, 60, 40);
+}
+
+h2,
+h3,
+h4 {
+  color: rgb(10, 60, 40);
+  font-weight: 700;
+  border: 1px dashed red;
 }
 
 ul {
@@ -43,25 +52,6 @@ a {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
-h2 {
-  background-color: rgb(127, 140, 255);
-  border: 1px dashed red;
-}
-
-h3 {
-  background-color: rgb(227, 156, 208);
-  border: 1px dashed red;
-}
-
-h4 {
-  background-color: rgb(143, 225, 143);
-  border: 1px dashed red;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,12 +65,18 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-.header h1 {
+.header .logo a h1 {
   text-transform: uppercase;
   font-style: italic;
-  color: darkcyan;
+  color: rgba(40, 240, 160, 0.75);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
-.header nav ul {
+.header .logo a h1:hover {
+  scale: 1.1;
+  color: rgb(40, 240, 160);
+}
+.header .navbar nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,8 +92,19 @@ h4 {
   padding-left: 20px;
   text-transform: uppercase;
 }
-.header nav ul li:hover {
+.header .navbar nav ul li {
+  font-weight: 500;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.header .navbar nav ul li:hover {
   scale: 1.2;
+}
+.header .navbar nav ul li a {
+  color: rgba(40, 240, 160, 0.75);
+}
+.header .navbar nav ul li a:hover {
+  color: rgb(40, 240, 160);
 }
 
 .main {
@@ -106,8 +113,8 @@ h4 {
 }
 
 .footer {
-  background-color: rgb(143, 181, 251);
-  border: 3px solid blueviolet;
+  color: rgb(40, 240, 160);
+  text-align: center;
 }
 
 /***************************************************/

@@ -7,15 +7,24 @@
 }
 
 body {
+    background-color: $lightTransFull;
     font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $fontWeight;
-    color: $txtDark;
+    color: $middle;
 }
 
-header {
-    background-color: rgb(131, 217, 251);
-    border: 3px solid green;
+header,
+footer {
+    background-color: $dark;
+}
+
+h2,
+h3,
+h4 {
+    color: $dark;
+    font-weight: 700;
+    border: 1px dashed red;
 }
 
 ul {
@@ -38,50 +47,49 @@ a {
     }
 }
 
-a {
-    text-decoration: none;
-}
-
-h2 {
-    background-color: rgb(127, 140, 255);
-    border: 1px dashed red;
-}
-
-h3 {
-    background-color: rgb(227, 156, 208);
-    border: 1px dashed red;
-}
-
-h4 {
-    background-color: rgb(143, 225, 143);
-    border: 1px dashed red;
-}
-
-
 // HEADER
-.header{
+.header {
     @include flex;
-    h1{
-        text-transform: uppercase;
-        font-style: italic;
-        color: darkcyan
-    }
-// navbar
-    nav {
-        ul{
-            @include flex;
-            width: 300px;
-            padding-left: 20px;
-            text-transform: uppercase;
-            li{
+    // logo
+    .logo {
+        a {
+            h1 {
+                text-transform: uppercase;
+                font-style: italic;
+                color: $lightTransHalf;
+                transition: $transition;
                 &:hover{
-                    scale: 1.2;
+                    scale: 1.1;
+                    color: $light;
+                }
+            }
+        }
+    }
+    // navbar
+    .navbar {
+        nav {
+            ul {
+                @include flex;
+                width: 300px;
+                padding-left: 20px;
+                text-transform: uppercase;
+                li {
+                    font-weight: 500;
+                    transition: $transition;
+                    &:hover {
+                        scale: 1.2;
+                    }
+                    a {
+                        color: $lightTransHalf;
+                        &:hover {
+                            color: $light;
+                        }
+                    }
                 }
             }
         }
     }
 }
-
 
 //MAIN
 .main {
@@ -89,10 +97,8 @@ h4 {
     border: 3px solid orangered;
 }
 
-
-
 // FOOTER
 .footer {
-    background-color: rgb(143, 181, 251);
-    border: 3px solid blueviolet;
+    color: $light;
+    text-align: center;
 }

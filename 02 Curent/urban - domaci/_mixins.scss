@@ -1,0 +1,23 @@
+@import 'vars.scss';
+
+// flex mixin
+@mixin flex($justufy: space-between, $align: center){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justufy;
+    align-items: $align;
+}
+// responsive mixin
+@mixin responsive($device){
+    @if $device == tablet {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    } @else if $device == phone {
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    } @else {
+        @error "Invalid parameter: '#{$device}'."; 
+    }
+}

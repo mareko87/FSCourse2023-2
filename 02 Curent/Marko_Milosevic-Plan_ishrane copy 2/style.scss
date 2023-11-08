@@ -1,190 +1,199 @@
-@import 'globals';
-
+@import "globals";
 
 /***************************************************/
 // index.html
 /***************************************************/
 
-
 // HERO
-.hero .main h2{
-    text-transform: uppercase;
-    padding: 20px 20px 20px 0;
-}
-  
-.hero .main img {
-    width: 320px;
-    height: auto;
-    transition: $transition;
-}
-  
-.hero .main img:hover{
-    width: 640px;
-    height: auto;
-    // scale: 0.8;
+.hero {
+    .main {
+        section {
+            h2 {
+                text-transform: uppercase;
+                padding: 20px 20px 20px 0;
+                color: $dark;
+                text-align: center;
+            }
+            .articles {
+                @include flex($align: start, $justufy: center);
+                article {
+                    padding-bottom: 10px;
+                    flex: 0 0 33.33%;
+                    .dropdown {
+                        position: relative;
+                        a {
+                            figure {
+                                padding: 10px;
+                                transition: $transition;
+                                @include flex;
+                                figcaption {
+                                    flex: 0 0 100%;
+                                    h3 {
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: $dark;
+                                    }
+                                }
+                                img {
+                                    flex: 0 0 100%;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                &:hover {
+                                    scale: 1.1;
+                                }
+                            }
+                        }
+                        .groceries {
+                            display: none;
+                            position: absolute;
+                            z-index: 1;
+                            padding: 0 10px;
+                            width: 100%;
+                            h4 {
+                                display: block;
+                                transition: $transition;
+                                a {
+                                    color: $medium;
+                                    &:hover{
+                                        color: $dark;
+                                    }
+                                }
+                                &:hover {
+                                    scale: 1.1;
+                                }
+                            }
+                        }
+                        &:hover {
+                            a{
+                                figure{
+                                    img{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .groceries {
+                                @include flex($justufy: center);
+                                h4{
+                                    flex: 0 0 50%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // SECTION RECOMMENDED GROCERIES
 
-
 // Article Cereals and Flour in section Recommended Groceries
-
 
 // Article Milk Products in section Recommended Groceries
 
-
 // Article Meat in section Recommended Groceries
-
 
 // Article Vegetables in section Recommended Groceries
 
-
 // Article Fruits in section Recommended Groceries
-
 
 // Article Drinks in section Recommended Groceries
 
-
 // Article Spices in section Recommended Groceries
-
 
 // Article Other in section Recommended Groceries
 
-
 // SECTION ALLOWED GROCERIES
-
 
 // Article Cereals and Flour in section Allowed Groceries
 
-
 // Article Milk Products in section Allowed Groceries
-
 
 // Article Meat in section Allowed Groceries
 
-
 // Article Vegetables in section Allowed Groceries
-
 
 // Article Fruits in section Allowed Groceries
 
-
 // Article Drinks in section Allowed Groceries
-
 
 // Article Spices in section Allowed Groceries
 
-
 // Article Other in section Allowed Groceries
-
 
 // SECTION FORBIDDEN GROCERIES
 
-
 // Article Cereals and Flour in section Forbidden Groceries
-
 
 // Article Milk Products in section Forbiden Groceries
 
-
 // Article Meat in section Forbidden Groceries
-
 
 // Article Vegetables in section Forbidden Groceries
 
-
 // Article Fruits in section Forbidden Groceries
-
 
 // Article Drinks in section Forbidden Groceries
 
-
 // Article Spices in section Forbidden Groceries
 
-
 // Article Other in section Forbidden Groceries
-
 
 /***************************************************/
 // hutrition.html
 /***************************************************/
 
-
 // HERO
-
 
 // SECTION CEREALS AND FLUOR
 
-
 // Headiong in section Cereals and Flour
-
 
 // Articles / Nutriments in section Cereals and Flour
 
-
-// SECTION MILK PRODUCTS 
-
+// SECTION MILK PRODUCTS
 
 // Heading in section Milk Products
 
-
 // Articles / Nutriments in section Milk Products
-
 
 // SECTION MEAT
 
-
 // Heading in section Meat
-
 
 // Articles / Nutriments in section Meat
 
-
 // SECTION VEGETABLES
-
 
 // Heading in section Vegetables
 
-
 // Articles / Nutriments in section Vegetables
-
 
 // SECTION FRUITS
 
-
 // Heading in section Fruits
-
 
 // Articles / Nutriments in section Fruits
 
-
 // SECTION SPICES
 
-
 // Heading
 
-
 // Heading
-
 
 // SECTION DRINKS
 
-
 // Heading in section Drinks
-
 
 // Articles / Nutriments in section Drinks
 
-
 // SECTION OTHER
-
 
 // Heading in section Other
 
-
 // Articles / Nutriments in section Other
-
-
 
 /***************************************************/
 // contact.html
@@ -192,12 +201,6 @@
 
 // HEADER
 
-
 // navbar
 
-
 // HERO
-
-
-
-

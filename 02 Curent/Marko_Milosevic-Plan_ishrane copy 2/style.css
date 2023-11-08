@@ -107,33 +107,120 @@ a {
   color: rgb(40, 240, 160);
 }
 
-.main {
-  background-color: rgb(253, 211, 160);
-  border: 3px solid orangered;
-}
-
 .footer {
   color: rgb(40, 240, 160);
   text-align: center;
+  height: 50px;
 }
 
 /***************************************************/
 /***************************************************/
-.hero .main h2 {
+.hero .main section h2 {
   text-transform: uppercase;
   padding: 20px 20px 20px 0;
+  color: rgb(10, 60, 40);
+  text-align: center;
 }
-
-.hero .main img {
-  width: 320px;
+.hero .main section .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.hero .main section .articles article {
+  padding-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+.hero .main section .articles article .dropdown {
+  position: relative;
+}
+.hero .main section .articles article .dropdown a figure {
+  padding: 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .main section .articles article .dropdown a figure figcaption {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+.hero .main section .articles article .dropdown a figure figcaption h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(10, 60, 40);
+}
+.hero .main section .articles article .dropdown a figure img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  width: 100%;
   height: auto;
+}
+.hero .main section .articles article .dropdown a figure:hover {
+  scale: 1.1;
+}
+.hero .main section .articles article .dropdown .groceries {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 0 10px;
+  width: 100%;
+}
+.hero .main section .articles article .dropdown .groceries h4 {
+  display: block;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
-
-.hero .main img:hover {
-  width: 640px;
-  height: auto;
+.hero .main section .articles article .dropdown .groceries h4 a {
+  color: rgb(20, 120, 80);
+}
+.hero .main section .articles article .dropdown .groceries h4 a:hover {
+  color: rgb(10, 60, 40);
+}
+.hero .main section .articles article .dropdown .groceries h4:hover {
+  scale: 1.1;
+}
+.hero .main section .articles article .dropdown:hover a figure img {
+  display: none;
+}
+.hero .main section .articles article .dropdown:hover .groceries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .main section .articles article .dropdown:hover .groceries h4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: center;
 }
 
 /***************************************************/

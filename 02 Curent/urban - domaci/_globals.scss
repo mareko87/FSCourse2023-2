@@ -9,18 +9,38 @@ basic styles
     box-sizing: border-box;
 }
 body {
-    font-family: var($bodyFont);
-    font-size: var($fontSize);
+    font-family: $bodyFont;
+    font-size: $fontSize;
     line-height: 1.8;
     font-weight: 300;
-    color: var($primary);
+    color: $primary;
 }
+
+img{
+    width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: var($headings);
+    font-family: $headings;
+}
+
+section{
+    width: 80%;
+    padding: 100px 0;
+    margin: auto;
 }
 
 .container {
     width: 80%;
     padding: 100px 0;
     margin: auto;
+}
+
+.btn{
+    padding: 13px 25px;
+    font-size: 1.2rem;
+    background-color: $secondary;
+    border: none;
+    border-radius: 5px;
+    color: $white;
 }

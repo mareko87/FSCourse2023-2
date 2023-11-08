@@ -198,4 +198,315 @@ header .callToAction button:hover {
 .hero .hero-text div button:last-child:hover {
   background-color: #fff;
   color: #000000;
+}
+
+.prices {
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.prices article {
+  background-color: #fff;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border: 1px solid #313131;
+  padding: 3rem;
+  text-align: center;
+}
+.prices article h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.prices article p {
+  margin: 0.5rem 0;
+}
+.prices article p span:nth-child(1) {
+  font-size: 1.5rem;
+}
+.prices article p span:nth-child(2) {
+  font-size: 2.5rem;
+}
+.prices article p span:nth-child(3) {
+  font-size: 0.9rem;
+}
+.prices article p:last-of-type {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.prices article button {
+  padding: 1rem 2rem;
+  border: 2px solid #506df5;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  color: #506df5;
+}
+.prices article button:hover {
+  background-color: #506df5;
+  color: #fff;
+}
+.prices article button:hover {
+  translate: 20px;
+}
+.prices article:hover {
+  scale: 1.1;
+}
+
+.advantages {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/bg2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg2.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+.advantages h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.advantages h2::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #fde21c;
+  width: 150px;
+  margin: 1rem auto 3rem;
+}
+.advantages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.advantages .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.advantages .container article .image {
+  overflow: hidden;
+}
+.advantages .container article .image img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.advantages .container article .image img:hover {
+  scale: 1.2;
+}
+.advantages .container article .text {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.advantages .container article .text p {
+  margin: 1 rem 0;
+  font-size: 0.8rem;
+}
+.advantages .container article .text button {
+  padding: 1rem 2rem;
+  border: 2px solid #506df5;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  color: #506df5;
+}
+.advantages .container article .text button:hover {
+  background-color: #506df5;
+  color: #fff;
+}
+.advantages .container article:nth-child(2) button {
+  padding: 1rem 2rem;
+  border: 2px solid #506df5;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: #fde21c;
+  color: #506df5;
+}
+.advantages .container article:nth-child(2) button:hover {
+  background-color: #506df5;
+  color: #fff;
+}
+.advantages .container article:nth-child(3) button {
+  padding: 1rem 2rem;
+  border: 2px solid crimson;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: crimson;
+  color: #fff;
+}
+.advantages .container article:nth-child(3) button:hover {
+  background-color: #506df5;
+  color: #fff;
+}
+
+.team {
+  padding: 4rem 0;
+}
+.team h2 {
+  text-align: center;
+}
+.team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.team .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 16px 8px 22px 6px rgba(222, 175, 175, 0.75);
+          box-shadow: 16px 8px 22px 6px rgba(222, 175, 175, 0.75);
+}
+.team .container article .image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.team .container article .text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-left: 1rem;
+}
+.team .container article .text p:last-of-type {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+.team .container article .text button {
+  padding: 1rem 2rem;
+  border: 2px solid crimson;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: crimson;
+  color: #fff;
+}
+.team .container article .text button:hover {
+  background-color: #506df5;
+  color: #fff;
+}
+
+.repair {
+  padding: 4rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/bg2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg2.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.repair .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.repair .container article:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 50px;
+}
+.repair .container article:first-child i {
+  font-size: 5rem;
+  color: #fde21c;
+}
+.repair .container article:first-child h3 {
+  margin: 1rem 0;
+}
+.repair .container article:first-child button {
+  padding: 1rem 2rem;
+  border: 2px solid #506df5;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  color: #506df5;
+}
+.repair .container article:first-child button:hover {
+  background-color: #506df5;
+  color: #fff;
+}
+.repair .container article:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
 }/*# sourceMappingURL=style.css.map */

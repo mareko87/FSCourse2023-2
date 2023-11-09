@@ -24,23 +24,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $headings;
 }
 
-section{
-    width: 80%;
-    padding: 100px 0;
-    margin: auto;
-}
-
 .container {
     width: 80%;
     padding: 100px 0;
     margin: auto;
-}
-
-.btn{
-    padding: 13px 25px;
-    font-size: 1.2rem;
-    background-color: $secondary;
-    border: none;
-    border-radius: 5px;
-    color: $white;
 }

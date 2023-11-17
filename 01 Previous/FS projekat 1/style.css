@@ -1,0 +1,399 @@
+/* import fontova po konvenciji na pocetku */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500&display=swap");
+
+/* reset svih elemenata univerzalnim selektorom */
+/* da padding i border udju u kupnu dimenziju objekta: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* pseudoklasa root je isto kao da smo napisali "html"
+s tim da klasa ima veci specificity */
+:root {
+  --tamnoPlava: rgb(29, 82, 124);
+  --svetloPlava: #459ad3;
+  --orange: rgb(253, 127, 69);
+  --tamnoSiva: #3c3b3c;
+  --svetloSiva: lightgray;
+  --bela: #fff;
+  --transition: 0.3s ease;
+  --padding: 100px 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* em je relativna u odnosu na roditeljski element, a rem u odnosu na root: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size */
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+/* postavljam globalno, pa cu pregaziti vecim specificitijem tamo gde je potrebno */
+h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--tamnoPlava);
+}
+/* da ne budu podvuceni linkovi */
+a {
+  text-decoration: none;
+}
+/* da lista nema tackica */
+ul {
+  list-style: none;
+}
+/* PREPORUKA */
+img {
+  width: 100%;
+  /* da bi slika popunila par piksela koji joj nedostaju */
+  display: block;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 15%;
+  margin: 0.5rem 0;
+}
+
+.dugme {
+  text-transform: uppercase;
+  cursor: pointer;
+  /* treba mi dodatno objasnjenje za ovo */
+  padding: 1em 3em;
+  background-color: var(--tamnoPlava);
+  border: 1px solid var(--tamnoPlava);
+  color: var(--bela);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.dugme:hover {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.container {
+  width: 80%;
+  /* centriranje */
+  margin: auto;
+}
+
+/*******************
+header
+*******************/
+header {
+  background: linear-gradient(to right, var(--orange), var(--tamnoPlava));
+  /* razdvajam levo i desno logo i navigaciju: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
+  display: flex;
+  justify-content: space-around;
+  /* kraj razdvajana */
+  align-items: center;
+  /* em je dobar za padding: https://www.w3schools.com/cssref/css_units.php  */
+  padding: 1em 0;
+}
+
+header a {
+  /* boja mora da se postavi na linkove, ne bi se primenila da je postavljena direktno na header */
+  color: var(--bela);
+  /* tranzicija ne mora na hover */
+  transition: var(--transition);
+}
+/* ako se tranzicija stavi na hover, onda se primenjuje samo na ulazak, ali ne i na izlazak misa */
+header a:hover {
+  color: var(--svetloSiva);
+}
+
+header .logo a h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--bela);
+}
+
+header ul {
+  /* elementi jedan pored drugog */
+  display: flex;
+}
+/* gadjam linkove */
+header nav ul li a {
+  text-transform: uppercase;
+  margin-left: 2.5rem;
+}
+
+/*******************
+Hero section
+*******************/
+.hero {
+  /* gusenje slike sa 80% boje */
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(253, 127, 69, 0.8)),
+    url(img/baloon.jpg);
+  /* pozicioniranje slike: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position  */
+  background-position: top center;
+  /* nacin sirenja slike: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size  */
+  background-size: cover;
+  /* treba mi visina */
+  height: 80vh;
+  /* da elementi budu jedan ispod drugog i u centru */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--bela);
+}
+
+.hero h1 strong {
+  font-style: italic;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.hero .dugme {
+  background-color: transparent;
+  border: 1px solid var(--bela);
+}
+
+.hero .dugme:hover {
+  background-color: var(--bela);
+  color: var(--tamnoSiva);
+  border: 1px solid var(--bela);
+}
+
+/*******************
+Fisne ikonice
+*******************/
+.fiksneIkonice {
+  /* fiksirane u odnosu na body */
+  position: fixed;
+  /* oduzimam pola visine od 150px */
+  top: calc(50% - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: bisque;
+  height: 150px;
+}
+
+.fiksneIkonice i {
+  color: var(--orange);
+  font-size: 20px;
+}
+
+/*******************
+About section
+*******************/
+.about {
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+}
+/* Primenjuje se flex od roditelja. Ovo je potrebno primeniti na oba elementa kako bi ih zakucali na 48%: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex */
+.about .about-text {
+  flex: 0 0 48%;
+  /* stavljam jedno ispod drugog */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* sada je dugme flex (child) pe se razvuklo skroz. To treba srediti. 
+    da gadjam dugme direktno, morao bih da koristim align-self properti. */
+  align-items: flex-start;
+}
+
+/* definisan je globalno, ovde su samo prilagodjavam boju */
+.about .about-text hr {
+  background-color: var(--tamnoPlava);
+}
+
+.about .about-text button {
+  margin-top: 1rem;
+}
+
+/* flex grow, shrink, basis */
+.about .about-image {
+  flex: 0 0 48%;
+}
+
+/* box-shadow: https://www.cssmatic.com/box-shadow  */
+.about .about-image img {
+  box-shadow: 10px 10px var(--tamnoPlava);
+}
+
+/*******************
+Services
+*******************/
+
+.services {
+  padding: var(--padding);
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)),
+    url(img/header.jpg);
+  /* fiksiranje slike */
+  background-attachment: fixed;
+  color: var(--bela);
+}
+
+.services .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .container .services-icons {
+  flex: 0 0 48%;
+  display: flex;
+  flex-wrap: wrap;
+  /* koristim kada imam vise redova */
+  align-content: space-around;
+}
+
+.services .container .services-icons i {
+  font-size: 3rem;
+  color: var(--orange);
+  /* pod dve u redu. U roditelju imam wrap */
+  flex: 0 0 50%;
+}
+
+.services .container .services-text {
+  flex: 0 0 48%;
+}
+
+.services .container .services-text h2 {
+  color: var(--bela);
+}
+
+.services .container .services-text hr {
+  background-color: var(--orange);
+}
+
+.services .container .services-text p {
+  padding: 1rem 0;
+}
+
+/*******************
+Blog
+*******************/
+
+.blog {
+  padding: var(--padding);
+  text-align: center;
+}
+
+.blog hr {
+  background-color: var(--orange);
+  margin: 1rem auto 2rem;
+}
+
+.blog .container {
+  display: flex;
+  /* ovo nije preporucivo, ali moze */
+  /* gap: 20px; */
+  justify-content: space-between;
+}
+
+.blog .container article {
+  flex: 0 0 32%;
+  background-color: lightcyan;
+  padding: 0.5rem;
+}
+
+/* pozicioniranje */
+.blog .container article .blog-image{
+  position: relative;
+} 
+
+.blog .container article .blog-image .blog-image-category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--tamnoPlava);
+  color: var(--bela);
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.blog .container article .meta {
+  background-color: var(--orange);
+  color: var(--bela);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.blog .container article h3 {
+  font-size: 1.5rem;
+  color: var(--tamnoPlava);
+  margin: 0.5rem 0;
+}
+
+.blog .container article .dugme {
+  margin: 1rem 0;
+}
+
+/*******************
+Footer
+*******************/
+footer {
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)),
+    url(img/baloon.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: var(--padding);
+  color: var(--bela);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container article {
+  flex: 0 0 32%;
+}
+
+footer .container article h3 {
+  margin-bottom: 1rem;
+}
+/* za pseudoelement potreban razmak dve dvotacke od prethodnog elementa */
+footer .container article ul ::marker {
+  list-style-type: square;
+  /* da bude u ravni sa levom ivicom teksta*/
+  list-style-position: inside;
+
+  /* marker */
+  color: var(--orange);
+  content: "->";
+  font-size: 20px;
+}
+
+footer .container article ul li {
+  /* text-align: center; */
+  color: var(--svetloPlava);
+}
+
+/* Botton bar */
+.bottonBar {
+  background-color: var(--tamnoPlava);
+  color: var(--bela);
+  padding: 1rem;
+  text-align: center;
+}
+
+.bottonBar p a {
+  color: var(--svetloSiva);
+}
+
+/* pozicioniranje: https://developer.mozilla.org/en-US/docs/Web/CSS/position  */

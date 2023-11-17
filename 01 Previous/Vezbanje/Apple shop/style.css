@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --gray1: #515365;
+    --gray2: #4e5062;
+    --gray3: #4b4d5e;
+    --gray4: #484a5a;
+    --purple: rgb(110, 37, 148);
+    --yellow: #ecd444;
+    --white: #fff;
+    --text: #444;
+    --transition: .4s easy;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/***************
+nav
+****************/
+nav {
+    text-align: center;
+    background: linear-gradient(to right, var(--purple), var(--yellow));
+    height: 55px;
+    line-height: 55px;
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 30px;
+    color: var(--white);
+}
+
+nav ul li a:hover{
+    color: var(--purple);
+    transition: var(--transition);
+}
+
+nav i {
+    font-size: 2rem;
+    position: relative;
+    top: 5px;
+}
+
+nav i:hover {
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+/***************
+header
+****************/
+header {
+    background-image: url(img/);
+}
+/***************
+about
+****************/
+
+/***************
+products
+****************/
+
+/***************
+cta
+****************/
+
+/***************
+footer
+****************/

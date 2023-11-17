@@ -1,0 +1,34 @@
+header{
+    background-color: antiquewhite;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heroSection{
+    background-color: aqua;
+    padding: 20px;
+}
+
+#uvod{
+    padding: 20px;
+    background-color: bisque;
+}
+
+#uvod div{
+    display: flex;
+
+}
+
+#frontEnd{
+
+}
+
+#backEnd{
+
+}
+
+#raspored{
+
+}

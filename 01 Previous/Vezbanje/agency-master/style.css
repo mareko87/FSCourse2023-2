@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,700&display=swap');
+
+/* https://bennettfeely.com/clippy/ */
+
+/* http://demo.tinywall.net/numscroller/ */
+
+:root {
+    --bela: #fff;
+    --orange: rgb(255, 138, 91);
+    --siva: #555;
+    --moka: #FCEADE;
+    --black: #000;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--white);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+/***************
+NAVBAR
+***************/
+.navbar {
+    border-top: 6px solid var(--orange);
+    background: var(--black);
+    padding: 0;
+    margin: 0 !important;
+}
+.navbar .navbar-brand {
+    display: block;
+    background: var(--orange);
+    padding: 15px 40px;
+    font-style: italic;
+    color: var(--white);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: 0.4s ease;
+}
+.navbar .nav-link:hover {
+    color: var(--moka)
+}
+/***************
+BANNER
+***************/
+.banner .row {
+    min-height: 80vh;
+}
+#banner .align-items-center {
+    height: 80vh;
+}
+#banner {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(img/banner.jpg);
+    height: 80vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner-title {
+    font-style: italic;
+}
+#banner h2 {
+    color: var(--orange);
+}
+#banner .banner-link {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: 2px solid var(--orange);
+    color: var(--white);
+    background: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+#banner .banner-link:hover {
+    border: 2px solid var(--orange);
+    color: var(--black);
+    background: var(--orange);
+    border-radius: 0;
+}
+/**** banner after ****/
+#banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--black);
+    z-index: -1;
+    bottom: 0px;
+    transform-origin: left bottom;
+    transform: skewY(7deg);
+}
+/***************
+BANNER ICONS
+***************/
+#banner-icons {
+    margin-top: -50px;
+}
+#banner-icons ul {
+    list-style-type: none;
+}
+#banner-icons ul li {
+    padding: 10px;
+    margin: 0 3px;
+    background: rgba(255, 138, 91, 0.8);
+    background: var(--orange);
+}
+#banner-icons i {
+    font-size: 45px;
+}
+#banner-icons a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+#banner-icons a:hover {
+    color: var(--black);
+}
+/***************
+SERVICES
+***************/
+#services h1 {
+    color: var(--orange);
+}
+
+#services .service-icon {
+    font-size: 60px;
+    color: var(--white);
+    padding: 50px;
+    background: var(--orange);
+    transition: 0.4s ease-in-out;
+}
+#services .service-icon:hover {
+    color: var(--orange);
+    background: var(--black);
+}
+#services .service-icon-1 {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+#services .service-icon-2 {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+#services .service-icon-3 {
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+#services .service-icon-4 {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+/***************
+CONTACT
+***************/
+#contact {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/contact.jpg);
+    height: 70vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0% 15%, 100% 0, 100% 85%, 0% 100%);
+}
+#contact .form-control {
+    background: transparent;
+    border: none;
+    font-size: 2.5em;
+    border-radius: 0;
+    border-bottom: 3px solid var(--white);
+}
+#contact .form-btn {
+    font-size: 2.5em;
+    border-radius: 0;
+    background: transparent;
+    color: var(--orange);
+    border: 3px solid var(--orange);
+}
+#contact .form-btn:hover {
+    background: var(--orange);
+    color: var(--black);
+}
+#contact input[type="text"]::-webkit-input-placeholder {
+    color: white;
+}
+
+#team .carousel-caption {
+    color: var(--orange);
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+}
+/***************
+TEAM - slider
+***************/
+#team {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/***************
+ABOUT US
+***************/
+#about-us {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/about-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+#about-us img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#about-us .btn-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#about-us .btn-link:hover {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#about-us .card-header {
+    background: var(--orange);
+}
+#about-us.card {
+    border: 1px solid var(--white);
+    border-radius: 0;
+}
+/***************
+PROJECTS
+***************/
+#projects .img-container {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+.projects .img-container:hover img {
+    opacity: 0.7;
+    cursor: pointer;
+}
+#projects .img-icons {
+    position: absolute;
+    bottom: -10em; /* pomerili smo 10em ispod da izadje iz kontejnera */
+    padding: 30px 0;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    transition: bottom 1.5s;
+}
+#projects .img-container:hover .img-icons {
+    bottom: 0;
+}
+#projects i {
+    color: var(--orange);
+    font-size: 35px;
+    margin: 0 10px;
+    transition: 0.4s ease;
+}
+#projects i:hover {
+    color: var(--siva);
+}
+.no-padding {
+    padding: 0;
+}
+/***************
+COUNTER
+***************/
+#counter .number {
+    background: var(--black);
+    padding: 30px 0;
+    color: var(--orange);
+    transition: 0.4s ease;
+    font-size: 30px;
+}
+#counter .number:hover {
+    background: var(--orange);
+    color: var(--black);
+    font-size: 35px;
+}
+/***************
+PEOPLE
+***************/
+#people img {
+    width: 80%;
+    margin-top: -100px;
+}
+#people .card hr {
+    background: var(--orange);
+}
+#people .card i {
+    color: var(--orange);
+    font-size: 30px;
+    transition: 0.4s ease;
+}
+#people .card i:hover {
+    color: var(--siva);
+}
+/***************
+PROGRESS
+***************/
+#skills {
+    background-image: linear-gradient(rgba(255, 138, 91, 0.8), rgba(255, 138, 91, 0.8)), url(img/progress.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+#skills .primary-color-background {
+    background: var(--black);
+}
+/***************
+PRICING
+***************/
+#pricing .price-num {
+    background: var(--moka);
+    padding: 10px 0;
+    position: relative;
+}
+#pricing .money {
+    position: absolute;
+    top: 32%;
+    left: 22%;
+    font-size: 28px;
+}
+#pricing .money-num {
+    font-size: 70px;
+}
+#pricing .money-end {
+    font-size: 25px;
+}
+#pricing .prince-num::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translate(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--moka);
+}
+#pricing .list-group-item {
+    position: relative;
+    font-size: 12px;
+}
+#pricing .first-list {
+    border-top: none !important;
+}
+#pricing .price-btn {
+    border: 2px solid var(--orange);
+    border-radius: 0;
+    margin-bottom: -20px;
+    text-decoration: none;
+    color: var(--black);
+    background: var(--orange);
+}
+#pricing .price-btn:hover {
+    border: 2px solid var(--black);
+    color: var(--orange);
+    background: black;
+}
+#pricing .pro .price-num  {
+    background: var(--orange);
+    color: var(--black);
+}
+#pricing .pro .price-num::after {
+    border-top: 20px solid var(--orange);
+}
+/***************
+FOOTER
+***************/
+#footer {
+    background: var(--black);
+    color: var(--white);
+}
+#footer h2 {
+    color: var(--orange);
+}
+#footer i {
+    color: var(--orange);
+}
+
+
+

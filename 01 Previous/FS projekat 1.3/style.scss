@@ -1,0 +1,592 @@
+/* import fontova - inspektovali smo postojecu stranicu da vidimo koje fontove imamo */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500&display=swap");
+
+/* reset nekih podesavanja */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Definisemo promensljive koje cemo koristiti kasnije u CSS-u..
+Mozemo selektovati ceo dokument "html { }", ali je bolje koristiti pseudo klasu koja ima veci specificity.
+Pored boja, cesto cemo koristiti tranziciju i padding.
+Obicno na inspect-u mozemo videti odeljak "inherited from html, odnosno :root" */
+/* Dodatna napomena - scope varijable: varijabla vazi tamo gde je deklaricana, 
+tako da je najbolje deklarisati je u "root" pseudo-klasi. */
+:root {
+  --tamnoPlava: rgb(29, 82, 124);
+  --svetloPlava: #459ad3;
+  --orange: rgb(253, 127, 69);
+  --tamnoSiva: #3c3b3c;
+  --svetloSiva: lightgray;
+  --bela: #fff;
+
+  --transition: 0.3s;
+  --padding: 100px 0;
+}
+/* Tekstovi su nam uglavnom "'Open Sans', sans-serif", pa cemo to staviti na body  */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* Ovo su nam fontovi na naslovima */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/* Ovde stilizujemo H1 za nasu stranicu.
+Ocitali smo da nam je potrebna velicina od 3rem i debljina od 300 koju smo ucitali sa fontovima. */
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  /* position: sticky;
+    top: 20px; */
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--tamnoPlava);
+}
+
+/* Uglavnom sami stilizujemo linkove pa nam default podvlacenje ne treba. */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+/* Globalno podesavanje horizontal rule-a */
+hr {
+  border: none;
+  height: 1px;
+  width: 15%;
+  margin: 0.5rem 0;
+}
+
+/********************************************************
+OVDE SE OTPRILIKE ZAVRSAVAJU GLOBALNA PODESAVANJA.
+To se lako prepoznaje zato sto se uglavnom selektuju uobicajeni tagovi i specificity je nizak.
+Ta su stvari koje se ponavljaju na samom sajtu.
+Ako negde postoji odstupanje, vecim specificity-jem se lako pregazi globalna postavka.
+*********************************************************/
+
+/* Ovde je stilizacija jasna. Pozda je bitno napomenuti "pointer"
+kojim se dobija rucica na prelazak misem. Ne primecujem razliku
+ako ovaj atribut i ovu vredsnot stavim u ":hover" */
+.dugme {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1em 3em;
+  background-color: var(--tamnoPlava);
+  border: 1px solid var(--tamnoPlava);
+  color: var(--bela);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+/* Na prelazak misem se menja pozadinska boja i ivica. Ne znam zasto je tranzicija 
+i promena boje teksta odradjena u specificnijem "hero" delu. Verovatno zato sto imamo
+jos dugmadi na stranici. */
+/* NAPOMENA" Na "inspect-u" mogu ukljuciti pseudo klasu da ispratim promenu. 
+U nekom browser-u  pise "element state".*/
+.dugme:hover {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+/* BITNO!!!
+Sve sto je kontejner ce zauzeti 80% sirine i bice centrirano "margin: auto;" */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/********************************************************
+MOZE SE SMATRATI DA SE I OVDE ZAVRSAVAJU GLOBALNA PODESAVANJA.
+Iako su vec gadjane neke klase, nije se pocelo sa konkretnom stilizacijom odeljaka stranice, kao sto je npr. header.
+Granica nije toliko striktna, ali je bitno imati neki osecaj za specificnost / opstost stilizacije.
+*********************************************************/
+
+/**************
+Header
+***************/
+
+/* Ovde cemo rasporediti logo i navigaciju levo i desno sa "display: flex;
+    justify-content: space-around;". "space-around" je pogodan je daje razmak od leve i desne ivice.
+    Pozadinska bija se lako resava linearnim gradijentom (ide s leva na desno).  */
+header {
+  background: linear-gradient(to right, var(--orange), var(--tamnoPlava));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+}
+
+/* Ovde specificnije gadjamo linkove u header-u. Evo kako koristimo globalno definisanu tranziciju (promenljivu). */
+header a {
+  color: var(--bela);
+  transition: var(--transition);
+}
+/* Promena na prelaz misem (koriscenje pseudo-klase).
+Mozemo i ovde definisati tranziciju, ali je bolje to definisati na sam link, specificno.
+Tada dobijam efekat na svaku promenu (i na ulaz i na izlaz misa).
+Da sam tranziciju stavio ovde, imao bih samo na ulaz misa (:hover). */
+header a:hover {
+  color: var(--svetloSiva);
+}
+
+/* Gadjam logo vrlo specificno. Podesavanja su jasna. */
+header .logo a h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--bela);
+}
+
+/* Ovde posebno primenjujemo flex na listu navigacije, radi horizontalnog rasporeda. */
+header nav ul {
+  display: flex;
+}
+/* Ovde gadjamo linkove u navigaciji specificno, kako bi postavili slova na velika i 
+dodati levu marginu (razmak izmedju elemenata navigacije). Ne koristi se desna jer bi odvojili navigaciju od desne ivice.
+  */
+header nav ul li a {
+  text-transform: uppercase;
+  margin-left: 2.5rem;
+}
+
+/**************
+Pozicioniranje section
+***************/
+.pozicioniranje {
+  padding: var(--padding);
+  /* position: relative; */
+}
+
+.pozicioniranje .spoljasnji {
+  background-color: antiquewhite;
+  height: 30vh;
+  position: relative;
+}
+
+.pozicioniranje .spoljasnji .unutrasnji {
+  background-color: #459ad3b5;
+  padding: 1rem;
+
+  position: static;
+
+  position: relative;
+
+  position: absolute;
+
+  /* position: fixed; */
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+
+/**************
+Display property
+***************/
+/* testiranje ponasanja na inline elementu. */
+.display p span {
+    background-color: aqua;
+    color: red;
+    font-weight: bold;
+    /* width i height se ne primenjuju */
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    /* margina se primenila samo levo i desno */
+    margin: 20px;
+
+    /* resavanje inline elementa */
+    /* preslo sve u novi red */
+    /* display: block; */
+
+    display: inline-block;
+}
+
+/**************
+Hero section
+***************/
+/* "    display: flex; flex-direction: column; justify-content: center; align-items: center;" -
+postavljamo elemente na sredinu i poredjane po vertikali.
+Postavljamo visinu "height" kako ne bi slepili donju ivicu uz kontent.
+Koristimo vh zbog bolje responzivnosti (da na svakom ekranu izgleda slicno / isto).
+U pozadini se nalazi slika. Sa "cover" razvlacimo sliku skroz bez promene proporcija. 
+Sa "top center" hvatamo deo slike koji nam najvise odgovora. Slike su obicno pravljene tako da je 
+njen centar najbitniji deo. */
+/* PREPORUKA ZA FOTOGRAFISANJE - Fokus treba biti na glavnom objektu slike tako da se on obicno postavlja u sredinu. */
+/* Posetiti https://developer.mozilla.org/en-US/docs/Web/CSS/background-size 
+i https://developer.mozilla.org/en-US/docs/Web/CSS/background-position  */
+/* Potreban nam je alfa channel da bi postigli providnost (jer preko slike imamo linearni gradijent.
+Zato koristimo rgba(), a boje lako iscitamo iz promenljivih (iako su date u heksadecimalnim vrednostima). 
+Nije pametno koristiti "opacity" jer on ubije i tekst na delu gde se pozadina nalazi (ovde je definisan beo tekst).*/
+/* H1 imamo samo na jednom mestu na stranici, pa ga stilizujemo gore u globalnim podesavanjima. */
+.hero {
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(253, 127, 69, 0.8)),
+    url(img/baloon.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--bela);
+  /* za male ekrane */
+  text-align: center;
+}
+/* Dodatno stilizujemo "@"strong" (bolje nego u html-u) */
+.hero h1 strong {
+  font-style: italic;
+}
+/* Pravim razmak od naslova i dugmeta. */
+.hero p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+/* Tranzicija pri promeni. Ovde imamo primer gde smo vecom specificnoscu pregazili
+tamno belom globalno podesenu tamno sivu ivicu (sto se moze videti u inspect-u kao precrtano pravilo). */
+.hero .dugme {
+  background-color: transparent;
+  border: 1px solid var(--bela);
+}
+/* Promena boje pozadine i teksta. */
+.hero .dugme:hover {
+  background-color: var(--bela);
+  color: var(--tamnoSiva);
+}
+
+/**************
+Fiksno pozicionirane ikonice
+***************/
+.fiksneIkonice {
+  position: fixed;
+  top: calc(50% - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: bisque;
+  height: 150px;
+}
+
+.fiksneIkonice i {
+  color: var(--orange);
+  font-size: 20px;
+}
+
+/**************
+About
+***************/
+/* Odmah malo padinga da malo prodise. 
+Odmah na "flex" i  na "space-between" da rasporedim tekst i sliku levo i desno.*/
+.about {
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  /* za male ekrane */
+  flex-wrap: wrap;
+}
+/* Gadjam tekst i kazen da hocu da zauzme 48% (basis). 
+Prva cifra ka\e da se ne siri ako ima viska prostora (grow), druga ako ima manjka prostora da se ne skuplja (shrink).
+Sada na tekst postavljam "flex"
+menjam osu na vertikalnu i centriram kontemt po vertikali (glavnoj osi sada).
+"align-items" sada radi po pomocnoj horizontalnoj osi, pa ce "flex-start" da rasiri elemente od pocetka.
+Dugme ce ici dokle ima kontenta, ali tekst ne moze da se skupi. 
+"strech" (default) drugacije radi na dugmetu i na tekstu.*/
+.about .about-text {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* specificno cu samo da mu dam pozadinsku boju. Ostalo ide u globalno gore. */
+.about .about-text hr {
+  background-color: var(--tamnoPlava);
+}
+/* Ovde specificno kod teksta dugmetu dajemo samo marginu. Ostalo je podeseno globalno. */
+.about .about-text button {
+  margin-top: 1rem;
+}
+/* Kao i kod teksta, i sliku postavljamo na 48% sirine. Kad stilizujemo velicinu slike
+uvek je bolje koristiti njen kontejner kao ovde. */
+.about .about-image {
+  flex: 0 0 48%;
+}
+/* Ovde specificno gadjamo sliku i dajemo joj senku. 
+Za "box-shadow" dodatno pogledati https://www.cssmatic.com/box-shadow  */
+.about .about-image img {
+  box-shadow: 10px 10px var(--tamnoPlava);
+}
+
+/**************
+Services
+***************/
+/* Pading da prodise. U pozadini slika kojoj treba da se ubije intenzitet linearnim gradijentom 
+iste boje. Linearni gradijent moze biti i jednobojni. Glavna fora je u alfa channel-u.
+da bi slika bila fiksirana a sadrzaj prelazio preko nje postavljamo "background-attachment: fixed;". */
+.services {
+  padding: var(--padding);
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)),
+    url(img/header.jpg);
+  background-attachment: fixed;
+  color: var(--bela);
+}
+/* Horizontalno rasporedjujemo ikonice i tekst. */
+.services .container {
+  display: flex;
+  justify-content: space-between;
+}
+/* Sa "wrap" dobijamo da ikonice prelaze u sledeci red. 
+"align-content" se koristi kada imamo vise redova. Ovde nam je pogodna opcija "space-around".
+Pogledati https://developer.mozilla.org/en-US/docs/Web/CSS/align-content */
+.services .container .services-icons {
+  flex: 0 0 48%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+/* Ako svaka ikonica zauzima 50% roditeljskog kontejnera, onda ce zbog "wrap"
+da se prelome nakon svake druge. */
+.services .container .services-icons i {
+  font-size: 3rem;
+  color: var(--orange);
+  flex: 0 0 50%;
+}
+
+.services .container .services-text {
+  flex: 0 0 48%;
+}
+
+.services .container .services-text h2 {
+  color: var(--bela);
+}
+/* Dok ne zadam boju, hr se nee prikazati */
+.services .container .services-text hr {
+  background-color: var(--orange);
+}
+
+.services .container .services-text p {
+  padding: 1rem 0;
+}
+
+/**************
+Blog
+***************/
+.blog {
+  padding: var(--padding);
+  text-align: center;
+}
+
+.blog hr {
+  background-color: var(--orange);
+  margin: 1rem auto 2rem;
+}
+
+.blog .container {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-between;
+  /* za male ekrane */
+  flex-wrap: wrap;
+}
+
+.blog .container article {
+  flex: 0 0 32%;
+  background-color: rgb(195, 244, 244);
+  padding: 0.5rem;
+}
+
+.blog .container article .blog-image {
+  position: relative;
+}
+
+.blog .container article .blog-image .blog-image-category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--tamnoPlava);
+  color: var(--bela);
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.blog .container article .meta {
+  background-color: var(--orange);
+  color: var(--bela);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.blog .container article h3 {
+  font-size: 1.5rem;
+  color: var(--tamnoPlava);
+  margin: 0.5rem 0;
+}
+
+.blog .container article .dugme {
+  margin: 1rem 0;
+}
+
+/**************
+Footer
+***************/
+footer {
+  background: linear-gradient(rgba(29, 82, 124, 0.8), rgba(29, 82, 124, 0.8)),
+    url(img/baloon.jpg);
+
+  background-size: cover;
+  background-position: center;
+  padding: var(--padding);
+  color: var(--bela);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container article {
+  flex: 0 0 32%;
+}
+
+footer .container article h3 {
+  margin-bottom: 1rem;
+}
+
+/* footer .container article ul ::marker {
+  list-style-type: square;
+  list-style-position: inside;
+
+  color: var(--orange);
+  content: "-> ";
+  font-size: 20px;
+} */
+
+footer .container article ul li {
+  /* text-align: center; */
+  color: var(--svetloPlava);
+}
+
+/**************
+Bottom bar
+***************/
+.bottomBar {
+  background-color: var(--tamnoPlava);
+  color: var(--bela);
+  padding: 1rem;
+  text-align: center;
+}
+
+.bottomBar p a {
+  color: var(--svetloSiva);
+}
+
+
+
+/**************
+RESPONSIVE
+***************/
+
+
+/* Za responsive posetiti https://css-tricks.com/a-complete-guide-to-css-media-queries/  
+Pogledati kao smernicu koje breakpoint-e koristi Boostrap https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+
+
+@media screen and (max-width: 768px){
+
+    .container {
+        width: 90%;
+    }
+
+    .about .about-text {
+        flex: 0 0 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .about .about-image {
+        flex: 0 0 100%;
+    }
+
+
+    /* drugi nacin */
+    /* .about {
+        flex-direction: column;
+    } */
+
+    .services .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .services .container .services-text hr {
+        margin: 1rem auto;
+    }
+
+    .services .container .services-icons i {
+        margin: 3rem auto;
+    }
+
+    .blog .container article {
+        flex: 0 0 100%;
+        margin-bottom: 3rem;
+    }
+
+
+    footer .container article {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 415px){
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        margin: 1rem 2rem;
+        /* da bi radila margina dole i gore */
+        display: inline-block;
+    }
+
+}
+
+@media print {
+    .about .about-image {
+        display: none;
+    }
+}

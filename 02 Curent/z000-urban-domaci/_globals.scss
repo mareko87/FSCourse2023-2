@@ -1,0 +1,31 @@
+@import 'mixins.scss';
+
+/*****************
+basic styles
+*****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $bodyFont;
+    font-size: $fontSize;
+    line-height: 1.8;
+    font-weight: 300;
+    color: $primary;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings;
+}
+
+.container {
+    width: 80%;
+    padding: 100px 0;
+    margin: auto;
+}

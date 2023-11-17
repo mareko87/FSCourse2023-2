@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 20px;
+    font-weight: 300;
+}
+a,
+ul {
+    text-decoration: none;
+}
+h2,
+h3,
+h4,
+a {
+    text-transform: uppercase;
+    color: #260F17;
+}
+h2 {
+    text-align: center;
+}
+
+nav.header {
+    color: #270B13;
+    text-transform: uppercase;
+    text-align: center;
+}
+header nav a {
+    padding-left: 20px;
+}
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebe1d6;
+}
+#hero h1 {
+    font-size: 1.5rem;
+    color: #E99366;
+    text-transform: uppercase;
+}
+#uvod div,
+#prirodaLek div {
+    display: flex;
+}
+#zdravaHrana,
+#raspored table .boja {
+    background-color: #ebe1d6;
+}
+#raspored div{
+    display: flex;
+    justify-content: center;
+}
+#raspored td {
+    width: 150px;
+}
+#raspored th {
+    width: 100px;
+}
+#raspored table thead tr th {
+    color: #260F17;
+    font-size: 1.5rem;
+} 
+#raspored table thead tr .ikonica {
+    color: #E99366;
+    font-size: 2.5rem;
+}
+#raspored table tfoot tr td {
+    text-align: center;
+    color: #E99366;
+    font-weight: 700;
+}
+#raspored table .bela {
+    background-color: #fff;
+  
+}
+#raspored details summary {
+    color: #270B13;
+    font-weight: 700;
+}
+footer {
+    background-color: #260F17;
+    color: #FFF;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer h2,
+footer a {
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+
+
+/* STRANICA KONTAKT I RAZRESENJE */
+.povratak {
+    text-transform: uppercase;
+    color: #260F17;
+}

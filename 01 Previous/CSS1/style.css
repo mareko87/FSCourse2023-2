@@ -1,0 +1,43 @@
+/* *{
+    border: 1px solid red;
+} */
+
+/* #prvaSekcija p{
+    color: blue;
+} */
+
+/* p.plavaBoja{
+    color: blue;
+}
+
+#drugaSekcija .izdvojeno p {
+    color: orange;
+} */
+
+/* article > p{
+    color: red;
+} */
+
+/* div + p{
+    color: red;
+}
+
+#drugaSekcija article .izdvojeno p span{
+    font-style: italic;
+} */
+
+
+h1{
+    /* color: red; */
+    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    color: #0000ff88;
+    color: #f00;
+
+    height: 100px; 
+
+    background-color: antiquewhite;
+
+    background: linear-gradient(to top right, orange, green);
+}
+

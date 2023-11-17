@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FS webex</title>
+        <!-- ikonice: ovaj link je potrebno da bude pre linka za css -->
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+      />
+    <!-- linkujem css -->
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <!-- header-->
+    <header>
+      <!-- moglo je da bude i slika, pa je pogodno da ima div -->
+      <div class="logo">
+        <a href=""><h2>webex</h2></a>
+      </div>
+      <!-- ul>li*3>a -->
+      <!-- Unutar nav taga se mogu direktno pobrojati linkovi, bez liste -->
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <h1>
+        Hi, we are <strong>Webex</strong> <br />
+        full digital agency
+      </h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+        explicabo minus vel atque aut omnis.
+      </p>
+      <button class="dugme">contact us</button>
+    </section>
+
+    <!-- Fiksno pozicionirane ikonice -->
+    <div class="fiksneIkonice">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+
+
+    <!-- About section -->
+    <section class="about container">
+      <!-- dva dela: tekstualni i deo sa slikom -->
+      <div class="about-text">
+        <h2>About</h2>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          distinctio nostrum, mollitia perspiciatis quasi saepe quae quia,
+          quibusdam dignissimos accusamus quaerat quo earum quod aut.
+        </p>
+        <button class="dugme">lean more</button>
+      </div>
+      <div class="about-image">
+        <img src="img/about.jpg" alt="about" />
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <!-- Ova sekcija ide od ivice do ivice, pa container stavljam u poseban div tag -->
+    <section class="services">
+      <div class="container">
+        <div class="services-icons">
+          <!-- vuce ikonice preko fontawesome -->
+          <i class="fab fa-adobe"></i>
+          <i class="fab fa-trello"></i>
+          <i class="fab fa-slack"></i>
+          <i class="fab fa-wordpress"></i>
+          <i class="fab fa-behance"></i>
+          <i class="fab fa-dribbble"></i>
+        </div>
+        <div class="services-text">
+          <h2>Services</h2>
+          <hr>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi rem expedita sunt voluptatum, amet magnam laboriosam voluptatibus earum consectetur similique necessitatibus omnis. Quos a magni sunt sed quibusdam officiis!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi rem expedita sunt voluptatum, amet magnam laboriosam voluptatibus earum consectetur similique necessitatibus omnis. Quos a magni sunt sed quibusdam officiis!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi rem expedita sunt voluptatum, amet magnam laboriosam voluptatibus earum consectetur similique necessitatibus omnis. Quos a magni sunt sed quibusdam officiis!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi rem expedita sunt voluptatum, amet magnam laboriosam voluptatibus earum consectetur similique necessitatibus omnis. Quos a magni sunt sed quibusdam officiis!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog section -->
+    <section class="blog">
+      <h2>latest posts</h2>
+      <hr>
+      <div class="container">
+        <article>
+          <div class="blog-image">
+            <img src="img/blog1.jpg" alt="">
+            <div class="blog-image-category">
+              <span>sport</span>
+            </div>
+          </div>
+          <div class="meta">
+            <p>Autor: Pera Peric</p>
+            <p>Datum: 1.3.2023.</p>
+          </div>
+          <h2>Blog post 1</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, optio ab fugit expedita magnam aperiam laudantium dicta maiores nostrum impedit!</p>
+          <button class="dugme">read more</button>
+        </article>
+        <article>
+          <div class="blog-image">
+            <img src="img/blog2.jpg" alt="">
+            <div class="blog-image-category">
+              <span>film</span>
+            </div>
+          </div>
+          <div class="meta">
+            <p>Autor: Pera Peric</p>
+            <p>Datum: 1.3.2023.</p>
+          </div>
+          <h2>Blog post 2</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, optio ab fugit expedita magnam aperiam laudantium dicta maiores nostrum impedit!</p>
+          <button class="dugme">read more</button>
+        </article>
+        <article>
+          <div class="blog-image">
+            <img src="img/blog3.jpg" alt="">
+            <div class="blog-image-category">
+              <span>muzika</span>
+            </div>
+          </div>
+          <div class="meta">
+            <p>Autor: Pera Peric</p>
+            <p>Datum: 1.3.2023.</p>
+          </div>
+          <h2>Blog post 3</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, optio ab fugit expedita magnam aperiam laudantium dicta maiores nostrum impedit!</p>
+          <button class="dugme">read more</button>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <!-- container posebno zao sto footer ide od ivice do ivice -->
+      <div class="container">
+        <article>
+          <h3>O nama</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem maxime corrupti placeat et. Tenetur reiciendis voluptate ipsum ipsam temporibus?</p>
+        </article>
+        <article>
+          <h3>Kontakt</h3>
+          <ul>
+            <li>Kralja Petra I 20</li>
+            <li>021/123-456</li>
+            <li>proba@gmail.com</li>
+          </ul>
+        </article>
+        <article>
+          <h3>O nama</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem maxime corrupti placeat et. Tenetur reiciendis voluptate ipsum ipsam temporibus?</p>
+        </article>
+      </div>
+    </footer>
+
+    <!-- Botton bar -->
+    <section class="bottonBar">
+      <p>Sajt napravili <span>&copy;</span> <a href="https://websitestworkshop.com">Websites Workshop</a> ekipa</p>
+    </section>
+  </body>
+</html>

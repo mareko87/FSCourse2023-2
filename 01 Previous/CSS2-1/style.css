@@ -1,0 +1,79 @@
+/* Postoje default margine i padinzi koje je zgodno na 
+pocetku ponistiti. To se radi pomocu univerzalnog selektora. */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Jedinice se dele na relativne i apsolutne. */
+p{
+    /* apsolutna - fisna */
+    width: 300px; 
+    /* relativna - promenljiva */
+    width: 50%;
+}
+
+
+/* Najjaci specificity ima id, pa clasa, pa obican tag kao selektor */
+/* Preporuka da je da se izbegava ID. On je vise deo HTML-a i uglavnom sluzi kao arnchor.
+JS takodje dobija elemente na osnovu ID-a
+Za CSS se preporucuje upotreba klasa */
+
+/* Ovo je root i rem se uporedjuje u odnosu na ovu velicinu fonta.  */
+html{
+    /* najbolje je definisati sa 1 rem */
+    font-size: 1.5rem;
+    /* svodi rem na 10px */
+    /* font-size: 62.5%; */
+}
+
+
+/* 100vh je vidljivi deo browser-a */
+.spoljasnjiDiv{
+    background-color: antiquewhite;
+    border: 3px solid red;
+    /* width: 50%;
+    height: 100vh; */
+}
+
+/* Relativne velicine se prilagodjavaju roditelju. */
+.unutrasnjiDiv{
+    background-color: aqua;
+    border: 3px solid blue;
+    /* width: 50%;
+    height: 50%; */
+}
+
+/* rem - root element - on zavisi od defaut velicine fonta browser-a. */
+/* em gleda svog roditelja. On mnozi cifru sa velicionom fonta roditelja.
+Za margine i padinge se mogu koristiti em-ovi */
+p{
+    font-size: 18px;
+    font-size: 1.5rem;
+}
+
+.text{
+    background-color: antiquewhite;
+    width: 400px;
+    /* ako ima teksta preko 300px, ici ce preko */
+    min-height: 300px;
+    /* drugo resenje za visak teksta */
+    overflow: scroll;
+}
+
+/* neposeceni linkovi */
+a:link {
+    color: orange;
+}
+/* poseceni linkovi */
+a:visited{
+    color: red;
+}
+/* prelazak misem */
+a:hover{
+    color: green;
+}
+/* na zadrzani klik */
+a:active{
+    color: darksalmon;
+}

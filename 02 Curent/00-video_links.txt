@@ -23,3 +23,8 @@ Fullstack 4 spisak lekcija
 17. CSS 12 - Zadatak 4.3 - Mixin - https://www.youtube.com/watch?v=teLBR0duLiM
 18. CSS 13 - Figma to HTML(CSS, SASS) - https://www.youtube.com/watch?v=VMGMUCcDW3c 
 19. CSS 14 - Responsive 2 zadatka - https://www.youtube.com/watch?v=RgQkz1vhACg
+20. CSS - Zadatak 5 + transform - https://www.youtube.com/watch?v=28-qeh8eUy4
+21. CSS - Zadatak 5.2 + pseudo elementi - https://www.youtube.com/watch?v=wlurnBentvU
+22. CSS - Zadatak 6 + fixed header, Z-index, opacity - https://www.youtube.com/watch?v=4V3qOsTzD_4
+23. CSS - Zadatak 6.2 + forme + responsive - https://www.youtube.com/watch?v=B7uYY96ucdk
+24. CSS - Bootstrap 1 + background video - https://www.youtube.com/watch?v=YcU-Qcy2IOE

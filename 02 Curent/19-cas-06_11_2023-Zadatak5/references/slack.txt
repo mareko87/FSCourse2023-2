@@ -1,0 +1,541 @@
+Boban Nalic
+  8:04 PM
+Zip
+ 
+
+House Works - starter.zip
+Zip
+
+
+
+
+Boban Nalic
+  8:20 PM
+<header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <a href="">Work in progres</a>
+        </div>
+        <div class="workingHours">
+            <p>mon-sun: 07:00-16:00 <br> sunday: closed</p>
+            <p>+021/123-456</p>
+        </div>
+        <div class="callToAction">
+            <button>read more</button>
+        </div>
+    </header>
+
+
+Boban Nalic
+  8:36 PM
+// Header
+header{
+    display: flex;
+    // justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: $black;
+    color: $white;
+    .logo{
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        @include flex(flex-start, center );
+        img{
+            width: 80px;
+        }
+        a{
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: $transition;
+            &:hover{
+                color: $lightgray;
+            }
+        }
+    }
+    .workingHours{
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        @include flex(space-around,center);
+        text-transform: uppercase;
+    }
+    .callToAction{
+        flex: 1;
+    }
+}
+8:36
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
+
+$primary: #313131;
+$secondary: #fde21c;
+$tertiary: #506df5;
+$darkblue: #012f5b;
+$lightgray: #d3d3d3;
+$text: #585858;
+$white: #fff;
+$black: #000000;
+$orange: #fd830f;
+
+$fontSize: 16px;
+$fontFamily: 'Montserrat', sans-serif;
+$transition: .4s ease;
+$padding: 4rem 0;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    color: $black;
+}
+
+h1 {
+    font-size: 50px;
+    color: $white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+// MIKSINI
+@mixin flex($justify, $align, $direction:row){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+
+// Header
+header{
+    display: flex;
+    // justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: $black;
+    color: $white;
+    .logo{
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        @include flex(flex-start, center );
+        img{
+            width: 80px;
+        }
+        a{
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: $transition;
+            &:hover{
+                color: $lightgray;
+            }
+        }
+    }
+    .workingHours{
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        @include flex(space-around,center);
+        text-transform: uppercase;
+    }
+    .callToAction{
+        flex: 1;
+    }
+}
+
+
+
+// Hero section
+
+
+// Prices section
+
+
+// Advantages section
+
+
+// Team section
+
+
+// Repair section
+
+
+// Dugmici section
+
+
+// Info section
+
+
+// Footer
+
+
+
+Boban Nalic
+  8:46 PM
+header{
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include flex(space-between, center);
+    padding: 1rem 2rem;
+    background-color: $black;
+    color: $white;
+    .logo{
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        @include flex(flex-start, center );
+        img{
+            width: 80px;
+        }
+        a{
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: $transition;
+            &:hover{
+                color: $lightgray;
+            }
+        }
+    }
+    .workingHours{
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        @include flex(space-around,center);
+        text-transform: uppercase;
+    }
+    .callToAction{
+        flex: 1;
+        text-align: right;
+        button{
+            padding: 1rem 2rem;
+            cursor: pointer;
+            transition: $transition;
+            font-size: 1rem;
+            text-transform: capitalize;
+            background-color: transparent;
+            border: 2px solid $white;
+            border-radius: 3px;
+            color: white;
+            &:hover{
+               background-color: $white;
+               color: $black; 
+            }
+        }
+    }
+}
+
+
+Boban Nalic
+  8:52 PM
+<section class="hero">
+        <div class="hero-text">
+            <h1>House workers</h1>
+            <p>Our team can help with management wind-downs, as we have experience in dealing with the issues that follow. We are one of the best companies in the restructuring industry.</p>
+            <div>
+                <button>get started</button>
+                <button>more info</button>
+            </div>
+        </div>
+    </section>
+
+
+Boban Nalic
+  9:05 PM
+@mixin dugme($txtColor, $bgColor, $border, $txtHover, $bgHover) {
+    padding: 1rem 2rem;
+    border: 2px solid $border;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: $transition;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: $bgColor;
+    color: $txtColor;
+
+    &:hover {
+        background-color: $bgHover;
+        color: $txtHover;
+    }
+}
+
+
+Boban Nalic
+  9:11 PM
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
+
+$primary: #313131;
+$secondary: #fde21c;
+$tertiary: #506df5;
+$darkblue: #012f5b;
+$lightgray: #d3d3d3;
+$text: #585858;
+$white: #fff;
+$black: #000000;
+$orange: #fd830f;
+
+$fontSize: 16px;
+$fontFamily: 'Montserrat', sans-serif;
+$transition: .4s ease;
+$padding: 4rem 0;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    color: $black;
+}
+
+h1 {
+    font-size: 50px;
+    color: $white;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+// MIKSINI
+@mixin flex($justify, $align, $direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+@mixin dugme($txtColor, $bgColor, $border, $txtHover, $bgHover) {
+    padding: 1rem 2rem;
+    border: 2px solid $border;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: $transition;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: $bgColor;
+    color: $txtColor;
+
+    &:hover {
+        background-color: $bgHover;
+        color: $txtHover;
+    }
+}
+
+
+
+// Header
+header {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include flex(space-between, center);
+    padding: 1rem 2rem;
+    background-color: $black;
+    color: $white;
+
+    .logo {
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        @include flex(flex-start, center);
+
+        img {
+            width: 80px;
+        }
+
+        a {
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: $transition;
+
+            &:hover {
+                color: $lightgray;
+            }
+        }
+    }
+
+    .workingHours {
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        @include flex(space-around, center);
+        text-transform: uppercase;
+    }
+
+    .callToAction {
+        flex: 1;
+        text-align: right;
+
+        button {
+            // padding: 1rem 2rem;
+            // cursor: pointer;
+            // transition: $transition;
+            // font-size: 1rem;
+            // text-transform: capitalize;
+            // background-color: transparent;
+            // border: 2px solid $white;
+            // border-radius: 3px;
+            // color: white;
+
+            // &:hover {
+            //     background-color: $white;
+            //     color: $black;
+            // }
+            @include dugme($white,transparent ,$white ,$black ,$white );
+        }
+    }
+}
+
+
+// Hero section
+.hero {
+    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(img/header.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex(center, center);
+    text-align: center;
+
+    .hero-text {
+        width: 60%;
+        color: $white;
+
+        p {
+            margin: 1rem 0;
+        }
+
+        div {
+            button:first-child {
+                @include dugme($white,$tertiary ,$tertiary ,$tertiary ,transparent );
+                margin-right: 1rem;
+            }
+
+            button:last-child {
+                @include dugme($white,transparent ,$white ,$black ,$white );
+            }
+        }
+    }
+}
+
+
+// Prices section
+
+
+// Advantages section
+
+
+// Team section
+
+
+// Repair section
+
+
+// Dugmici section
+
+
+// Info section
+
+
+// Footer
+
+
+Boban Nalic
+  9:16 PM
+<section class="prices container">
+        <article>
+            <h3>Day of work</h3>
+            <p><span>$</span><span>100</span><span>/per day</span></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequuntur ut totam ducimus sit quidem, quod est eveniet sint amet.</p>
+            <button>Get started</button>
+        </article>
+
+        <article>
+            <h3>Week of work</h3>
+            <p><span>$</span><span>300</span><span>/per day</span></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequuntur ut totam ducimus sit quidem, quod est eveniet sint amet.</p>
+            <button>Get started</button>
+        </article>
+
+        <article>
+            <h3>Month of work</h3>
+            <p><span>$</span><span>1000</span><span>/per day</span></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam consequuntur ut totam ducimus sit quidem, quod est eveniet sint amet.</p>
+            <button>Get started</button>
+        </article>
+    </section>
+
+
+Boban Nalic
+  9:26 PM
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform

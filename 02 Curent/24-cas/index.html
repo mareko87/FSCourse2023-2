@@ -8,35 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
 
-    <!-- <h1 class="nasGlavniNaslov bg-danger text-white py-3 px-5 fst-italic fw-normal mt-5">Lorem, ipsum dolor.</h1> -->
-
-    <!-- <div class="container bg-info">100% wide until small breakpoint</div>
-    <div class="container-sm bg-warning">100% wide until small breakpoint</div>
-    <div class="container-md bg-info">100% wide until medium breakpoint</div>
-    <div class="container-lg bg-danger">100% wide until large breakpoint</div>
-    <div class="container-xl bg-dark text-white">100% wide until extra large breakpoint</div>
-    <div class="container-xxl bg-success">100% wide until extra extra large breakpoint</div>
-    <div class="container-fluid bg-info">100% wide always</div> -->
-
-
-    <!-- <div class="container text-center">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 col-xl-3 bg-info">
-            Column
-          </div>
-          <div class="col-md-3 col-lg-4 col-xl-6  bg-danger">
-            Column
-          </div>
-          <div class="col-md-3 col-lg-4 col-xl-3  bg-success">
-            Column
-          </div>
-
-        </div>
-      </div> -->
 
       <nav class="navbar navbar-expand-lg  position-fixed start-0 end-0">
         <div class="container">
@@ -65,13 +41,171 @@
       <section class="hero  min-vh-100 py-5 d-flex flex-column justify-content-center align-items-center position-relative">
         <h1 class="text-white text-center text-uppercase fw-bold display-3 mb-5">perfect kitchen</h1>
         <p class="text-center w-75 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti repudiandae nostrum rem dolorum voluptates recusandae quod, iste saepe delectus explicabo architecto quam consectetur amet quasi itaque? Iusto, labore sapiente?</p>
-        <video autoplay muted loop>
-            <source src="video/video.mp4" type="video/mp4">
-        </video>
       </section>
 
 
+      <!-- Dishes section -->
+      <section class="dishes container py-5">
+        <h2 class="text-center text-uppercase fs-1 fw-bold">dishes</h2>
+        <hr class="mx-auto opacity-100 bg-dark  border-0">
+        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid excepturi veritatis eveniet commodi illum veniam amet vero placeat. Nisi obcaecati atque reprehenderit est. Iure eius qui voluptate consequatur excepturi quod laborum laudantium eaque, cupiditate maiores reiciendis doloremque, suscipit ab architecto sit fugiat iste tempore fugit! Sit omnis id voluptate ducimus!</p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col ">
+            <div class="card bg-info p-2">
+              <img src="img/image1.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-dark rounded-0">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-info p-2">
+              <img src="img/image2.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-dark rounded-0">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-info p-2">
+              <img src="img/image3.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <button class="btn btn-dark rounded-0">Read more</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- Gallery section -->
+      <section class="gallery container-fluid">
+        <div class="row">
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image1.jpg" alt="">
+          </div>
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image2.jpg" alt="">
+          </div>
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image3.jpg" alt="">
+          </div>
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image4.jpg" alt="">
+          </div>
+
+
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/resturant1.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/resturant2.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/resturant3.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/specialities1.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/specialities2.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/specialities3.jpg" alt="">
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about container py-5">
+        <div class="col-md-5"></div>
+        <div class="col md-7">
+          <h2 class="text-center text-uppercase fs-1 fw-bold">Who we are</h2>
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti maxime iste nesciunt vel sit iure assumenda magnam aspernatur quos distinctio quibusdam accusantium nobis excepturi, eius officiis consequuntur sed molestias.</p>
+          <p class="lead fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti maxime iste nesciunt vel sit iure assumenda magnam aspernatur quos distinctio quibusdam accusantium nobis excepturi, eius officiis consequuntur sed molestias.</p>
+        </div>
+      </section>
       
+      <!-- Numbers -->
+      <section class="numbers py-5">
+        <div class="container">
+          <h2 class="text-center text-uppercase fs-1 fw-bold text-white">Let's numbers to speak</h2>
+
+          <div class="row row-cols-2 row-cols-md-4 mt-5">
+            <div class="col text-white text-center">
+              <h4 class="display-1 fw-semibold">23</h4>
+              <p class="fw-3">Restaurants</p>
+            </div>
+            <div class="col text-white text-center">
+              <h4 class="display-1 fw-semibold">23</h4>
+              <p class="fw-3">Restaurants</p>
+            </div>
+            <div class="col text-white text-center">
+              <h4 class="display-1 fw-semibold">23</h4>
+              <p class="fw-3">Restaurants</p>
+            </div>
+            <div class="col text-white text-center">
+              <h4 class="display-1 fw-semibold">23</h4>
+              <p class="fw-3">Restaurants</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Menu -->
+      <section class="menu container">
+        <h2 class="text-center text-uppercase fs-1 fw-bold">Our Menu</h2>
+        <hr class="mx-auto opacity-100 bg-dark border-0">
+          <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti maxime iste nesciunt vel sit iure assumenda magnam aspernatur quos distinctio quibusdam accusantium nobis excepturi, eius officiis consequuntur sed molestias.</p>
+
+          <div class="row row-cals-1 row-cols-md-3 mt-5">
+
+            <div class="col text-center">
+              <img class="img-fluid" src="img/specialities2.jpg" alt="">
+              <h3>Noodle</h3>
+            </div>
+            <div class="col text-center">
+              <img class="img-fluid" src="img/specialities2.jpg" alt="">
+              <h3>Noodle</h3>
+            </div>
+            <div class="col text-center">
+              <img class="img-fluid" src="img/specialities2.jpg" alt="">
+              <h3>Noodle</h3>
+            </div>
+            <div class="col text-center">
+              <img class="img-fluid" src="img/specialities2.jpg" alt="">
+              <h3>Noodle</h3>
+            </div>
+            <div class="col text-center">
+              <img class="img-fluid" src="img/specialities2.jpg" alt="">
+              <h3>Noodle</h3>
+            </div>
+            <div class="col text-center">
+              <img class="img-fluid" src="img/specialities2.jpg" alt="">
+              <h3>Noodle</h3>
+            </div>
+
+          </div>
+
+      </section>
 
 
 

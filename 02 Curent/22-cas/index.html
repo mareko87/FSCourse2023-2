@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-white fs-4 fw-bold fst-italic" href="#"
+          >Navbar</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- ms-auto razdvaja naslov od menija -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <!-- Ctrl+D viselinijski selektor -->
+              <a
+                class="nav-link text-uppercase fs-5 text-white active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-5 text-white" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-5 text-white" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-info min-vh-100 py-5 d-flex flex-column justify-content-center align-items-center position-relative">
+        <h1 class="text-uppercase text-white text-center fw-bold h2">perfect kitchen</h1>
+        <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum suscipit fugiat quibusdam nesciunt modi debitis, tenetur sed consequatur neque cumque porro cupiditate facilis qui! Nesciunt ipsa veniam reiciendis harum vel tenetur ducimus, at inventore? Itaque quibusdam libero consectetur. Pariatur voluptate commodi nesciunt repellat. Vitae expedita tempore fuga provident autem.</p>
+        <video autoplay="">
+            <source src="video/video.mp4" type="video/mp4"></video>
+        </video>
+    </section>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

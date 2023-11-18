@@ -1,0 +1,30 @@
+
+
+A pseudo-element is like adding or targeting an extra element without having to add more HTML. 
+
+::before and ::after
+
+Both the ::before and ::after pseudo-elements create a child element inside an element only if you define a content property.
+
+.my-element::before {
+    content: "";
+}
+
+.my-element::after {
+    content: "";
+}
+
+The content can be any string —even an empty one— but be mindful that anything other than an empty string will likely be announced by a screen reader. You can add an image url, which will insert an image at its original dimensions, so you won't be able to resize it. You can also insert a counter.
+Key term: You can create a named counter and then increment it, based on its position in the document flow. There's all sorts of contexts where they can be really useful, such as automatically numbering an outline. 
+
+Once a ::before or ::after element has been created, you can style it however you want with no limits. You can only insert a ::before or ::after element to an element that will accept child elements (elements with a document tree), so elements such as <img />, <video> and <input> won't work.
+
+EXAMPLE (adding line after heading element):
+    h2:after{
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: $secondary;
+        width: 150px;
+        margin: 1rem auto 3rem;
+    }

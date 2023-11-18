@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
 
+// CAS 19
 
 $primary: #313131;
 $secondary: #fde21c;
@@ -12,11 +13,9 @@ $black: #000000;
 $orange: #fd830f;
 
 $fontSize: 16px;
-$fontFamily: 'Montserrat', sans-serif;
-$transition: .4s ease;
+$fontFamily: "Montserrat", sans-serif;
+$transition: 0.4s ease;
 $padding: 4rem 0;
-
-
 
 * {
     margin: 0;
@@ -57,7 +56,6 @@ a {
     margin: auto;
 }
 
-
 // MIKSINI
 @mixin flex($justify, $align, $direction: row) {
     display: flex;
@@ -66,7 +64,6 @@ a {
     align-items: $align;
     flex-direction: $direction;
 }
-
 
 @mixin dugme($txtColor, $bgColor, $border, $txtHover, $bgHover) {
     padding: 1rem 2rem;
@@ -85,8 +82,6 @@ a {
     }
 }
 
-
-
 // Header
 header {
     // display: flex;
@@ -102,7 +97,7 @@ header {
     .logo {
         flex: 1;
         // display: flex;
-        // align-items: center; 
+        // align-items: center;
         @include flex(flex-start, center);
 
         img {
@@ -150,11 +145,10 @@ header {
             //     background-color: $white;
             //     color: $black;
             // }
-            @include dugme($white,transparent ,$white ,$black ,$white );
+            @include dugme($white, transparent, $white, $black, $white);
         }
     }
 }
-
 
 // Hero section
 .hero {
@@ -180,54 +174,53 @@ header {
 
         div {
             button:first-child {
-                @include dugme($white,$tertiary ,$tertiary ,$tertiary ,transparent );
+                @include dugme($white, $tertiary, $tertiary, $tertiary, transparent);
                 margin-right: 1rem;
             }
 
             button:last-child {
-                @include dugme($white,transparent ,$white ,$black ,$white );
+                @include dugme($white, transparent, $white, $black, $white);
             }
         }
     }
 }
 
-
 // Prices section
-.prices{
+.prices {
     padding: $padding;
     display: flex;
-    article{
+    article {
         background-color: $white;
         transition: $transition;
         border: 1px solid $primary;
         padding: 3rem;
         text-align: center;
-        h3{
+        h3 {
             font-size: 2rem;
             font-weight: normal;
         }
-        p{
+        p {
             // selektovanje sva tri spana jednog pojednog
             margin: 0.5rem 0;
-            span:nth-child(1){
+            span:nth-child(1) {
                 font-size: 1.5rem;
             }
-            span:nth-child(2){
+            span:nth-child(2) {
                 font-size: 2.5rem;
             }
-            span:nth-child(3){
+            span:nth-child(3) {
                 font-size: 0.9rem;
             }
         }
         // poslednji paragraf unutar roditelja
-        p:last-of-type{
+        p:last-of-type {
             font-size: 0.9rem;
             margin-bottom: 1.5rem;
         }
         // transform: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-        button{
-            @include dugme($tertiary,$white ,$tertiary ,$white ,$tertiary );
-            &:hover{
+        button {
+            @include dugme($tertiary, $white, $tertiary, $white, $tertiary);
+            &:hover {
                 // transform: translate(20px,);
                 translate: 20px;
                 // transform: rotate(-45deg);
@@ -235,161 +228,216 @@ header {
             }
         }
     }
-    article:hover{
-        // transform: scale(1.1);  
-        scale: 1.1; 
+    article:hover {
+        // transform: scale(1.1);
+        scale: 1.1;
     }
 }
 
 // CAS 20
 
 // Advantages section
-.advantages{
+.advantages {
+    padding: $padding;
     background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(img/bg2.jpg);
-    height: 80vh;
     background-size: cover;
     background-position: center;
-    padding: $padding;
-    h2{
+    h2 {
         text-align: center;
         color: $white;
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
     }
-    // moze i jedna dvotacka
     // h2:before{
     //     content: '123';
     //     color: red;
+    //     font-size: 15px;
+    //     display: block;
     // }
-    // improvizacija div elementa
-    h2::after{
-        content: '';
+    // ovo je improvizacija nekog div elementa
+    h2:after {
+        content: "";
         display: block;
         height: 5px;
         background-color: $secondary;
         width: 150px;
         margin: 1rem auto 3rem;
     }
-    .container{
+    .container {
+        // display: flex;
         @include flex(space-between, center);
-        article{
+        // 3 artikla po 32%
+        article {
             flex: 0 0 32%;
-            border: 2px solid lightgray;
+            border: 2px solid lightgrey;
+            // slika nece slusati ovaj border-radius, yato je potrebno postaviti overflow: hidden
             border-radius: 25px;
             overflow: hidden;
-            .image{
+            .image {
+                // ovde odsecam skaliranje sklike na dole
                 overflow: hidden;
-                img{
-                    // donji levi i desni
+                img {
                     // border-radius: 25px 25px 0 0;
                     transition: $transition;
-                    &:hover{
+                    &:hover {
                         scale: 1.2;
                     }
                 }
             }
-            .text{
+            .text {
                 background-color: $white;
-                padding: 0.5rem;
-                p{
-                    margin: 1 rem 0;
+                padding: 1rem;
+                p {
+                    margin: 1rem 0;
                     font-size: 0.8rem;
                 }
-                button{
-                    @include dugme($tertiary,$white ,$tertiary ,$white ,$tertiary );
+                button {
+                    @include dugme($tertiary, $white, $tertiary, $white, $tertiary);
                 }
             }
-        }  
-        article:nth-child(2){
-            button{
-                @include dugme($tertiary,$secondary ,$tertiary ,$white ,$tertiary );
+            &:nth-child(2) {
+                button {
+                    @include dugme($tertiary, $secondary, $tertiary, $white, $tertiary);
+                }
             }
-        }      
-        article:nth-child(3){
-            button{
-                @include dugme($white,crimson, crimson ,$white ,$tertiary );
+            &:nth-child(3) {
+                button {
+                    @include dugme($white, crimson, crimson, $white, $tertiary);
+                }
             }
-        }      
+        }
+        // article:nth-child(2){
+        //     button{
+        //         @include dugme($tertiary,$secondary ,$tertiary ,$white , $tertiary);
+        //     }
+        // }
+        // article:nth-child(3){
+        //     button{
+        //         @include dugme($white,crimson ,crimson ,$white , $tertiary);
+        //     }
+        // }
     }
 }
 
-
-
 // Team section
-
-.team{
+.team {
     padding: $padding;
-    h2{
+    h2 {
         text-align: center;
+        margin-bottom: 3rem;
     }
-    .container{
+    .container {
+        display: flex;
         @include flex(space-between, center);
-        article{
+        article {
             flex: 0 0 48%;
-            @include flex(space-between, center);
+            display: flex;
             margin-bottom: 2rem;
-            // css generator
-            box-shadow: 16px 8px 22px 6px rgba(222,175, 175 , 0.75);
-            .image{
+            //https://cssgenerator.org/box-shadow-css-generator.html
+            box-shadow: 6px 11px 15px -3px rgba(224, 175, 175, 0.75);
+            box-shadow: 16px 8px 22px 6px rgba(224, 175, 175, 0.75);
+
+            @include flex(space-between, center);
+            .image {
                 flex: 0 0 50%;
             }
-            .text{
+            .text {
                 flex: 0 0 50%;
                 padding-left: 1rem;
-                p:last-of-type{
+                p:last-of-type {
                     font-size: 0.9rem;
                     margin: 0.5rem 0;
                 }
-                button{
-                    @include dugme($white,crimson, crimson ,$white ,$tertiary );
+                button {
+                    @include dugme($white, crimson, crimson, $white, $tertiary);
                 }
             }
         }
     }
 }
 
-
 // Repair section
-.repair{
+.repair {
     padding: $padding;
     background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(img/bg2.jpg);
-    height: 80vh;
     background-size: cover;
     background-position: center;
     color: $white;
-    .container{
-        @include flex(space-between, center);
-        article:first-child{
-            flex: 0 0 48%;
-            text-align: center;
+    .container {
+        // display: flex;
+        @include flex(space-between, stretch);
+        article:first-child {
             border: 1px solid $white;
             padding: 50px;
-            i{
+            flex: 0 0 48%;
+            text-align: center;
+            i {
                 font-size: 5rem;
                 color: $secondary;
             }
-            h3{
+            h3 {
                 margin: 1rem 0;
             }
-            button{
-                @include dugme($tertiary,$white ,$tertiary ,$white ,$tertiary );
+            button {
+                @include dugme($white, transparent, $white, $black, $white);
+                margin-top: 2rem;
             }
         }
-        article:last-child{
+        article:last-child {
             flex: 0 0 48%;
+            display: flex;
+            @include flex(space-between, center, column);
         }
     }
 }
 
-
+// Info section
+.info {
+    padding: $padding;
+    @include flex(space-between, center);
+    div:first-child {
+        flex: 1;
+    }
+    div:last-child {
+        flex: 3;
+        column-count: 2;
+        column-gap: 50px;
+    }
+}
 
 // Dugmici section
-
-
-
-
-// Info section
-
-
-
+.dugmici {
+    padding: $padding;
+    background-color: $primary;
+    text-align: center;
+    button:first-child {
+        @include dugme($white, transparent, $white, $black, $white);
+    }
+    button:nth-child(2) {
+        @include dugme($black, $white, $white, $white, transparent);
+        margin: 0 1rem;
+    }
+    button:last-child {
+        @include dugme($white, transparent, $white, $black, $white);
+    }
+}
 
 // Footer
+footer {
+    padding: $padding;
+    .container {
+        @include flex(space-between, flex-start);
+        article {
+            flex: 0 0 23%;
+        }
+        .meni {
+            ul {
+                // ubacivanje check znaka
+                li:before {
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f00c";
+                }
+            }
+        }
+    }
+}

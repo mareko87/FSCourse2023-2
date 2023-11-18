@@ -1,0 +1,22 @@
+
+Some common font sizes expressed in rem units, assuming, of course, that the base size is 16px:
+    10px = 0.625rem
+    12px = 0.75rem
+    14px = 0.875rem
+    16px = 1rem (base)
+    18px = 1.125rem
+    20px = 1.25rem
+    24px = 1.5rem
+    30px = 1.875rem
+    32px = 2rem
+
+Trick called “62.5%“. It was already used with em units:
+    body { font-size:62.5%; } /* =10px */
+    h1 { font-size: 2.4em; } /* =24px */
+    p { font-size: 1.4em; } /* =14px */
+    li { font-size: 1.4em; } /* =14px? */
+
+As rem units are relative to the root element, Snook’s variant of the solution becomes:
+    html { font-size: 62.5%; } /* =10px */
+    body { font-size: 1.4rem; } /* =14px */
+    h1 { font-size: 2.4rem; } /* =24px */

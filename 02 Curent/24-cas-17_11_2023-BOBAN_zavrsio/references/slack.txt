@@ -1,0 +1,165 @@
+.hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+Boban Nalic
+  8:43 PM
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+      <nav class="navbar navbar-expand-lg  position-fixed start-0 end-0">
+        <div class="container">
+          <a class="navbar-brand text-uppercase fs-4 fw-bold fst-italic text-white" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fs-5 text-white " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fs-5 text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fs-5 text-white" href="#">Pricing</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+      <section class="hero  min-vh-100 py-5 d-flex flex-column justify-content-center align-items-center position-relative">
+        <h1 class="text-white text-center text-uppercase fw-bold display-3 mb-5">perfect kitchen</h1>
+        <p class="text-center w-75 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti repudiandae nostrum rem dolorum voluptates recusandae quod, iste saepe delectus explicabo architecto quam consectetur amet quasi itaque? Iusto, labore sapiente?</p>
+      </section>
+
+
+      <!-- Dishes section -->
+      <section class="dishes container py-5">
+        <h2 class="text-center text-uppercase fs-1 fw-bold">dishes</h2>
+        <hr class="mx-auto opacity-100 bg-dark  border-0">
+        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid excepturi veritatis eveniet commodi illum veniam amet vero placeat. Nisi obcaecati atque reprehenderit est. Iure eius qui voluptate consequatur excepturi quod laborum laudantium eaque, cupiditate maiores reiciendis doloremque, suscipit ab architecto sit fugiat iste tempore fugit! Sit omnis id voluptate ducimus!</p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col ">
+            <div class="card bg-info p-2">
+              <img src="img/image1.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-dark rounded-0">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-info p-2">
+              <img src="img/image2.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button class="btn btn-dark rounded-0">Read more</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-info p-2">
+              <img src="img/image3.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <button class="btn btn-dark rounded-0">Read more</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+Boban Nalic
+  8:59 PM
+      <!-- Gallery section -->
+      <section class="gallery container-fluid">
+        <div class="row">
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image1.jpg" alt="">
+          </div>
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image2.jpg" alt="">
+          </div>
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image3.jpg" alt="">
+          </div>
+          <div class=" col-sm-6 col-md-3 p-0">
+            <img class="img-fluid" src="img/image4.jpg" alt="">
+          </div>
+
+
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/resturant1.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/resturant2.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/resturant3.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/specialities1.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/specialities2.jpg" alt="">
+          </div>
+          <div class=" col-sm-4 col-md-2 p-0">
+            <img class="img-fluid" src="img/specialities3.jpg" alt="">
+          </div>
+
+
+        </div>
+      </section>
+Saved for later
+
+
+Boban Nalic
+  9:49 PM
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+Saved for later
+9:49
+https://icons.getbootstrap.com/
+icons.getbootstrap.comicons.getbootstrap.com
+Bootstrap Icons
+Official open source SVG icon library for Bootstrap (532 kB)

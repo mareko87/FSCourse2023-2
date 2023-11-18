@@ -1,0 +1,228 @@
+Boban Nalic
+  8:26 PM
+Zip
+ 
+
+20. CSS - Zadatak 5.2 - House Works.zip
+Zip
+
+
+8:31
+<section class="advantages">
+        <h2>Our advantages</h2>
+        <div class="container">
+            <article>
+                <div class="image">
+                    <img src="img/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Best masters</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eligendi aut perspiciatis magnam illum at.</p>
+                    <button>Get started</button>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="img/img2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Best masters</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eligendi aut perspiciatis magnam illum at.</p>
+                    <button>Get started</button>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="img/img3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Best masters</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eligendi aut perspiciatis magnam illum at.</p>
+                    <button>Get started</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+Boban Nalic
+  9:08 PM
+// Advantages section
+.advantages{
+    padding: $padding;
+    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    h2{
+        text-align: center;
+        color: $white;
+        // margin-bottom: 5rem;
+    }
+    // h2:before{
+    //     content: '123';
+    //     color: red;
+    //     font-size: 15px;
+    //     display: block;
+    // }
+    h2:after{
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: $secondary;
+        width: 150px;
+        margin: 1rem auto 3rem;
+    }
+    .container{
+        // display: flex;
+        @include flex(space-between,center);
+        article{
+            flex: 0 0 32%;
+            border: 2px solid lightgrey;
+            border-radius: 25px;
+            overflow: hidden;
+            .image{
+                overflow: hidden;
+                img{
+                    // border-radius: 25px 25px 0 0;
+                    transition: $transition;
+                    &:hover{
+                        scale: 1.2;
+                    }
+                }
+            }
+            .text{
+                background-color: $white;
+                padding: 1rem;
+                p{
+                    margin: 1rem 0;
+                    font-size: 0.8rem;
+                }
+                button{
+                    @include dugme($tertiary,$white ,$tertiary ,$white ,$tertiary );
+                }
+            }
+            &:nth-child(2){
+                button{
+                    @include dugme($tertiary,$secondary ,$tertiary ,$white , $tertiary);
+                }
+            }
+            &:nth-child(3){
+                button{
+                    @include dugme($white,crimson ,crimson ,$white , $tertiary);
+                }
+            }
+        }
+        // article:nth-child(2){
+        //     button{
+        //         @include dugme($tertiary,$secondary ,$tertiary ,$white , $tertiary);
+        //     }
+        // }
+        // article:nth-child(3){
+        //     button{
+        //         @include dugme($white,crimson ,crimson ,$white , $tertiary);
+        //     }
+        // }
+    }
+}
+9:10
+    <section class="team">
+        <h2>Our team</h2>
+        <div class="container">
+            <article>
+                <div class="image">
+                    <img src="img/img4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Jane Doe</h3>
+                    <p>Laborant</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, deleniti!</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="img/img5.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Jane Doe</h3>
+                    <p>Laborant</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, deleniti!</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="img/img6.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Jane Doe</h3>
+                    <p>Laborant</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, deleniti!</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <img src="img/img7.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Jane Doe</h3>
+                    <p>Laborant</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, deleniti!</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+Boban Nalic
+  9:23 PM
+   <section class="repair">
+        <div class="container">
+            <article>
+                <i class="fab fa-facebook"></i>
+                <h3>Repair service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At animi numquam, velit dolorem illum deserunt ex beatae tempora eaque tenetur?</p>
+                <button>More info</button>
+            </article>
+            <article>
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, minima!</p>
+                </div>
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, minima!</p>
+                </div>
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, minima!</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+Boban Nalic
+  9:48 PM
+font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+9:49
+https://fontawesome.com/v5/docs/web/advanced/css-pseudo-elements
+CSS Pseudo-elementsCSS Pseudo-elements
+CSS Pseudo-elements
+The internet's icon library + toolkit. Used by millions of designers, devs, & content creators. Open-source. Always free. Always awesome.
+Saved for later
+9:51
+Zip
+ 
+
+20. CSS - Zadatak 5.2 - House Works.zip
+Zip
+
+

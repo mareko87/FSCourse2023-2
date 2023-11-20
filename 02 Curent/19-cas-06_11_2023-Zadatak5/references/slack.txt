@@ -1,11 +1,18 @@
+Vladimir Pešić
+  7:14 AM
+Binary
+ 
+Muzička škola-responsive.rar
+Binary
+
+
+
 Boban Nalic
   8:04 PM
 Zip
  
-
 House Works - starter.zip
 Zip
-
 
 
 
@@ -181,27 +188,19 @@ header{
 
 // Hero section
 
-
 // Prices section
-
 
 // Advantages section
 
-
 // Team section
-
 
 // Repair section
 
-
 // Dugmici section
-
 
 // Info section
 
-
 // Footer
-
 
 
 Boban Nalic
@@ -387,7 +386,6 @@ a {
 }
 
 
-
 // Header
 header {
     // display: flex;
@@ -491,21 +489,15 @@ header {
 
 // Prices section
 
-
 // Advantages section
-
 
 // Team section
 
-
 // Repair section
-
 
 // Dugmici section
 
-
 // Info section
-
 
 // Footer
 
@@ -539,3 +531,9 @@ Boban Nalic
 Boban Nalic
   9:26 PM
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+developer.mozilla.orgdeveloper.mozilla.org
+transform - CSS: Cascading Style Sheets | MDN
+The transform CSS property lets you rotate, scale, skew, or translate an element.
+It modifies the coordinate space of the CSS visual formatting model. (24 kB)
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+

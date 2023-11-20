@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Raleway:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$pink: #f20f97;
+$black: #000;
+$white: #fff;
+$gray: gray;
+$lightgray: #f8f8f8;
+
+$transition: .4s ease;
+$padding: 5rem 0;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: $pink;
+    width: 150px;
+    margin: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.dugme {
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: $transition;
+
+    &:hover {
+        background-color: $pink;
+        color: $white;
+    }
+}
+
+// Mixins
+@mixin fleks($jus:space-between, $ali:center, $dir:row){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jus;
+    align-items: $ali;
+    flex-direction: $dir;
+}
+
+
+// Header
+header{
+    // position: relative;
+    z-index: 99999;
+    height: 5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    // width: 100%;
+    padding: 0 2rem;
+    background-color: rgba($black, 0.5);
+    border-bottom: 1px solid $white;
+    // display: flex;
+    // justify-content: space-between;
+    @include fleks();
+    .logo{
+        font-size: 1.5rem;
+        span{
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+    ul{
+        @include fleks();
+        li{
+            padding: 0 1rem;
+            a{
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+// Hero section
+.hero{
+    position: relative;
+    z-index: 3;
+    // margin-top: -5rem;
+    height: 100vh;
+    background: linear-gradient(rgba($black, 0.5), rgba($black, 0.5)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @include fleks($jus:center ,$dir:column );
+}
+
+
+
+// About section
+.about{
+    padding: $padding;
+    display: flex;
+    @include fleks();
+    &-text{
+        flex: 0 0 64%;
+        hr{
+            margin: 1rem 0;
+        }
+        button{
+            @extend .dugme;
+            margin-top: 1rem;
+        }
+    }
+    &-image{
+        flex: 0 0 34%;
+        img{
+            border-radius: 50px;
+            box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+
+
+// Numbers section
+.numbers{
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    padding: $padding;
+    @include fleks();
+    article{
+        text-align: center;
+        hr{
+            margin: 1rem 0;
+        }
+    }
+}
+
+
+
+// Team section
+.team{
+    padding: $padding;
+    article{
+        width: 65%;
+        margin-left: auto;
+        text-align: right;
+        @include fleks( );
+        .text{
+           flex: 0 0 65%; 
+           padding: 1rem;
+           hr{
+            width: 350px;
+            position: relative;
+            right: -140px;
+           }
+        }
+        .image{
+            flex: 0 0 35%;
+        }
+        // &:nth-child(){
+
+        // }
+    }
+    article:nth-child(even){
+        margin-right: auto;
+        margin-left: 0;
+        flex-direction: row-reverse;
+        .text{
+            text-align: left;
+            hr{
+                right: 80px;
+            }
+        }
+    }
+}
+
+
+
+// Services section
+.services{
+    padding: $padding;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    display: flex;
+    @include fleks($ali:stretch);
+    div{
+        flex: 0 0 32%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        @include fleks($dir:column );
+    }
+    .slika{
+        img{
+            border-radius: 30px;
+        }
+    }
+}
+
+
+
+// Gallery section
+.gallery{
+    padding: $padding;
+    text-align: center;
+    hr{
+        margin: 1rem auto 3rem;
+    }
+    .slike{
+        display: flex;
+        @include fleks( );
+        div{
+            flex: 0 0 23%;
+            margin-bottom: 2rem;
+            position: relative;
+            h3{
+                background-color: $pink;
+                position: absolute;
+                transition: $transition;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                color: $white;
+                @include fleks(center,center);
+                opacity: 0;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Contact section
+
+
+
+
+// Address section
+
+
+
+
+// Footer

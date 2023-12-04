@@ -1,0 +1,282 @@
+slobamiric
+  10:52 AM
+Vidimo se veceras u 8 Slobodan
+Topic: FS4 PHP uvod
+Time: Nov 27, 2023 08:00 PM Belgrade, Bratislava, Ljubljana
+https://us02web.zoom.us/j/84859745275?pwd=ZlMwTkdUSFllaUo4Slk5dWNvY2h6dz09
+Meeting ID: 848 5974 5275
+Passcode: 934247 (edited) 
+:+1:
+1
+
+
+slobamiric
+  7:58 PM
+Ovo ce nam treabati za pocetak jedan lagani dizajn da napravimo kroz PHP https://www.figma.com/file/gKZoWoleFgP35xvYu83Y2l/Portfolio-UI---Web-%26-Mobile?type=design&node-id=0-1&mode=design&t=18VLCV73RwyOssxZ-0
+FigmaFigma
+Portfolio UI - Web & Mobile
+Created with Figma (71 kB)
+https://www.figma.com/file/gKZoWoleFgP35xvYu83Y2l/Portfolio-UI---Web-%26-Mobile?type=design&node-id=0-1&mode=design&t=18VLCV73RwyOssxZ-0
+
+
+slobamiric
+  8:06 PM
+https://www.apachefriends.org/
+apachefriends.orgapachefriends.org
+XAMPP Installers and Downloads for Apache Friends
+XAMPP is an easy to install Apache distribution containing MariaDB, PHP and Perl.
+
+
+slobamiric
+  8:14 PM
+http://localhost/
+
+
+slobamiric
+  8:32 PM
+https://www.figma.com/file/hg8lBsuzFJQvxUeZFhjQ9I/imdesign-(Community)?node-id=9%3A103&mode=dev
+FigmaFigma
+imdesign (Community)
+Created with Figma (146 kB)
+https://www.figma.com/file/hg8lBsuzFJQvxUeZFhjQ9I/imdesign-(Community)?node-id=9%3A103&mode=dev
+
+
+slobamiric
+  8:44 PM
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&display=swap');
+:root {
+    --headingsFont: 'Forum', serif;
+    --bodyFont: 'Montserrat', sans-serif;
+    --text: #726E6E;
+    --bg: #F2F2F2;
+    --white: white;
+    --black: black;
+}
+body {
+    font-family: var(--bodyFont);
+    font-size: 24px;
+    color: var(--text);
+}
+h1, h2, h3, h4 {
+    font-family: var(--headingsFont);
+    color: var(--black);
+}
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 55px;
+}
+
+
+slobamiric
+  8:56 PM
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&display=swap');
+/* variables */
+:root {
+    --headingsFont: 'Forum', serif;
+    --bodyFont: 'Montserrat', sans-serif;
+    --text: #726E6E;
+    --bg: #F2F2F2;
+    --white: white;
+    --black: black;
+}
+/* basic styles */
+body {
+    font-family: var(--bodyFont);
+    font-size: 24px;
+    color: var(--text);
+}
+h1, h2, h3, h4 {
+    font-family: var(--headingsFont);
+    color: var(--black);
+}
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 55px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+/* nav */
+nav .logo {
+    text-transform: uppercase;
+    font-size: 30px; 
+}
+nav ul li a {
+    font-size: 20px; 
+    margin-left: 50px;
+}
+nav a {
+    color: var(--black);
+}
+
+
+slobamiric
+  9:20 PM
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&display=swap');
+/* variables */
+:root {
+    --headingsFont: 'Forum', serif;
+    --bodyFont: 'Montserrat', sans-serif;
+    --text: #726E6E;
+    --gray: #5F5C5C;
+    --bg: #F2F2F2;
+    --white: white;
+    --black: black;
+}
+/* basic styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--bodyFont);
+    font-size: 24px;
+    color: var(--text);
+}
+h1, h2, h3, h4 {
+    font-family: var(--headingsFont);
+    color: var(--black);
+}
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 55px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.align-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.mx-auto {
+    margin: auto;
+}
+/* nav */
+nav .logo {
+    text-transform: uppercase;
+    font-size: 30px; 
+}
+nav ul li a {
+    font-size: 20px; 
+    margin-left: 50px;
+}
+nav a {
+    color: var(--black);
+    font-family: var(--headingsFont);
+}
+/* footer */
+footer {
+    background: var(--bg);
+    padding: 35px 0 40px 0;
+    font-family: var(--headingsFont);
+}
+footer a {
+    margin: 0 30px;
+    color: var(--black);
+}
+footer p {
+    color: var(--gray);
+    margin: 60px;
+}
+footer h2 {
+    margin-bottom: 60px;
+}
+9:21
+    <!-- footer -->
+    <footer class="text-center container">
+        <h2><a href="#" class="logo">Maison</a></h2>
+        <ul class="flex justify-center">
+            <li><a href="">Home</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Shop</a></li>
+        </ul>
+        <div class="contact flex justify-center">
+            <p>maison@info.com</p>
+            <p>+9989 90123 42 91</p>
+        </div>
+    </footer>
+</body>
+</html>
+9:21
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav -->
+    <nav class="container flex justify-between align-center">
+        <a href="index.php" class="logo">Maison</a>
+        <ul class="flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Shop</a></li>
+        </ul>
+    </nav>
+9:21
+<?php include 'partials/header.php'; ?>
+
+<?php include 'partials/footer.php'; ?>
+New
+Saved for later
+
+
+slobamiric
+  9:57 PM
+Binary
+ 
+
+maison.7z

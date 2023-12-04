@@ -1,0 +1,200 @@
+slobamiric
+  6:48 AM
+SNimak PHP uvod - projekat Maison - https://www.youtube.com/watch?v=etDzM5jPyRQ
+:+1:
+1
+
+
+slobamiric
+  9:15 AM
+Vidimo se u 8 danas https://us02web.zoom.us/j/89359538155?pwd=ZFdEZUkyc3BKR2pHczVCc2ZPRWRjUT09
+Meeting ID: 893 5953 8155
+Passcode: 199729
+
+
+slobamiric
+  12:34 PM
+Kad zavrsimo projekat koji smo zapoceli prosli cas u Figmi, nastavljamo novi u Adobe XD, koristicemo SASS i dodajemo polako i Git. Evo projekat za danas https://xd.adobe.com/view/f0c33bd9-c796-4afe-b5b5-de5c69be35ff-a590/ (edited) 
+xd.adobe.comxd.adobe.com
+Coffee
+3 Screens, Published on Dec 01, 2022 13:35 GMT
+12:35
+Malo cemo ga i unaprediti i dodati sadrzaja u odnosu na ovaj trenutni da vidite kako je dobar fazon kad uz pomoc PHP-a mozete da odvojite delove koji se ponavljaju vise puta.
+:white_check_mark:
+1
+
+
+slobamiric
+  8:05 PM
+evo evo updajte
+8:06
+Znaci CTRL Shift R
+8:06
+Brisanje kesa browsera
+Saved for later
+
+
+slobamiric
+  8:13 PM
+6 files
+ 
+Rectangle 11.jpg
+
+Rectangle 9.jpg
+
+Rectangle 8.jpg
+
+Rectangle 4.jpg
+
+Rectangle 6.jpg
+
+Rectangle 10.jpg
+
+
+slobamiric
+  8:26 PM
+https://caniuse.com/
+caniuse.comcaniuse.com
+Can I use... Support tables for HTML5, CSS3, etc
+"Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+
+
+slobamiric
+  8:51 PM
+<div class="services">
+    <div class="container service py flex justify-between">
+        <div class="text">
+            <h2>HANDMADE PIECE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar ullamcorper eros, eu turpis scelerisque. <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar</p>
+            <a href="" class="btn">TAKE A LOOK</a>
+        </div>
+        <div class="img flex justify-between">
+            <div>
+                <img src="img/maison1.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/maison2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container service py flex justify-between">
+        <div class="text">
+            <h2>WOODWORKING</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar ullamcorper eros, eu turpis scelerisque. <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar</p>
+            <a href="" class="btn">TAKE A LOOK</a>
+        </div>
+        <div class="img flex justify-between">
+            <div>
+                <img src="img/masion4.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/masion3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container service py flex justify-between">
+        <div class="text">
+            <h2>STUDIO HOUSE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar ullamcorper eros, eu turpis scelerisque. <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar</p>
+            <a href="" class="btn">TAKE A LOOK</a>
+        </div>
+        <div class="img flex justify-between">
+            <div>
+                <img src="img/masion5.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/masion6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+8:52
+/* services */
+.service .text {
+    flex: 0 0 30%;
+}
+.service .img {
+    flex: 0 0 50%;
+}
+.service .img img {
+    width: 100%;
+}
+.service .img div:nth-child(1) {
+    flex: 0 0 38%;
+    align-self: flex-end;
+}
+.service .img div:nth-child(2) {
+    flex: 0 0 57%;
+    align-self: flex-end;
+}
+.service .img div:first-child {
+    align-self: flex-end;
+}
+.service .text p {
+    padding: 35px 0 105px 0;
+}
+Saved for later
+
+
+slobamiric
+  9:04 PM
+https://git-scm.com/
+Saved for later
+
+
+slobamiric
+  9:13 PM
+https://www.imdb.com/title/tt2575988/
+IMDbIMDb
+Silicon Valley (TV Series 2014–2019) :star: 8.5 | Comedy
+28m | TV-MA (82 kB)
+https://www.imdb.com/title/tt2575988/
+
+Saved for later
+
+
+slobamiric
+  9:31 PM
+Binary
+ 
+maison.7z
+Binary
+
+
+slobamiric
+  9:44 PM
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
+$headingsFont: 'Amatic SC', sans-serif;
+$bodyFont: 'Montserrat', sans-serif;
+$accents: #FACB36;
+$accentsHover: #F3CD56;
+$text: #444645;
+$white: white;
+$black: black;
+$bg: #FCF4EA;
+$fontSize: 15px;
+Saved for later
+
+
+slobamiric
+  9:54 PM
+Evo ga postavljena struktura za projekat. Ako budete imali problem sa instalacijom Gita i Githaba pisite pa da resavamo. Uzivajte, vidimo se u petak.
+Binary
+ 
+
+freeda.7z
+Binary
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  11:24 PM
+Snimak PHP 2 / Zavrsen Maison projekat, git i github i setovanje novog projekta Freeda https://www.youtube.com/watch?v=ywa-NTBCcnw

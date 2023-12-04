@@ -1,0 +1,99 @@
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas
+$ git clone https://github.com/mareko87/frida.git
+Cloning into 'frida'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas
+$ ls
+'New folder'/   frida/
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas
+$ cd frida
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/
+        index.php
+        partials/
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ git add .
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   img/header.jpg
+        new file:   img/maison1.jpg
+        new file:   img/maison2.jpg
+        new file:   img/masion3.jpg
+        new file:   img/masion4.jpg
+        new file:   img/masion5.jpg
+        new file:   img/masion6.jpg
+        new file:   index.php
+        new file:   partials/cta.php
+        new file:   partials/footer.php
+        new file:   partials/handmade.php
+        new file:   partials/header.php
+        new file:   partials/hero.php
+        new file:   style.css
+
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ git commit -m "dodavanje index fajla"
+[main ffab2df] dodavanje index fajla
+ 14 files changed, 291 insertions(+)
+ create mode 100644 img/header.jpg
+ create mode 100644 img/maison1.jpg
+ create mode 100644 img/maison2.jpg
+ create mode 100644 img/masion3.jpg
+ create mode 100644 img/masion4.jpg
+ create mode 100644 img/masion5.jpg
+ create mode 100644 img/masion6.jpg
+ create mode 100644 index.php
+ create mode 100644 partials/cta.php
+ create mode 100644 partials/footer.php
+ create mode 100644 partials/handmade.php
+ create mode 100644 partials/header.php
+ create mode 100644 partials/hero.php
+ create mode 100644 style.css
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ git push
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 1.14 MiB | 731.00 KiB/s, done.
+Total 18 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mareko87/frida.git
+   ca9c4b4..ffab2df  main -> main
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$ ^C
+
+marek@DESKTOP-C194VKJ MINGW64 /c/xampp/htdocs/fs4/27-cas/frida (main)
+$

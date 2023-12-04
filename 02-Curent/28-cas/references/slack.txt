@@ -1,0 +1,143 @@
+
+
+slobamiric
+  11:56 AM
+Vidimo se u 8 https://us02web.zoom.us/j/85907087320?pwd=UjlaZ00wM2w3NWFPUG5vNTVOVXpNdz09
+Meeting ID: 859 0708 7320
+Passcode: 351223
+Saved for later
+
+
+slobamiric
+  7:49 PM
+Evo ga ovde smo stali pa nastavljamo za 10 minuta dalje
+Zip
+ 
+
+freeda.zip
+Zip
+
+
+slobamiric
+  8:08 PM
+Zip
+ 
+
+img.zip
+Zip
+
+
+slobamiric
+  8:20 PM
+<?php include 'partials/header.php' ?>
+
+<?php include 'partials/footer.php' ?>
+8:21
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Freeda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <?php include 'partials/nav.php' ?>
+8:21
+</body>
+</html>
+8:21
+<!-- nav -->
+<nav>
+    <div class="container">
+        <a href=""><img src="img/Coffee-Freeda-zuti.png" alt=""></a>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="dogadjaji.php">Dogadjaji</a></li>
+            <li><a href="ponuda.php">Ponuda</a></li>
+            <li><a href="meni.php">Meni</a></li>
+            <li><a href="usluge.php">Usluge</a></li>
+        </ul>
+    </div>
+</nav>
+Saved for later
+
+
+slobamiric
+  9:50 PM
+Ovde smo stali
+Zip
+ 
+
+freeda.zip
+Zip
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:41 AM
+Snimak cas PHP 3 - projekat Freeda https://www.youtube.com/watch?v=ZgHdMatcfwA
+Saved for later
+
+
+slobamiric
+  7:09 PM
+Evo ga jedan domaci zadatak https://xd.adobe.com/view/5b2a5771-cde9-41e4-951d-5e313d3f9b83-0e79/
+xd.adobe.comxd.adobe.com
+Flow 1
+10 Screens, Published on Apr 24, 2023 06:13 GMT
+Saved for later
+7:14
+Evo fotografije za sajt
+Zip
+ 
+
+creative-workshop.zip
+Zip
+Saved for later
+7:16
+Drugi domaci umesto Adobe XDa Figma https://www.figma.com/file/bfcyHFCxQxRTXnnrMXrgXB/Covid-19-UI%2FUX-Design-Website-(Community)?node-id=0%3A1&mode=dev
+FigmaFigma
+Covid 19 UI/UX Design Website (Community)
+Created with Figma (161 kB)
+https://www.figma.com/file/bfcyHFCxQxRTXnnrMXrgXB/Covid-19-UI%2FUX-Design-Website-(Community)?node-id=0%3A1&mode=dev
+
+
+02.12.2023.
+
+MILOS
+  7:55 AM
+Dobro jutro svima.Da li je neko probao da skine slike koje nedostaju za prvi domaci,npr logo?Ne nudi se nikakva opcija za download za razliku od prethodnog projekta..
+
+
+slobamiric
+  9:37 AM
+Poslao sam slike za projekat ne mogu da se skinu sa linka oadobe xd, figma mogu. (edited) 
+Saved for later
+
+
+slobamiric
+  9:40 AM
+Evo jos jedan domaci
+image.png
+ 
+image.png
+
+1 reply
+Today at 11:33 AMView thread
+Saved for later
+
+
+slobamiric
+  9:42 AM
+Starter fajlovi sa fontom i nekim sitnicima, samo krenete da radite, ne morate da razmisljete o fontovima imate i sirinu kontejnera.
+Zip
+ 
+
+Theory-projekat.zip
+Zip
+Pinned by 
+slobamiric
+9:45
+Sledeci vikend saljem jos par komada 5 - 6 da imate da vezbate, ako neko ima problem neka pise ako treba da prodjemo neke stvari dodatno jedan termin da razjasnimo sve sto ne razumete.

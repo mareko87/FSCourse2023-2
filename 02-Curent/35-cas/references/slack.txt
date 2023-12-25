@@ -1,0 +1,157 @@
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:20 AM
+Vidimo se u 8 danas https://us02web.zoom.us/j/84747112239?pwd=R2NydmVISFdOeDRFc0tIYjBSTEdOUT09
+Meeting ID: 847 4711 2239
+Passcode: 781274
+Pinned by 
+slobamiric
+
+
+slobamiric
+  11:56 AM
+Ekipice mala promena, pocenjemo u 8 i 30, a ne u 8, moram da budem prisutan na FS3 danas prvih 20-30 min pa cemo raditi mi od 8 i 30. Vidimo se. (edited) 
+
+
+slobamiric
+  8:56 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <style>
+        body {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch naredba</h1>
+    <hr>
+    <pre>
+        switch($promenjljiva) {
+            case 1 :
+                // nesto radi
+                break;
+            case 2 :
+                // nesto radi
+                break;
+            case 3 :
+                // nesto radi
+                break;
+            default:
+                // ako nije ispinjen uslov onda se ovo desava
+        }
+    </pre>
+    <hr>
+    <?php 
+    $ispitni_rezultati = "";
+    switch($ispitni_rezultati) {
+        case $ispitni_rezultati <= 50:
+            echo "Nije dovoljno za prolaz, vidimo se na sledecem roku";
+            break;
+        case $ispitni_rezultati <= 60:
+            echo "Moze i bolje, ali ako ti je 6ica ok, imas je";
+            break;
+        case $ispitni_rezultati <= 70:
+            echo "Ok ocena znaci da imas vise od osnovnog znanja";
+            break;
+        case $ispitni_rezultati <= 80:
+            echo "Vidi se da si ucio, bravo";
+            break;
+        case $ispitni_rezultati <= 90:
+            echo "Pa svaka cast, ovo je zavidan nivo znanja";
+            break;
+        case $ispitni_rezultati <= 100:
+            echo "Ovo je neverovatan rezultat svaka cast";
+            break;
+        default:
+            $ispitni_rezultati = "";
+            echo "Pripremi se za iduci ispitni rok";
+    }
+    ?>
+</body>
+</html>
+
+
+slobamiric
+  9:57 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <style>
+        body {
+            font-size: 25px;
+        }
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Foreach loop</h1>
+    <hr>
+    <pre>
+                 key      value
+        foreach($niz as $element) {
+            // radi nesto
+        }
+    </pre>
+    <pre>     
+        foreach($niz as $kljuc => $vrednost) {
+            // radi nesto
+        }
+    </pre>
+    <?php 
+    $kurs_ekipa = ['Arnold', 'Barisa', 'Bojan', 'Dare', 'Meda', 'Milos', 'Nina', 'Ninoslav', 'Olja', 'Sanel', 'Vukasin'];
+    echo "<pre>";
+    print_r($kurs_ekipa);
+    echo "</pre>";
+    echo "<hr>";
+    foreach ($kurs_ekipa as $kljuc => $vrednost) {
+        echo $kljuc . " : " . $vrednost . '<br>';
+    }
+    foreach ($kurs_ekipa as $polaznik) {
+        echo $polaznik . ", ";
+    }
+
+    echo "<hr>";
+    $websites_workshop = [
+        "web dizajn"=> "boban",
+        "javascript"=> "danijel",
+        "react"=> "jovana",
+        "php i mysql"=> "sloba",
+        "python"=> "sloba",   
+        "sql"=> "zoran",     
+    ];
+    // echo "<pre>";
+    // print_r($websites_workshop);
+    // echo "</pre>";
+    // foreach( $websites_workshop as $predavac => $tehnologija) {
+    //     echo $predavac . " : " . $tehnologija . "<br>";
+    // }
+    ?>
+
+    <?php foreach($websites_workshop as $predavac => $tehnologija) : ?>
+
+        <h3><span><?php echo $predavac; ?></span> : <?php echo $tehnologija; ?></h3>
+
+    <?php endforeach; ?>
+    
+</body>
+</html>
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:12 AM
+Snimak PHP 5 - if else, whitch, for, while, fireach https://www.youtube.com/watch?v=zltVYMVym0k

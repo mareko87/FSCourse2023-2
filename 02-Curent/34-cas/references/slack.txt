@@ -1,0 +1,59 @@
+slobamiric
+  9:36 AM
+Vidimo se u 8 https://us02web.zoom.us/j/81089721620?pwd=U24zWXpyazk5S1pBcm5ZZmZYMmdCQT09
+Meeting ID: 810 8972 1620
+Passcode: 851004
+
+
+Bojan Ruzic
+  8:31 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatori dodele</title>
+    <style>
+        th {
+            background: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        body {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operatori poredjenja</h1>
+    <hr>
+    <table>
+        <thead>
+            <th>Operator</th>
+            <th>Opis</th>
+            <th>Primer</th>
+        </thead>
+        <tr>
+            <td>=</td>
+            <td>i = 10</td>
+            <td>i = 10</td>
+        </tr>
+        
+    </table>
+    <?php 
+    
+    ?>
+</body>
+</html>
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:16 AM
+Snimak petak 15. decembar PHP 4 https://www.youtube.com/watch?v=6e2lRqhGKuM

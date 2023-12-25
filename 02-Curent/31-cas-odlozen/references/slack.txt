@@ -1,0 +1,53 @@
+Pinned by 
+slobamiric
+
+
+slobamiric
+  9:56 AM
+Ekipice uhvatio me je bas ovaj kasalj, odlozicemo danasnji cas, jer nisam ja ok, a i ne bi cas licio na nista. Dobio sam juce jake antibiotike, pa kontam da cu u ponedeljak biti upotrebljiv. Poslacu vam ja danas neki snimak da imate bar neku alternativu da vezbate npr CSS tranzicije, animacije i transformacije. A mogu i jedan projekat gde se pravi neki sajt. Da imate nesto za vikend, a saljem i par domacih, cisto da vam ne bude dosadno. Hvala vam na razumevanju. Vidimo se u ponedeljak.
+:+1:
+3
+
+
+
+
+
+
++1
+7 replies
+Last reply 14 days agoView thread
+
+
+slobamiric
+  11:04 AM
+Ovde je spisak lekcija ako nekom treba i slucajno nema taj dokument https://docs.google.com/document/d/1yWi5xSd8TDpnYyH9R4h9RyO11TYfbkcJejLBaaJ9L30/edit
+:white_check_mark:
+1
+:+1:
+1
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  5:29 PM
+Evo ga 2h CSS transformacije, animacije i tranzicije https://www.youtube.com/watch?v=Sj58ljAbxOE
+5:33
+Evo ga i jedan opsirniji domaci da iz FIgme ovo nakodirate :slightly_smiling_face: https://www.figma.com/file/QWsnBNkS4MUzX9nx8B5R6Z/Client-First-Template-5-(Community)?node-id=0%3A1&mode=dev ako ovo znate to je npr nesto sto cete sutra praviti u firmama.
+FigmaFigma
+Client-First Template 5 (Community)
+Created with Figma (140 kB)
+https://www.figma.com/file/QWsnBNkS4MUzX9nx8B5R6Z/Client-First-Template-5-(Community)?node-id=0%3A1&mode=dev
+
+5:35
+Mislim da sam ovo radio jednom na nekom programu, pa ako imam snimak mogu poslati, ali ne sad vec za par dana kada probate sami, mislim da je snimak 4 puta po 2 ipo do 3 sata, tipa preko 10h.
+Pinned by 
+slobamiric
+
+
+slobamiric
+  5:45 PM
+Evo jos jedan projekat lep, ima malo i Javascripta i Jquery/ja da vidite sta vas ceka za 2 meseca :slightly_smiling_face: https://www.youtube.com/watch?v=s4FRTKmm5Hs
+5:47
+Poslao sam vam znaci snimak sa dosta detaljnjim objasnjejem trasnformacija transformacija i trazicija i drugi je projekat onako dosta simpatican ima stvari koje dolaze, a zapravo da vidite kako se koriste gotove JS i Jquery biblioteke. I poslao sam domaci bas onako pravi pa eto imate odlicnog programa ako ste zainteresovani za aktivnosti. Na snimcima ako ima potrebnog materijala u opisu su videa linkovi za to. Srecan rad i ugodan vikend.

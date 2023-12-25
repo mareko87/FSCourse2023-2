@@ -1,0 +1,51 @@
+slobamiric
+  9:47 AM
+Vidimo se veceras https://us02web.zoom.us/j/81632142627?pwd=cVVzeUUxZnpSQU00WS8vZU1mMWlRZz09
+Meeting ID: 816 3214 2627
+Passcode: 870290
+:+1:
+2
+
+
+
+slobamiric
+  8:11 PM
+<?php 
+echo("<html>");
+echo("<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.'>
+    <title>php</title>
+    </head>");
+echo("<body>");
+echo("<h1>Echo funkcija</h1>");
+echo("<hr>");
+echo("</body>");
+echo("</html>");
+?>
+
+
+slobamiric
+  9:35 PM
+Zip
+ 
+
+fs4.zip
+Zip
+
+
+
+
+slobamiric
+  9:52 PM
+Ljudi dobro je izgurali smo, oderao sam grlo ali dobro je pijem sad caj. Pojasnicemo neke stvari nije bilo za prvi cas tipova podataka npr razlika izmedju float i double. Razlika je izmedju ostalog i u memoriji koliko zauzimaju bajtova, a tu dolaze i bitovi kao termin. To su neke stvari kako radi racunar uopste, to nije neka nasa tema, ali pojasnicu i to jedan dan. Float npr zauzima 6 ili 7 decimalnih mesta dok daouble zauzima 15 do 16.....Zacicemo dublje u nacim razmisljanja racunara, to ce vam pomoci da ovo savladate. Idemo laganim tempom da moze sve da legne kako treba. Uzivajte, vidimo se u sredu. (edited) 
+:+1:
+4
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:10 AM
+Snimak od sinoc - ponedeljak 11. decembar https://www.youtube.com/watch?v=DupiCFW7dNg (edited) 

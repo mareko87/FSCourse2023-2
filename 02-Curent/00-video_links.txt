@@ -35,7 +35,9 @@ Fullstack 4 spisak lekcija
 27. PHP - Maison projekat finale - Git i Github - Struktura Freeda projekta - https://www.youtube.com/watch?v=ywa-NTBCcnw
 28. PHP - Freeda projekat - https://www.youtube.com/watch?v=ZgHdMatcfwA
 29. PHP - Freeda 2 final https://www.youtube.com/watch?v=3mcJospS3eg 
-30. PHP  1- osnovni pojmovi veba i PHP uvod - https://www.youtube.com/watch?v=u3N-vJCDjKw 
-31. PHP 2 https://www.youtube.com/watch?v=DupiCFW7dNg 
-32. PHP 3 https://www.youtube.com/watch?v=ZtGsvy9mXuo 
-33. PHP 4 https://www.youtube.com/watch?v=6e2lRqhGKuM 
+30. PHP  1 - osnovni pojmovi veba i PHP uvod - https://www.youtube.com/watch?v=u3N-vJCDjKw 
+31. PHP 2 -  https://www.youtube.com/watch?v=DupiCFW7dNg 
+32. PHP 3 -  https://www.youtube.com/watch?v=ZtGsvy9mXuo 
+33. PHP 4 - OOP -  https://www.youtube.com/watch?v=6e2lRqhGKuM 
+34. PHP 5 -  OOP 2 -  https://www.youtube.com/watch?v=j5tLiVfLL-U
+35. PHP 6 -  OOP 3 -  https://www.youtube.com/watch?v=oePjdRYubLA

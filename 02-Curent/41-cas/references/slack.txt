@@ -1,0 +1,236 @@
+slobamiric
+  7:43 AM
+Danas od pola 7 do 8 radimo WordPress i to je uvod u jedan stvarni projekat, sajt za psiholosko savetovaliste u beogradu. Ovo je nesto sto i nama treba na kursu, pa aako vam je puno da da radite 2 puta sat ipo (mada sta je to za vas) pogedajte odlozeno. https://us02web.zoom.us/j/85874956418?pwd=S08rZmVZL0JHVFNrQ3JKb0IzRzR6QT09
+Meeting ID: 858 7495 6418
+Passcode: 719622
+7:44
+Instalirajte ovaj alat, to je namenski simulator servera za WordPress koji u 3 klika odradi WP inslataciju https://localwp.com/
+localwp.com
+Local (46 kB)
+https://localwp.com/
+
+Pinned by 
+slobamiric
+7:49
+A u 8 nas redovan cas https://us02web.zoom.us/j/82094590648?pwd=TVBKNnczREZZWXNlcDY5anVRaWxXUT09
+Meeting ID: 820 9459 0648
+Passcode: 537171
+
+
+MILOS
+  5:18 PM
+Koji je bese shortcut za brisanje kesha? (edited) 
+
+
+slobamiric
+  5:19 PM
+ctr shift r
+
+
+2 replies
+Last reply 3 days agoView thread
+
+
+slobamiric
+  6:27 PM
+Ovo ce nam trebati danas
+Zip
+ 
+
+img.zip
+Zip
+
+
+
+
+slobamiric
+  8:49 PM
+https://65985c9c19fbf147f443213e--velvety-beijinho-688056.netlify.app/
+
+
+slobamiric
+  8:58 PM
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+8:58
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+9:01
+<?php include 'header.php'; ?>
+
+<?php include 'footer.php'; ?>
+
+
+slobamiric
+  9:10 PM
+nav.bg-body-tertiary {
+    background: rgba(255,255,255,.5) !important;
+}
+nav .navbar-brand img {
+    width: 50%;
+}
+.mainHeader img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+9:14
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+:root {
+    --primary: #86d4aa;
+    --secondary: #3db89c;
+    --tertiary: #209677;
+    --white: #fff;
+    --lightgray: #f5f5f5;
+    --text: #555;
+    --black: black;
+    --transition: .3s ease;
+    --bodyFont: 'Roboto', sans-serif;
+    --headingsFont: 'MuseoModerno', cursive;
+    --lineHeight: 1.6;
+}
+
+
+slobamiric
+  9:23 PM
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+:root {
+    --primary: #86d4aa;
+    --secondary: #3db89c;
+    --tertiary: #209677;
+    --white: #fff;
+    --lightgray: #f5f5f5;
+    --text: #555;
+    --black: black;
+    --transition: .3s ease;
+    --bodyFont: 'Roboto', sans-serif;
+    --headingsFont: 'MuseoModerno', cursive;
+    --lineHeight: 1.6;
+}
+body {
+    font-family: var(--bodyFont);
+    color: var(--text);
+    line-height: var(--lineHeight);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--headingsFont);
+}
+.container {
+    max-width: 1150px !important;
+}
+nav.bg-body-tertiary {
+    background: transparent !important;
+    padding-top: 0;
+}
+nav .navbar-brand img {
+    width: 50%;
+}
+nav .container {
+    background: rgba(255,255,255,.7);
+    padding: 10px 20px;
+}
+nav .nav-link {
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+nav .nav-link:hover {
+    color: var(--tertiary);
+}
+.mainHeader img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+slobamiric
+  9:30 PM
+Ovde smo stali
+Zip
+ 
+
+mint-fs4.zip
+Zip
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  11:03 AM
+Evo ga snimak Uvod u WP i Themify sto sam radio na praksi juce. Ovo nam treba tako da pogledajte ovo kad stignete. https://www.youtube.com/watch?v=UpOzUjD1cVU
+YouTubeYouTube | Websites Workshop
+Praksa Websites Workshop - Uvod u WordPress i Themify 
+
+11:06
+Za aktivaciju ultra teme treba vam userna i to je ovo  wolfslayer , a licence key je ovo  ZYCDQ1AUW42ZW4
+11:07
+Ovo su tema i plugin koji smo koristili za aktivaciju samog Themify servisa, imate sve korak po korak u videu. Samo ispratite, ako treba pomoc pisite.
+2 files
+ 
+
+themify-ultra(1).zip
+Zip
+
+
+
+themify-updater(1).zip
+Zip
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  11:22 AM
+Evo ga i snimak PHP casa https://www.youtube.com/watch?v=mzfwAkkkKm8
+
+
+slobamiric
+  11:30 AM
+Ovo je Figma projekat koji radimo u WP https://www.figma.com/file/ytTwOiOlXkcM83DRmp0AtD/Love-Struck?node-id=0%3A1&mode=dev
+FigmaFigma
+Love Struck
+Created with Figma (242 kB)

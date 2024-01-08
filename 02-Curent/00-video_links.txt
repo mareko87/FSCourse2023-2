@@ -41,3 +41,5 @@ Fullstack 4 spisak lekcija
 33. PHP 4 - OOP -  https://www.youtube.com/watch?v=6e2lRqhGKuM 
 34. PHP 5 -  OOP 2 -  https://www.youtube.com/watch?v=j5tLiVfLL-U
 35. PHP 6 -  OOP 3 -  https://www.youtube.com/watch?v=oePjdRYubLA
+36. PHP 7 - https://www.youtube.com/watch?v=3ybCtE0V-SI
+38. PHP 9 - https://www.youtube.com/watch?v=mzfwAkkkKm8

@@ -1,0 +1,114 @@
+slobamiric
+  10:19 AM
+Od pola 7 praksa, a od 8 nas cas https://us02web.zoom.us/j/81411161824?pwd=UVFGTlAyTEtWRnlYekx2dVRMY2U5QT09
+Meeting ID: 814 1116 1824
+Passcode: 435366
+
+
+slobamiric
+  12:40 PM
+Ovo nam treba za prvi cas
+Word Document
+ 
+
+MKM priprema za sajt.docx
+Word Document
+
+
+
+
+slobamiric
+  12:42 PM
+Posto nam je tema i Cpanel, ovo sto smo pravili WP i staticke template cemo
+danas da podignemo na pravi server da vidite kako se to radi, a pisalo
+mi je dosta vas da vas to interesuje pa cemo to uraditi danas, taman dok
+ su vam svezi ovi sajtovi koje smo radili da vidimo kako se to radi sa i
+ bez baze podaka, jer WP ima bazu i da napravimo mali uvod u to, da
+vidite kako to izgleda i na pravom serveru u odnosu na Xampp i local wp.
+ I da ste spremni ko sad uzme da radi a nekog staticki ili WP sajt moze
+samostalno da podigne na hosting koji zakupi za klijenta. A na praksi
+imate vec opciju kako se instalira WP na pravom serveru, danas cemo
+raditi transfer podataka sa lokalnog racunara na pravi server sa i bez
+baze podataka.
+ danas opet radimo malo duze kao i u sredu od pola 7 do pola 10. A za
+vikend vam saljem jos jedan projekat koji savm vam vec rekao poslati to
+je Hiking shop, da prodjete pre JS i Reacta jer od tog dizajna pravite
+full funkcionalan shop u Reactu, a za sledeci vikend vam saljem jos 3
+termina CSS grid. Sad ste vec napredovali i zavoleli programiranje, pa
+mozemo malo jace. Slabo ste mi slali domace, saljem i par zadataka za
+vikend i da mi onda kazete mogu ili ne mogu da uradim da prosto vidimo
+gde smo. Aj uzivajte, vidimo se veceras :slightly_smiling_face: (edited) 
+
+2 replies
+Last reply 10 days agoView thread
+
+
+slobamiric
+  12:50 PM
+Ovo je za cas, prvi invite je za praksu
+https://us02web.zoom.us/j/85216724703?pwd=R25aQm9nYWxWZzNIU1pMdmVhQVJaQT09
+Meeting ID: 852 1672 4703
+Passcode: 017567
+
+
+slobamiric
+  8:53 PM
+https://interconnectit.com/search-and-replace-for-wordpress-databases/
+inter.connectinter.connect
+Database Search and Replace Script in PHP | inter.connect
+Search Replace DB is a powerful tool for developers, allowing them to run a search replace against their database where CLI tools or WP plugins can’t work. (336 kB)
+https://interconnectit.com/search-and-replace-for-wordpress-databases/
+
+8:55
+Zip
+ 
+
+Search-Replace-DB-4.1.3.zip
+Zip
+8:59
+http://mintsajt.webdesignstudio.rs/
+
+
+S4N3L
+  9:18 PM
+mintsajt.jpg
+ 
+mintsajt.jpg
+
+
+
+1 reply
+9 days agoView thread
+
+
+slobamiric
+  6:55 AM
+Struktura otisla gore a za jedan procenat smanjene performanse, ali ovo je svakako vrhunski rezultat
+
+
+slobamiric
+  7:30 AM
+Ekipo evo za vas jedan lep projekat Custom tema u 5 snimaka :slightly_smiling_face: pa ko hoce moje jos da vezba WP custom teme Dodatak Nedodjija tema
+1 https://www.youtube.com/watch?v=08qQsz2GS5s
+2 https://www.youtube.com/watch?v=sN-L6xFEiQI
+3 https://www.youtube.com/watch?v=HLRNM1asx1g
+4 https://www.youtube.com/watch?v=tra46OpLQKY
+5 https://www.youtube.com/watch?v=z8NRJYmPUS0
+
+
+
+
+C panel snimak od juce https://www.youtube.com/watch?v=YbdpcB3rZ-Q
+
+Dodao sam ovu temu Nedodjija sajt za kucu za Odmor u Apatinu u 5 snimaka na onaj dokument sa lekcijama, pa imate eto jos jednu temu da provezbate izradu tema :slightly_smiling_face:
+7:40
+Ovaj projekat sto sam vam poslao snimke traje preko 12 sati 3:20 + 2:45 + 2 + 2 + 2:12 ali predlazem da pogledate, ovo se sve uci tako sto se dovoljan broj puta ponovi pre nego legne na svoje :slightly_smiling_face: (edited) 
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:45 AM
+Evo kako izgleda home na Nedodjija sajtu, ima par fazona borderi sa linearnim gradijentom, tekst sa linearnim gradijentom onda frame na sekcijama kako da napravite da ne budu ravne ivice vec kako da napravite da bude zakrivljeno itd.....Snimio sam ovaj mali video da vas zainteresujem (edited) 
+ice_video_20240127-074252.mp4
+ 

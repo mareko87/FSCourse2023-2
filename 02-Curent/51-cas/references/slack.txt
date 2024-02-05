@@ -1,0 +1,134 @@
+slobamiric
+  12:39 PM
+Vidimo se veceras u 8 https://us02web.zoom.us/j/81118861339?pwd=N0hHSllpdklrR2Q0NmJ0OHNyK0w2Zz09
+Meeting ID: 811 1886 1339
+Passcode: 936655
+
+
+slobamiric
+  8:16 PM
+//////////
+ID: 3
+Slika: img/mint drustvene mreze.jpg
+Naslov: Drustvene mreze
+Datum: 1.02.2024.
+Admin: Admin
+Tekst: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero commodi, eos at nesciunt obcaecati earum molestiae omnis mollitia necessitatibus reiciendis officia sunt nemo ipsam ad quisquam itaque error consequatur magnam quam maiores. Autem, esse.
+//////////
+ID: 2
+Slika: img/mint-google-ads.jpg
+Naslov: Google ads
+Datum: 21.01.2024.
+Admin: Admin
+Tekst: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero commodi, eos at nesciunt obcaecati earum molestiae omnis mollitia necessitatibus reiciendis officia sunt nemo ipsam ad quisquam itaque error consequatur magnam quam maiores. Autem, esse.
+//////////
+ID: 1
+Slika: img/mint_seo.jpg
+Naslov: SEO
+Datum: 10.01.2024.
+Admin: Admin
+Tekst: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero commodi, eos at nesciunt obcaecati earum molestiae omnis mollitia necessitatibus reiciendis officia sunt nemo ipsam ad quisquam itaque error consequatur magnam quam maiores. Autem, esse.
+
+
+slobamiric
+  8:23 PM
+/////////////  BLOG   //////////////
+// f za citanje podataka
+functiona ocitaj_blog_text_file() {
+    return file_get_contents('baza/blog.txt');
+}
+
+
+slobamiric
+  8:48 PM
+/////////////  BLOG   //////////////
+// f za citanje podataka
+function ocitaj_blog_text_file() {
+    return file_get_contents('baza/blog.txt');
+}
+
+function normalizacija_blog_podataka($blog_podaci) {
+    $prelomi_blog = explode('//////////', $blog_podaci);
+    //debagovanje($prelomi_blog);
+    unset($prelomi_blog[0]);
+    //debagovanje($prelomi_blog);
+    foreach($prelomi_blog as $blog_novi_red) {
+        //debagovanje($blog_novi_red);
+        $novi_blog_red_razbijen = explode(PHP_EOL, $blog_novi_red);
+        //debagovanje($novi_blog_red_razbijen);
+        $novi_blog_red_razbijen = array_filter($novi_blog_red_razbijen);
+        //debagovanje($novi_blog_red_razbijen);
+        debagovanje(normalizacija_redova_blog($novi_blog_red_razbijen[1]));
+    }
+}
+
+function normalizacija_redova_blog($blog_podaci_red) {
+    $normalizuj_blog_podatke = ['ID:', 'Slika:', 'Naslov:', 'Datum:', 'Admin:', 'Tekst:'];
+    $blog_red = str_replace($normalizuj_blog_podatke, "", $blog_podaci_red);
+    $blog_red = trim($blog_red);
+    return $blog_red;
+}
+
+
+slobamiric
+  9:14 PM
+<?php 
+//normalizacija_blog_podataka(ocitaj_blog_text_file());
+// izlistaj_blog_postove();
+$blog_postovi = izlistaj_blog_postove();
+?>
+
+<main class="container py-5">
+    <div class="row">
+        <section class="col-md-8">
+
+        <?php foreach($blog_postovi as $post) : ?>
+            <article>
+                <div class="featured-image">
+                    <img class="img-fluid" src="<?php echo $post['slika']; ?>" alt="<?php echo $post['naslov']; ?>">
+                </div>
+                <div class="text text-white mx-auto w-75 p-4 position-relative">
+                    <h3><?php echo $post['naslov']; ?></h3>
+                    <span><?php echo $post['datum']; ?> | <?php echo $post['admin']; ?></span>
+                    <p><?php echo $post['tekst']; ?></p>
+                </div>
+            </article>
+        <?php endforeach; ?>   
+            
+        </section>
+        <?php include 'partials/sidebar.php'; ?>
+    </div>
+</main>
+9:15
+Zavrsen Mint projekat
+Zip
+ 
+
+mint-fs4.zip
+Zip
+
+
+
+
+slobamiric
+  9:28 PM
+http://forumshop.webdesignstudio.rs/
+9:29
+https://www.youtube.com/watch?v=jPpLVf00LBE
+YouTubeYouTube | Websites Workshop
+Izrada web prodavnice za jedan sat - Uživo sa Foruma zapošljavanja 
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:00 AM
+Snimak MInt listing postova https://www.youtube.com/watch?v=tJMzM5aXyU4
+
+
+Jovana Lozanov
+  1:23 PM
+was added to fullstack-4 by slobamiric
+. Also, Danijel Basaric
+ joined.

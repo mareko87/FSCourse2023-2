@@ -1,0 +1,229 @@
+slobamiric
+  9:45 PM
+To je taj ali mi treba zavrsen, ovo je starter, treba mi ono sto sam vam poslao na kraju zavrseno
+
+
+MILOS
+  11:01 PM
+Evo ga Slobo:sunglasses:
+11:01
+Binary
+ 
+
+Portfolio-Sloba.7z
+Binary
+
+
+:heart:
+1
+
+
+
+Vukašin Zelić
+  11:43 PM
+Evo ga do kraja zavrsen zadatak sa blogom i works sto smo imali da uradimo.
+Zip
+ 
+
+portfolio - responsive.zip
+Zip
+
+
+:heart:
+1
+
+
+
+slobamiric
+  6:38 AM
+E hvala ljudi, je sam negde zaturio fajlove, pa da imamo za veceras :slightly_smiling_face:
+
+
+slobamiric
+  10:32 AM
+Vidimo se u 8. Apdejtovao sam dokument sa lekcijama sve su na listi https://us02web.zoom.us/j/87434752987?pwd=SWdiWEVlVVVXN3RmeDFwaVlURjgwZz09
+Meeting ID: 874 3475 2987
+Passcode: 480785
+
+
+slobamiric
+  1:25 PM
+Danas necemo raditi praksu sa digitalac kursom, nemam ja vremena tako da to radimo u ponedeljak
+Pinned by 
+slobamiric
+
+
+slobamiric
+  5:46 PM
+Evo jedan domaci za vikend da probate da napravite WP temu, ako vam je rano posle prve, sacekajte da prodjemo jos jednu pa probajte od nedelje, za pocetak napravite front end, pa od nedelje kad zavrsimo danas jos jednu, probajte, ako ne uspete, ponda mozemo napraviti dodatni cas da prodjemo i trecu temu.
+image.png
+ 
+image.png
+
+
+5:49
+Evo ih starter fajlovi, i moze jos jedan deo zadatka da sami osmislite single stranicu, kada se ode na jedam blog post, da bude umesto listinga jedan clanak moze da ostane, a i ne mora sidebar.
+Zip
+ 
+
+bloger wp tema zadatak.zip
+Zip
+
+
+5:50
+A mozemo ovo uraditi kao dodatni cas sledece nedelje. npr da u sredu radimo pre naseg casa dodatni za ovo od pola 7 do 8, a od 8 PHP tada radimo MInt media u cistom PHPu
+5:52
+Ono sto se ovde da primetiti da nema navigacije, tako da je jos lakse, imate index.php gde ce biti izlistani postovi i single.php kao pojedinacna stranica posta i to je to. Predlog resenja je da umesto glavne slike na singlovima stavite neku sliku kao featured image.
+Pinned by 
+slobamiric
+5:52
+Ako imate neko pitanje u vezi zadatka tu sam. predpostavljam da vam je to tesko, ali molim vas probaje, a u sredu camo zajedno :slightly_smiling_face:
+
+
+slobamiric
+  8:20 PM
+https://developer.wordpress.org/themes/
+WordPress Developer ResourcesWordPress Developer Resources
+Theme Handbook | Developer.WordPress.org
+Welcome to the WordPress Theme Developer Handbook, your resource for learning all about the exciting world of WordPress themes. The Theme…
+8:23
+screenshot.png
+ 
+screenshot.png
+
+
+8:24
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+WordPress Developer ResourcesWordPress Developer Resources
+Main Stylesheet (style.css) – Theme Handbook | Developer.WordPress.org
+The style.css is a stylesheet (CSS) file required for every WordPress theme. It controls the presentation (visual design and layout) of the…
+
+
+Anka
+  8:24 PM
+izvinjavam se zoom me izbacuje konstantno ne znam zasto
+
+
+slobamiric
+  8:25 PM
+/*
+Theme Name: Twenty Twenty
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+8:25
+Anka pustio sam te
+8:28
+https://developer.wordpress.org/themes/basics/template-files/
+WordPress Developer ResourcesWordPress Developer Resources
+Template Files – Theme Handbook | Developer.WordPress.org
+Template files are used throughout WordPress themes, but first let's learn about the terminology. Template Terminology The term "template"…
+
+
+slobamiric
+  8:45 PM
+https://developer.wordpress.org/reference/hooks/after_setup_theme/
+WordPress Developer ResourcesWordPress Developer Resources
+after_setup_theme – Hook | Developer.WordPress.org
+Fires after the theme is loaded.
+
+
+slobamiric
+  9:00 PM
+<?php
+// theme setup
+function portfolio_theme_support() {
+    add_theme_support('title-tag');
+
+}
+add_action('after_setup_theme', 'portfolio_theme_support');
+
+// excerpt length
+function excerpt() {
+    return 10;
+}
+add_filter('excerpt_length', 'excerpt');
+
+// load scripts
+function porfolio_theme_css() {
+    wp_enqueue_style('bootstran-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css');
+    wp_enqueue_style('style-css', get_template_directory_uri(). '/style.css');
+}
+add_action('wp_enqueue_scripts', 'porfolio_theme_css');
+
+
+slobamiric
+  9:10 PM
+register_nav_menu('main-manu', 'Main menu');
+9:10
+<?php wp_nav_menu(array('theme_location' => 'main-manu')); ?>
+9:13
+<body <?php body_class(); ?>>
+
+
+slobamiric
+  9:18 PM
+// widgets
+function widgets() {
+    register_sidebar(array(
+        'name' => 'Footer widget',
+        'id' => 'footer_widget',
+        'before_widget' => '<footer class="container">',
+        'after_widget' => '</footer">'
+    ));
+}
+add_action('widgets_init', 'widgets');
+9:21
+<!-- footer -->
+    <?php if(is_active_sidebar('footer_widget')) : ?>
+        <?php dynamic_sidebar('footer_widget'); ?>
+    <?php endif; ?>
+    <?php wp_footer(); ?>
+</body>
+</html>
+
+
+slobamiric
+  9:29 PM
+<?php echo get_template_directory_uri(); ?>/
+9:31
+OVde smo stalu zavrsicemo u ponedeljnik, osnovni wp loop i custom loop :slightly_smiling_face: Lep vikend vam zelim
+Zip
+ 
+
+portfolio.zip
+Zip
+
+
+slobamiric
+  9:37 PM
+Mala pomoc oko strukture projekta
+analiza-domaceg.png
+ 
+analiza-domaceg.png
+
+
+
+
+
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  10:49 PM
+SNimak Portfolio tema 1 deo https://www.youtube.com/watch?v=X0mAj4Cgs14

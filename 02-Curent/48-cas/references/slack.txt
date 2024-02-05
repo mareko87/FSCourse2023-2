@@ -1,0 +1,209 @@
+slobamiric
+  8:45 AM
+Vidimo se danas u 7 https://us02web.zoom.us/j/89615732888?pwd=YktJTGxrZ2JIT0ovTVBWaHlPVmNBUT09
+Meeting ID: 896 1573 2888
+Passcode: 335345
+Pinned by 
+slobamiric
+8:47
+Danas znaci radimo od 7 do pola 10, pisali ste mi jos da vam treba malo da pohvatate WP teme, pa cemo danas u cugu napraviti temu na onaj dizajn Webcon blogger koji ja imam zavrsen front end, a zajedno cemo u temu spakovati i da sa tim zavrsimo. Mogu vam i dati smernice sta dalje, sa html i css + wp custom teme ste vrlo dobri na trzistu rada, pa mogu da vam dam smernice ako neko hoce da se oproba u tom pravcu, a mogu vam dati jos par zadataka kome treba da se to jos izvezba. (edited) 
+8:50
+U petak imamo od pola 7 rad na onom psihoskom sajtu na praksu, pa nemamo kad da ovo dovrismo tako da cemo danas to zavrsiti, treba nam nekih 2 ipo do 3 sata. (edited) 
+:white_check_mark:
+1
+
+
+
+slobamiric
+  6:41 PM
+Ovo ce nam trebati danas
+Zip
+ 
+
+Webcon Blogger.zip
+Zip
+
+
+slobamiric
+  7:12 PM
+https://developer.wordpress.org/themes/
+WordPress Developer ResourcesWordPress Developer Resources
+Theme Handbook | Developer.WordPress.org
+Welcome to the WordPress Theme Developer Handbook, your resource for learning all about the exciting world of WordPress themes. The Theme… (30 kB)
+https://developer.wordpress.org/themes/
+
+
+
+slobamiric
+  7:21 PM
+screenshot.png
+ 
+screenshot.png
+
+
+
+
+slobamiric
+  7:40 PM
+header-blogger.jpg
+ 
+header-blogger.jpg
+
+
+
+
+slobamiric
+  7:46 PM
+<?php get_header(); ?>
+    <!-- header -->
+    <header>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/header-blogger.jpg" alt="">
+        <div>
+            <h1>Webcon <span>blogger</span></h1>
+            <p><?php bloginfo('description'); ?></p>
+        </div>
+    </header>
+7:47
+header {
+    position: relative;
+    z-index: -1;
+}
+header img {
+    width: 100%;
+}
+header div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+slobamiric
+  8:04 PM
+<?php get_header(); ?>
+    
+<?php get_template_part('template_parts/home-header'); ?>
+
+<?php get_template_part('template_parts/home-content'); ?>
+
+<?php get_footer(); ?>
+8:08
+// widgets
+function widgets() {
+    register_sidebar(array(
+        'name' => 'Footer',
+        'id'=> 'footer',
+        'before_widget' => '<footer>',
+        'after_widget' => '</footer>'
+    ));
+}
+add_action('widgets_init', 'widgets');
+
+
+slobamiric
+  8:15 PM
+<?php if(is_active_sidebar('footer')) : ?>
+        <?php dynamic_sidebar('footer'); ?>
+    <?php endif; ?>
+
+
+slobamiric
+  8:28 PM
+<!-- main -->
+<div class="main">
+    <div class="blog">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <div class="post">
+            <h2><?php the_title(); ?></h2>
+            <span><?php echo get_the_date(); ?></span>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="btn">
+                <?php _e('Read more'); ?>
+            </a>
+        </div>
+    <?php endwhile; else : ?>
+        <?php _e('Nema jos postova'); ?>
+    <?php endif; ?>
+        
+    </div>
+    <?php get_sidebar(); ?>
+</div>
+
+
+slobamiric
+  8:33 PM
+<!-- main -->
+<div class="main">
+    <div class="blog">
+    <?php $query = new WP_Query(array('post_type' => 'post'));
+    if($query->have_posts()) : ?>
+    <?php while($query->have_posts()) : $query->the_post(); ?>
+        <div class="post">
+            <h2><?php the_title(); ?></h2>
+            <span><?php echo get_the_date(); ?></span>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="btn">
+                <?php _e('Read more'); ?>
+            </a>
+        </div>
+    <?php endwhile; wp_reset_postdata(); ?>
+    <?php else : ?>
+        <?php _e('Nema jos postova'); ?>
+    <?php endif; ?>
+        
+    </div>
+    <?php get_sidebar(); ?>
+</div>
+8:37
+// excerpt length filter
+function excerpt_length_filter() {
+    return 30;
+}
+add_filter('excerpt_length', 'excerpt_length_filter');
+
+
+slobamiric
+  7:27 AM
+Evo jedan od nacina kako se moze odraditi Search, kada napravite search.php ubacite kod i pomocu klase search-page stilizujete izgled (edited) 
+7:27
+<?php get_header(); ?>
+
+<div class="search-page">
+    <?php 
+    echo '<h1>Rezultat pretraživanja</h1>';
+    echo "<hr>";
+    // Ovom funkcijom hvatamo parametre pretraživanja
+    $s = get_search_query();
+
+    // Funkcijom get_posts() hvatamo rezultat pretraživanja
+    $posts = get_posts(array(
+        's' => $s,
+        'post_type' => 'post',
+        'posts_per_page' => 10,
+    ));
+
+    // Ispisujemo rezultat pretraživanja
+    if ($posts) {
+        foreach ($posts as $post) {
+            echo '<h2><a href="' . get_permalink($post) . '">' . $post->post_title . '</a></h2>';
+            echo '<p>' . $post->post_excerpt . '</p>';
+        }
+    } else {
+        echo '<p>Nema rezultata pretraživanja za "' . $s . '".</p>';
+    }
+    ?>
+</div>
+
+
+<?php get_footer(); ?>
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:32 AM
+Evo snimka Webcon blogger teme https://www.youtube.com/watch?v=Qb_XntLPAUY
+7:36
+Za sada smo dovrsili WP, dodacemo kasnije posle kursa na praksi vasoj, a mozete sto sam vas dodao na praksi digitalca malo jos omirisete i Themify builder. Ovo sto smo prosli je najbolji nacin za ulazak na poziciju web dizajnera i developera u IT industriji, jer agancije klijentima najvise nude kao kompanijske sajtove WordPress. A razlog za to je sto onda posle oni kojima prave sajt mogu sami da objavjuju postove i kontrolisu stvar pomocu plagina za pracenje marketinskih aktivnosti to cete videti na projektu tamo na praksi digitalac kursa i kasnije na vasoj praksi. VIdimo se sutra i nastavljamo Mint media da izlistamo postove i usluge uz pomoc cistog PHPa i da vidimo razliku u ondosu na WP . A siuliramo i bazu podataka da bi videli kolijo je dobro kada za to imamo engine i zatim posle toga nastavljamo MySQL. Uzivajte lep dan vam zelim.

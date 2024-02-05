@@ -1,0 +1,103 @@
+slobamiric
+  11:25 AM
+Ekipice vidimo se u 8 veceras https://us02web.zoom.us/j/81137839461?pwd=eDZNdFFLRzhLbGZSUGVWdnRpSm1PUT09
+Meeting ID: 811 3783 9461
+Passcode: 157276
+
+
+slobamiric
+  8:07 PM
+https://developer.wordpress.org/themes/basics/the-loop/
+WordPress Developer ResourcesWordPress Developer Resources
+The Loop – Theme Handbook | Developer.WordPress.org
+The Loop is the default mechanism WordPress uses for outputting posts through a theme’s template files. How many posts are retrieved… (30 kB)
+https://developer.wordpress.org/themes/basics/the-loop/
+
+8:10
+<?php get_header(); ?>
+
+        <!-- Blog section -->
+        <section class="blog container">
+            <h2>Blog</h2>
+
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                <!-- <article>
+                    <h3>UI Interactions of the week</h3>
+                    <span>12 Feb 2020 &nbsp;&nbsp;|&nbsp;&nbsp;</span> <span class="cat">Express,Handlebars</span>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </article> -->
+
+            <?php endwhile; ?>
+            <?php else : ?>
+                <?php _e('Nema jos postova u bazi'); ?>
+            <?php endif; ?>
+
+        </section>
+
+<?php get_footer(); ?>
+8:12
+<?php get_header(); ?>
+
+        <!-- Blog section -->
+        <section class="blog container">
+            <h2>Blog</h2>
+
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                <article>
+                    <h3><?php the_title(); ?></h3>
+                    <span><?php echo get_the_date(); ?> &nbsp;&nbsp;|&nbsp;&nbsp;</span> <span class="cat"><?php the_category(); ?></span>
+                    <?php the_excerpt(); ?>
+                </article>
+
+            <?php endwhile; ?>
+            <?php else : ?>
+                <?php _e('Nema jos postova u bazi'); ?>
+            <?php endif; ?>
+
+        </section>
+
+<?php get_footer(); ?>
+
+
+slobamiric
+  8:27 PM
+<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+
+
+slobamiric
+  9:00 PM
+.single-post {
+    ul {
+        display: inline-block;
+        li {
+            display: inline-block;
+            a {
+                color: $gray;
+                &:hover {
+                    color: $accents;
+                }
+            }
+        }
+    }
+}
+9:01
+<article class="single-post">
+
+
+slobamiric
+  9:40 PM
+Gotova tema Portfolio
+Zip
+ 
+
+portfolio.zip
+Zip
+Pinned by 
+slobamiric
+
+
+slobamiric
+  6:59 AM
+Portfolio 2 tema (final) snimak https://www.youtube.com/watch?v=KY-r_Mfusc8 (edited) 

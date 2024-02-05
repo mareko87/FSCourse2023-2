@@ -1,0 +1,146 @@
+slobamiric
+  7:43 AM
+Praksa - Themify - Psiholosko savetovaliste zavrsen home page https://www.youtube.com/watch?v=nSSHkn4IvP4
+YouTubeYouTube | Websites Workshop
+Praksa Themify 5 - Psiholosko savetovaliste - zavrsena Home stranica 
+
+
+
+slobamiric
+  10:23 AM
+Vidimo se u 8 https://us02web.zoom.us/j/89489175589?pwd=OWpZSUJ0SUpJSUVIOTZpZHh6clgzUT09
+Meeting ID: 894 8917 5589
+Passcode: 638878
+
+
+slobamiric
+  6:04 PM
+Ovo pomocu PHPa danas pravimo dinamicki (imamo gotov Mint media front) da listamo blog postove i usluge :slightly_smiling_face:. vidimo se :slightly_smiling_face: (edited) 
+Zip
+ 
+
+mint-fs4.zip
+Zip
+
+
+6:04
+Da vidite koliko je WP laksi
+
+
+slobamiric
+  8:13 PM
+<?php include 'partials/header.php'; ?>
+
+<!-- main header -->
+<?php include 'partials/main-header.php'; ?>
+
+<!-- baner -->
+<?php include 'partials/baner.php'; ?>
+
+<!-- usluge -->
+<?php include 'partials/usluge.php'; ?>
+
+<?php include 'partials/footer.php'; ?>
+New
+
+
+slobamiric
+  8:33 PM
+//////////
+ID: 3
+Slika: img/mint-socijalne-mreze.jpg
+Naslov: Drustvene mreze
+Tekst: Some quick example text to build on the card title and make up the bulk of the card's content.
+//////////
+ID: 2
+Slika: img/mint_seo.jpg
+Naslov: SEO
+Tekst: Some quick example text to build on the card title and make up the bulk of the card's content.
+//////////
+ID: 1
+Slika: img/mint-google-oglasi.jpg
+Naslov: Google oglasi
+Tekst: Some quick example text to build on the card title and make up the bulk of the card's content.
+
+
+slobamiric
+  8:55 PM
+<?php 
+
+function ispisi_ime_sajta() {
+    $title = 'Dynamic Mint';
+    echo $title;
+}
+
+function debagovanje($parametar) {
+    echo '<pre>';
+    print_r($parametar);
+    echo '</pre>';
+}
+
+function ocitaj_usluge_text_file() {
+    return file_get_contents('baza/usluge.txt');
+}
+
+function normalizacija_podataka($podaci) {
+    $prelomi_usluge = explode('//////////', $podaci);
+    //debagovanje($prelomi_usluge);
+    unset($prelomi_usluge[0]);
+    //debagovanje($prelomi_usluge);
+
+    foreach($prelomi_usluge as $novi_red) {
+        //debagovanje($novi_red);
+        $novi_red_razbijen = explode(PHP_EOL, $novi_red);
+        $novi_red_razbijen = array_filter($novi_red_razbijen);
+        debagovanje($novi_red_razbijen);
+
+    }
+}
+
+
+slobamiric
+  9:04 PM
+function noramalizacija_redova($podaci_red) {
+    $normalizuj_podatke = ["ID:", "Slika:", "Naslov:", "Tekst:"];
+    $red = str_replace($normalizuj_podatke, "", $podaci_red);
+    $red = trim($red);
+    return $red;
+}
+
+
+slobamiric
+  9:12 PM
+$usluge_id = normalizacija_redova($novi_red_razbijen[1]);
+        $usluge_slika = normalizacija_redova($novi_red_razbijen[2]);
+        $usluge_naslov = normalizacija_redova($novi_red_razbijen[3]);
+        $usluge_tekst = normalizacija_redova($novi_red_razbijen[4]);
+        debagovanje($usluge_id);
+        debagovanje($usluge_slika);
+        debagovanje($usluge_naslov);
+        debagovanje($usluge_tekst);
+
+
+slobamiric
+  9:29 PM
+Upakovali smo usluge, sledeci cas pakujemo blogove i pocinjemo jos jedan na ovu foru, sa gotovim dizajnom.
+Zip
+ 
+
+mint-fs4.zip
+Zip
+
+
+
+
+slobamiric
+  6:45 AM
+Danas od 6 do 8 praksa - nastavljamo sajt Psiholoskog savetovalista, radimo ostale stranice https://us02web.zoom.us/j/81170430734?pwd=elBYNmdyYk5COEJjd3l4ZittQUZnUT09
+Meeting ID: 811 7043 0734
+Passcode: 394065
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:01 AM
+SNimak PHP izlistavnje usluga MInt https://www.youtube.com/watch?v=qzLy0DU0cww

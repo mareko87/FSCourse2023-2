@@ -1,0 +1,292 @@
+slobamiric
+  6:50 AM
+Vidimo se u 8 da dovrsimo Mint media temu https://us02web.zoom.us/j/85187053786?pwd=QXdxWnlOUXZLckV3bDBMbXZsNDRLdz09
+Meeting ID: 851 8705 3786
+Passcode: 063900
+6:52
+A od pola 7 do 8 imate onaj dodatak praku WP sa kursom digitalac  https://us02web.zoom.us/j/83399037728?pwd=ZXVTUWFZQnBpcUVOdS9jb0hWOEY1QT09 Meeting ID: 833 9903 7728 Passcode: 277259 (edited) 
+
+
+DaRe
+  3:45 PM
+Jedno pitanje, u wordpress-u u appearance-u nemam opciju menus, a na animku kod slobe ima, da li neko zna kako bookmark-ovati u appearance?
+
+
+slobamiric
+  3:45 PM
+Ne moze da se bukmarkuje, ili osvezi prikaz ili proveri jesi dobro napisao funkciju za dodavanje menija
+3:46
+ona se pojavi posle ubacivanje register nav menus funckije tamo u functions php
+
+
+DaRe
+  3:47 PM
+funkcija mi nje  imala dobro ime, umjesto functions.php ja sam stavio function.php i cim sam izmjenio radii
+
+
+slobamiric
+  3:48 PM
+e da to je cesta greska
+3:48
+eto dobro si pisao sigurno ce jos neko imati tu gresku
+
+
+DaRe
+  3:49 PM
+A kad si Slobo spomenuo register function i oni argumenti unutar zagrade ovaj prvi se povezuje sa lokacijom, a ovaj drugi sa imenom menija, konkretno me buni ovaj drugi pa da vidim jesam li ukapirao dobro?
+
+
+slobamiric
+  3:57 PM
+da prvi je lokacija, a drugi mislim opis obican tekst
+
+
+DaRe
+  3:57 PM
+Ok, hvalaa
+
+
+slobamiric
+  4:02 PM
+U toj funckiji obavezan je samo prvi parametar $location
+
+
+MILOS
+  6:28 PM
+Slobo imam pitanje vezano za momenat kad uredjujes sliku koju smo ubacili u WP bazu pa je izgubila proporcije.
+6:28
+.featured-image img{
+  width: 100%;
+  height: auto;
+}
+6:29
+img tag me buni,njega nigde nema u html-u tj index.php a bez tog img ne radi width..
+
+
+slobamiric
+  6:29 PM
+ima ga njega povlaci funkcija koja je slika
+
+
+MILOS
+  6:29 PM
+kako WP vidi taj img tag pre klase ako ga nismo stavili nigde
+6:31
+<?php the_post_thumbnail(); ?>
+6:31
+mislis na tu funkciju?kad je napisemo ona podrazumeva neki img tag?
+
+
+slobamiric
+  8:32 PM
+// widgets
+function widgets() {
+	register_sidebar(array(
+		'name' => 'Sidebar',
+		'id' => 'sidebar',
+		'before_widget' => '<div class="widget p-3 mb-4">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+	register_sidebar(array(
+		'name' => 'Footer 1',
+		'id' => 'footer-1',
+		'before_widget' => '<div class="col-md-6">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="bg-white d-inline-block px-3 py-1 text-dark mb-4">',
+		'after_title' => '</h3>'
+	));
+	register_sidebar(array(
+		'name' => 'Footer 2',
+		'id' => 'footer-2',
+		'before_widget' => '<div class="col-md-3">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="bg-white d-inline-block px-3 py-1 text-dark mb-4">',
+		'after_title' => '</h3>'
+	));
+	register_sidebar(array(
+		'name' => 'Footer 3',
+		'id' => 'footer-3',
+		'before_widget' => '<div class="col-md-3">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="bg-white d-inline-block px-3 py-1 text-dark mb-4">',
+		'after_title' => '</h3>'
+	));
+}
+add_action('widgets_init', 'widgets');
+8:36
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <?php if(is_active_sidebar('footer-1')) : ?>
+                    <?php dynamic_sidebar('footer-1'); ?>
+                <?php endif; ?>
+
+                <?php if(is_active_sidebar('footer-2')) : ?>
+                    <?php dynamic_sidebar('footer-2'); ?>
+                <?php endif; ?>
+
+                <?php if(is_active_sidebar('footer-3')) : ?>
+                    <?php dynamic_sidebar('footer-3'); ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </footer>
+    
+    <?php wp_footer(); ?>
+</body>
+
+</html>
+
+
+slobamiric
+  8:41 PM
+Sablon za page template
+8:41
+<?php get_header(); ?>
+
+    <!-- headers -->
+    <header class="headers position-relative">
+        <?php the_post_thumbnail(); ?>
+        <h1 class="display-1 text-white position-absolute translate-middle top-50 start-50 py-2 px-5"><?php the_title(); ?></h1>
+    </header>
+
+    <!-- blog listing -->
+    <main class="container py-5">
+        <div class="row">
+            <section class="col-md-12">
+
+            <?php if(have_posts()) : while(have_posts()) : the_post(); ?>            
+                <article>
+                    <div class="text text-white mx-auto w-75 p-4 position-relative">
+                        <?php the_content(); ?>
+                    </div>
+                </article>
+            <?php endwhile; ?>
+            <?php else : ?>
+                <?php _e('Name jos postova'); ?>
+            <?php endif; ?>
+                
+            </section>
+        </div>
+    </main>
+
+<?php get_footer(); ?>
+8:43
+Sredjen kod za page sablon
+8:43
+<?php get_header(); ?>
+
+    <!-- headers -->
+    <header class="headers position-relative">
+        <?php the_post_thumbnail(); ?>
+        <h1 class="display-1 text-white position-absolute translate-middle top-50 start-50 py-2 px-5"><?php the_title(); ?></h1>
+    </header>
+
+    <!-- loop -->
+    <main class="container py-5">
+        <div class="row">
+            <section class="col-md-12">
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>            
+                    <div class="text text-white mx-auto w-75 p-4 position-relative">
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; ?>
+                <?php else : ?>
+                    <?php _e('Name jos stranica'); ?>
+                <?php endif; ?>
+            </section>
+        </div>
+    </main>
+
+<?php get_footer(); ?>
+8:48
+<?php
+/*
+* Template Name: KOntakt sablon stranice
+*/
+get_header(); ?>
+8:50
+HappyForms
+
+
+slobamiric
+  9:01 PM
+<?php the_field(); ?>
+
+
+slobamiric
+  9:18 PM
+<?php get_header(); ?>
+
+<!-- main header -->
+<header class="mainHeader">
+    <img class="img-fluid" src="<?php the_field('home_header_img'); ?>" alt="<?php echo 'Home slika'; ?>">
+</header>
+
+<!-- baner -->
+<section class="container baner text-center text-white p-5 position-relative">
+    <h1><?php the_field('about_naslov'); ?></h1>
+    <p class="lead"><?php the_field('about_text'); ?></p>
+</section>
+
+<!-- usluge -->
+<section class="usluge container py-5">
+    <h2 class="text-center"><?php the_field('usluge_heading'); ?></h2>
+    <article class="row">
+
+    <?php $query = new WP_Query(array('post_type' => 'usluge'));
+    if($query->have_posts()) : ?>
+    <?php while($query->have_posts()) : $query->the_post(); ?>
+        <div class="col-md-4">
+            <div class="card">
+                <?php the_post_thumbnail(); ?>
+                <div class="card-body">
+                    <h5 class="card-title"><?php the_title(); ?></h5>
+                    <?php the_excerpt(); ?>
+                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">
+                    <?php _e('Procitaj vise'); ?>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <?php endwhile; wp_reset_postdata(); ?>
+    <?php else: ?>
+        <?php _e('Nema jos unetih usluga'); ?>
+    <?php endif; ?>
+        
+    </article>
+</section>
+
+<?php get_footer(); ?>
+
+
+slobamiric
+  9:36 PM
+Gotova tema mint media
+Zip
+ 
+
+mint.zip
+Zip
+
+
+
+
+
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  8:53 AM
+Mint media zavrsena tema https://www.youtube.com/watch?v=E4Vzgfohw6E
+8:54
+Zavrsen figma to themify projekat love struck band i instaliran WP na pravom serveru za sajt psiholoskog savetovalista https://www.youtube.com/watch?v=aZzG3m8p5i4
+YouTubeYouTube | Websites Workshop
+Praksa Themify 3 -zavrsetak sajta Love struck band i podizanje WP instalacije na live serveru 

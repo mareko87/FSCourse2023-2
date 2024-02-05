@@ -1,0 +1,284 @@
+slobamiric
+  8:51 AM
+Vidimo se veceras u 8 https://us02web.zoom.us/j/84509604199?pwd=WjF3bmYzMnJaRkNRNERGMHQrUmJBZz09
+Meeting ID: 845 0960 4199
+Passcode: 597111
+:white_check_mark:
+1
+
+
+
+DaRe
+  3:01 PM
+@slobamiric
+ moze li full kod php osnova?
+
+
+slobamiric
+  3:02 PM
+stize uskoro :slightly_smiling_face:
+:white_check_mark:
+2
+
+
+
+DaRe
+  3:02 PM
+Vazi
+
+
+slobamiric
+  3:29 PM
+Tj kad dodjem u kanc danas, posto mi je jedan deo na kompu koji ne koristim za predavanja, na kom sam radio u beceju prosli cas, pa kad dodjem u kanc sklopicu sve fajlove i saljem. Imam i jedan cas na trecem kompu na kom sam radio jedan cas :joy:
+
+
+Bojan Ruzic
+  8:09 PM
+https://65985c9c19fbf147f443213e--velvety-beijinho-688056.netlify.app/
+
+
+slobamiric
+  8:19 PM
+<!-- usluge -->
+<section class="usluge container py-5">
+    <h2 class="text-center">Usluge</h2>
+    <article class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/mint-socijalne-mreze.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Drustvene mreze</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Procitaj vise</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/mint_seo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SEO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Procitaj vise</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/mint-google-oglasi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Google oglasi</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Procitaj vise</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+8:22
+/* usluge */
+.usluge h2 {
+    font-size: 3.5rem;
+}
+.usluge h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 200px;
+    margin: 30px auto;
+    background: linear-gradient(to right, var(--primary), var(--tertiary));
+}
+8:23
+.btn {
+    border-radius: 0 !important;
+    border: none;
+}
+.btn-primary {
+    background: var(--secondary);
+}
+.btn-primary:hover {
+    background: var(--text);
+}
+
+
+slobamiric
+  8:28 PM
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+slobamiric
+  8:37 PM
+<!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>O nama</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora itaque, vitae esse reprehenderit voluptas provident rem quos at porro saepe!</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Kontakt</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Glavna ulica 36, Apatin</li>
+                        <li><i class="bi bi-telephone-fill"></i>&nbsp;025 739 815</li>
+                        <li><i class="bi bi-telephone-fill"></i>&nbsp;info@mintmedia.rs</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Povezimo se</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-inline"><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li class="d-inline"><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li class="d-inline"><a href=""><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+slobamiric
+  8:45 PM
+/* footer */
+footer {
+    background: var(--secondary);
+}
+footer p, 
+footer li {
+    color: var(--white);
+}
+footer a {
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 20px;
+}
+footer a:hover {
+    color: var(--text);
+}
+8:45
+<!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="bg-white d-inline-block px-3 py-1 text-dark mb-4">O nama</h3>
+                    <p class="pe-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quibusdam veritatis! Nam nostrum veniam saepe, ratione corrupti tempore? Impedit laboriosam at laudantium, sunt debitis ad!</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="bg-white d-inline-block px-3 py-1 text-dark mb-4">Kontakt</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Glavna ulica 36, Apatin</li>
+                        <li><i class="bi bi-telephone-fill"></i>&nbsp;025 739 815</li>
+                        <li><i class="bi bi-envelope-fill"></i>&nbsp;info@mintmedia.rs</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="bg-white d-inline-block px-3 py-1 text-dark mb-4">Povezimo se</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-inline"><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li class="d-inline"><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li class="d-inline"><a href=""><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+slobamiric
+  9:07 PM
+<!-- blog listing -->
+    <main class="container py-5">
+        <div class="row">
+            <section class="col-md-8">
+                <article>
+                    <div class="featured-image">
+                        <img class="img-fluid" src="img/mint drustvene mreze.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Drustvene mreze</h3>
+                        <span>10.01.2024. | Admin</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero commodi, eos at nesciunt obcaecati earum molestiae omnis mollitia necessitatibus reiciendis officia sunt nemo ipsam ad quisquam itaque error consequatur magnam quam maiores. Autem, esse.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="featured-image">
+                        <img class="img-fluid" src="img/mint-google-ads.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Google ads</h3>
+                        <span>10.01.2024. | Admin</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero commodi, eos at nesciunt obcaecati earum molestiae omnis mollitia necessitatibus reiciendis officia sunt nemo ipsam ad quisquam itaque error consequatur magnam quam maiores. Autem, esse.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="featured-image">
+                        <img class="img-fluid" src="img/mint_seo.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>SEO</h3>
+                        <span>10.01.2024. | Admin</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque libero commodi, eos at nesciunt obcaecati earum molestiae omnis mollitia necessitatibus reiciendis officia sunt nemo ipsam ad quisquam itaque error consequatur magnam quam maiores. Autem, esse.</p>
+                    </div>
+                </article>
+            </section>
+            <aside class="col-md-4">
+
+            </aside>
+        </div>
+    </main>
+
+
+slobamiric
+  9:22 PM
+<aside class="col-md-4">
+                <div class="widget p-3">
+                    <h3>Kategorije</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="">Web sajtovi</a></li>
+                        <li><a href="">Seo optimizacija</a></li>
+                        <li><a href="">Oglasavanje</a></li>
+                        <li><a href="">Grafcki dizajn</a></li>
+                    </ul>
+                </div>
+                <div class="widget p-3">
+                    <h3>Poslednje sa bloga</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="">Google algoritam 2024</a></li>
+                        <li><a href="">Seo trendovi</a></li>
+                        <li><a href="">Elementi dobrog dizajna</a></li>
+                        <li><a href="">SEO tools</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+
+slobamiric
+  9:36 PM
+Evo ga gotov front idemo dalje da napravimo dinamiku u petak
+Zip
+ 
+
+mint-fs4.zip
+Zip
+:raised_hands:
+1
+
+9:40
+Osnove PHP primeri
+Zip
+ 
+
+fs4.zip
+Zip
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  8:29 AM
+Snimak od srede 10. januara, zavrsen Mint projekat front https://www.youtube.com/watch?v=xjlub8yEkCg

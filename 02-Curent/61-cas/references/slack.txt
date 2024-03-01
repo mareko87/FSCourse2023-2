@@ -1,0 +1,53 @@
+slobamiric
+  9:29 AM
+Veceras krecete javascript ceka vas 
+@Danijel Basaric
+ https://us02web.zoom.us/j/82496760530?pwd=VERsSnEwK2NyOXR3UDZPZjRVSUNQQT09
+Meeting ID: 824 9676 0530
+Passcode: 601305
+
+
+Nikola Perjanica
+  8:05 PM
+moze ulaz?
+
+
+MILOS
+  8:14 PM
+Moze li ulaz?
+
+
+Danijel Basaric
+  8:43 PM
+terminal/command prompt u Windowsu
+----------------------------------------------------------
+windows + X, command prompt
+desni klik na „Start“, command prompt
+----------------------------------------------------------
+windows + R, cmd
+ikonica „Search“ (pored dugmeta start), cmd/command prompt
+desni klik na „Start“, Run, Cmd
+----------------------------------------------------------
+„Start“, „Windows system“, command prompt
+Komande u terminalu (koje cemo mi koristiti)
+„CD/Chdir (Change directory) + „Ime foldera““ – promena aktivnog foldera (direktorijuma)
+„MD/MkDir (Make directory) + „Ime foldera“ – pravljenje novog foldera (direktorijuma)
+MD „ime foldera“ && cd „ime fodera“ – pravljenje novog foldera i postavljanje istog za aktivni folder
+Code . – pokretanje VS Code iz terminala (edited)
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:11 AM
+Snimak JS 1 https://www.youtube.com/watch?v=8oVBCTt3lg0
+
+
+Danijel Basaric
+  3:37 PM
+kod sa prvog casa
+Zip
+ 
+
+lekcija01.zip
+Download Zip

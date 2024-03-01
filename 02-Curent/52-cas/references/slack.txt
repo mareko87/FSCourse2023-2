@@ -1,0 +1,114 @@
+slobamiric
+  12:46 PM
+Vidimo se u 8 i krecemo MySQL https://us02web.zoom.us/j/86526600712?pwd=VU83NE80RllxQTRXYXdibWtYQmdlQT09
+Meeting ID: 865 2660 0712
+Passcode: 661801
+
+
+slobamiric
+  8:10 PM
+https://websitesworkshop.com/relacioni-model-baza-podatka-i-edgar-f-codd/
+Websites Workshop
+Relacioni model baza podatka i Edgar F. Codd - Websites Workshop
+Relacioni model na kome je baziran i SQL je osmislio Edgar F. Codd. SQL kao jezik je standardizovan 1986. godine (kada sam ja imao 7 godina) i to je univerzalni jezik sa kojim rukujemo sa različitim bazama podataka. Na sajtu History Computer možete se upoznati opširnije sa životom tvorca relacionog modela koga smo pomenuli već, […]
+Napisano od
+Slobodan Mirić
+Procenjeno vreme čitanja
+5 minuta
+Jan 20th (118 kB)
+https://websitesworkshop.com/relacioni-model-baza-podatka-i-edgar-f-codd/
+
+
+
+slobamiric
+  8:15 PM
+2 files
+ 
+viber_slika_2024-02-05_18-06-31-876.png
+
+
+viber_slika_2024-02-05_18-06-32-406.png
+
+
+
+
+Amel Omanović
+  8:45 PM
+INSERT INTO `polaznici` (`id`, `ime`, `prezime`, `email`) VALUES (NULL, 'Amel', 'Omanovic','amel@gmail.com'), (NULL, 'Arnold', 'Sudicki','arnold@gmail.com') ;
+8:46
+Jel nam potrebna ova zagrada prije VALUES?
+
+
+slobamiric
+  9:20 PM
+<?php 
+//   mysqli
+
+$konekcija = mysqli_connect('localhost', 'root', '', 'web_design_studio') or die('Greska u konekciji sa bazom');
+
+$baza = "SELECT * FROM autori";
+
+$upit = mysqli_query($konekcija, $baza);
+
+$rezultat = mysqli_fetch_all($upit);
+
+echo '<pre>';
+var_dump($rezultat);
+echo '</pre>';
+
+
+slobamiric
+  9:35 PM
+INSERT INTO uobicajene_komande VALUES
+('alter', 'promena baze podataka ili tabele'),
+('backup', 'pravlenje rezervne kopije'),
+('create', 'pravljenje baze podataka'),
+('delete', 'brisanjee baze podataka'),
+('describe', 'opisivanje kolona tabele'),
+('drop', 'brisanje baze podataka ili tabele'),
+('exit', 'izlaz'),
+('help', 'prikazi pomoc'),
+('grant', 'pravljenje baze podataka'),
+('insert', 'unos podataka'),
+('lock', 'zakljucavanje tabela'),
+('quit', 'pandan exitu'),
+('rename', 'preimenovanje tabela'),
+('show', 'lista detalja o zeljenom objektu prikaza'),
+('source', 'izvrsava spoljnu datoteku'),
+('status', 'prikaz tekuceg status'),
+('truncate', 'praznjenje tabele'),
+('use', 'upotreba baze podataka'),
+('update', 'azuriranje zapisa'),
+('unlock', 'otkljucavanje tabela');
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:00 AM
+Snimak MySQL 1 https://www.youtube.com/watch?v=s630FiLEQKY
+
+
+slobamiric
+  7:11 AM
+Danas od pola 7 do 8 treba da zavrsimo sajt Psiholoskog savetovlaista https://us02web.zoom.us/j/89279529561?pwd=S1dvQjljZTBZT00vcGp6b2V1bzhnUT09
+Meeting ID: 892 7952 9561
+Passcode: 719266
+
+
+slobamiric
+  12:09 PM
+Screenshot_20240206_120907.jpg
+ 
+Screenshot_20240206_120907.jpg
+
+
+12:09
+Imamo li ovde nekog :innocent:
+
+
+slobamiric
+  10:40 PM
+Evo ga 7 deo themify i finale sajta za Psiholosko savetovaliste, ostalo je malo sminke https://www.youtube.com/watch?v=UjkqJXEHxa4
+YouTubeYouTube | Websites Workshop
+Praksa - Themify 7- kontakt strana i sitna kozmetika, fotnovi... 

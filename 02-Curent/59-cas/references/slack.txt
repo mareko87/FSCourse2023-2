@@ -1,0 +1,133 @@
+slobamiric
+  6:42 AM
+Vidimo se veceras u 8 https://us02web.zoom.us/j/83548807466?pwd=L29EWHNVK2tBdm1HYWRIeEwvcWkxZz09
+Meeting ID: 835 4880 7466
+Passcode: 401449
+
+
+slobamiric
+  7:41 PM
+Ovo ce nam treabti za danas
+Zip
+ 
+
+img.zip
+Zip
+
+
+
+
+slobamiric
+  8:07 PM
+image.png
+ 
+image.png
+
+
+
+
+slobamiric
+  8:49 PM
+<?php include 'template_parts/header.php'; ?>
+
+    <header>
+        <img class="w-100" src="img/register.jpg" alt="">
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 p-5 bg-light border my-5 text-center mx-auto rounded-5">
+                <form action="registracija.php" method="post">
+                    <input type="text" name="ime" placeholder="Unesite ime i prezime" class="form-control mb-3">
+                    <input type="email" name="email" placeholder="Unesite email" class="form-control mb-3">
+                    <input type="password" name="lozinka" placeholder="Unesite lozinku" class="form-control mb-3">
+                    <button class="btn btn-danger btn-lg" type="submit">Registruj se</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<?php include 'template_parts/footer.php'; ?>
+8:49
+<?php 
+
+include 'konekcija.php';
+
+$ime = $_POST['ime'];
+$email = $_POST['email'];
+$lozinka = $_POST['lozinka'];
+
+$upit = "INSERT INTO polaznici VALUES (NULL, '$ime', '$email', '$lozinka')";
+
+$baza = mysqli_query($konekcija, $upit);
+
+header('Location: logovanje.prikaz.php');
+
+
+slobamiric
+  8:56 PM
+<?php include 'template_parts/header.php'; ?>
+
+    <header>
+        <img class="w-100" src="img/login.jpg" alt="">
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 p-5 bg-light border my-5 text-center mx-auto rounded-5">
+                <form action="logovanje.php" method="post">
+                    <input type="email" name="email" placeholder="Unesite email" class="form-control mb-3">
+                    <input type="password" name="lozinka" placeholder="Unesite lozinku" class="form-control mb-3">
+                    <button class="btn btn-success btn-lg" type="submit">Uloguj se</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<?php include 'template_parts/footer.php'; ?>
+
+
+slobamiric
+  9:20 PM
+<?php 
+session_start();
+include 'konekcija.php';
+
+$email = $_POST['email'];
+$lozinka = $_POST['lozinka'];
+
+$upit = "SELECT * FROM polaznici WHERE email = '$email' AND lozinka = '$lozinka'";
+
+$baza = mysqli_query($konekcija, $upit);
+
+$id = mysqli_fetch_assoc($baza)['id'];
+
+if($id) {
+    $_SESSION['id'] = $id;
+    header('Location: index.php');
+} else {
+    header('Location: logovanje.prikaz.php');
+}
+9:23
+<?php 
+session_start();
+session_destroy();
+header('Location: index.php');
+9:26
+Logovanje i registracija - Online kurs mini aplikacija
+Zip
+ 
+
+online-kurs.zip
+Zip
+
+
+Pinned by 
+slobamiric
+
+
+slobamiric
+  7:15 AM
+Snimak logovanje i registracija https://www.youtube.com/watch?v=Bb8a-hRo2pM
+Pinned by 
+slobamiric
+7:20
+Evo dodao sam vas na jos jedan CRUD projekat, pa eto imate sad 2 komada pa mozete proci i ovaj nece vam skodi :slightly_smiling_face: https://www.youtube.com/watch?v=yhs_OHT1uiQ

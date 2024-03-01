@@ -1,0 +1,38 @@
+slobamiric
+  8:33 AM
+Vidimo se u 8 https://us02web.zoom.us/j/89599736254?pwd=QVIwcjNTWEM5d0dadk1yR2N0MlpyZz09
+Meeting ID: 895 9973 6254
+Passcode: 494023
+
+
+slobamiric
+  8:38 PM
+CREATE TABLE autori (
+    ID INT NOT NULL AUTO_INCREMENT,
+    ime varchar(20) NOT NULL,
+    adresa varchar(30),
+    godine int CHECK (godine >= 18),
+    grad varchar(20) NOT NULL,
+    drzava varchar(15) DEFAULT 'Srbija',
+    honorar DECIMAL(10, 2)
+);
+8:39
+INSERT INTO autori (ime, adresa, godine, grad, drzava, honorar) VALUES 
+ ('Slobodan Miric', 'Kozacinskog 5', 46, 'Novi Sad', 'Srbija', 800),
+    ('Branko Repac', 'Nova 4', 54, 'Apatin', 'Srbija', 800),
+    ('Branko Repac', 'Nova 4', 54, 'Apatin', 'Srbija', 900),
+    ('Branko Repac', 'Nova 4', 54, 'Apatin', 'Srbija', 1000),
+    ('Mirko Nikodijevic', 'Glavna 55', 42, 'Zajecar', 'Srbija', 500),
+    ('Ivana Sile', 'Srednja 8', 35, 'Novi Sad', 'Srbija', 700),
+    ('Bojan Ruzic', 'Uzicka 20', 27, 'Novi Sad', 'Srbija', 600),
+    ('Aleksandra Novakovic', 'Zelane 44', 24, 'UB', 'Srbija', 540),
+    ('Srdjan Srdjanov', 'Telepska 5', 42, 'Novi Sad', 'Srbija', 900),
+    ('Drasko Sikanjic', 'Marsala Tita 3', 42, 'Banja Luka', 'BIH', 500),
+    ('Mirko Nikodijevic', 'Glavna 55', 42, 'Zajecar', 'Srbija', 500);
+
+
+
+
+    slobamiric
+  8:07 AM
+Snimak od sinoc https://www.youtube.com/watch?v=abu9lSR7qCY Zelim vam lep vikend, vidimo se u ponedeljak :slightly_smiling_face:

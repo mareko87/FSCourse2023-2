@@ -1,0 +1,55 @@
+slobamiric
+  10:28 AM
+Pozz ekipice danas cemo malo ranije cas od pola 7 do 8, traba da budem tamo na upoznavanju novog FS kursa, tako da cemo danas malo ranije, vidimo se https://us02web.zoom.us/j/88022634523?pwd=UloxZXRRK0RMT2RiaFYvSk1wSVVBdz09
+Meeting ID: 880 2263 4523
+Passcode: 188874 (edited) 
+
+
+slobamiric
+  6:42 PM
+CREATE TABLE zaposleni (
+    ID INT NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY(ID),
+    ime VARCHAR(30) NOT NULL,
+    adresa VARCHAR(30),
+    godine INT CHECK (godine >= 18),
+    grad VARCHAR(20) NOT NULL,
+    drzava VARCHAR(20) DEFAULT 'Srbija',
+    plate INT
+);
+6:42
+INSERT INTO zaposleni (ime, adresa, godine, grad, drzava, plate) VALUES
+ ('Milos Zubac', 'Sekspirova 7', 47, 'Novi Sad', 'Srbija', 3900),
+ ('Korac Milan', 'Puskinova 12', 46, 'Novi Sad', 'Srbija', 390),
+ ('Nebojsa Repac', 'Lenjivova 14', 39, 'Apatin', 'Srbija', 680),
+ ('Marina Pesic', 'Zlatiborksa 44', 33, 'Uzice', 'Srbija', 7700),
+ ('Biljana Dukic', 'Mice Radakovica 79', 37, 'Apatin', 'Srbija', 12380),
+ ('Ivan Radenkovic', 'Marsala Tita 32', 28, 'Bor', 'Srbija', 18100),
+ ('Ivan Banasevic', 'Mekenzijeva 78', 25, 'Beograd', 'Srbija', 1500),
+ ('Ivan Banasevic', 'Mekenzijeva 78', 25, 'Beograd', 'Srbija', 370),
+ ('Ivan Banasevic', 'Mekenzijeva 78', 25, 'Beograd', 'Srbija', 13200),
+ ('Ivan Banasevic', 'Mekenzijeva 78', 25, 'Beograd', 'Srbija', 13600),
+ ('Radenko Maric', 'Bulevar oslobodjenja 108', 46, 'Novi Sad', 'Srbija', 11300),
+ ('Radenko Maric', 'Bulevar oslobodjenja 108', 46, 'Novi Sad', 'Srbija', 200),
+ ('Radenko Maric', 'Bulevar oslobodjenja 108', 46, 'Novi Sad', 'Srbija', 1035),
+ ('Radenko Maric', 'Bulevar oslobodjenja 108', 46, 'Novi Sad', 'Srbija', 4664),
+ ('Radenko Maric', 'Bulevar oslobodjenja 108', 46, 'Novi Sad', 'Srbija', 199),
+ ('Dusan Jovanovic', 'Juzni Bulevar 127', 50, 'Beograd', 'Srbija', 2904),
+ ('Dusan Jovanovic', 'Juzni Bulevar 127', 50, 'Beograd', 'Srbija', 2600),
+ ('Dusan Jovanovic', 'Juzni Bulevar 127', 50, 'Beograd', 'Srbija', 5850),
+ ('Dusan Jovanovic', 'Juzni Bulevar 127', 50, 'Beograd', 'Srbija', 2300),
+ ('Dusan Jovanovic', 'Juzni Bulevar 127', 50, 'Beograd', 'Srbija', 1999),
+ ('Jelena Bracika', 'Spanskih boraca 3', 35, 'Beograd', 'Srbija', 6736),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 680),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 2900),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 7300),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 2822),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 14890),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 1690),
+ ('Dusan Sotirovic', 'Banjicka 14', 27, 'Beograd', 'Srbija', 2600);
+New
+
+
+slobamiric
+  6:40 AM
+MySQL 4 snimak https://www.youtube.com/watch?v=TuYQ7Fl67Zw

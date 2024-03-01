@@ -1,0 +1,131 @@
+slobamiric
+  11:20 AM
+Vidimo se u 8
+https://us02web.zoom.us/j/84007844915?pwd=RHUrSnc4cFk3VEdxMmYzWHZ4czhPQT09
+Meeting ID: 840 0784 4915
+Passcode: 882456 (edited) 
+
+
+slobamiric
+  8:16 PM
+<?php 
+$konekcija = mysqli_connect('localhost', 'root', '', 'konferencija') or die('Greska u konekciji sa bazom');
+
+$baza = "SELECT * FROM predavaci";
+
+$upit = mysqli_query($konekcija, $baza);
+
+$rezultat = mysqli_fetch_all($upit);
+
+echo '<pre>';
+var_dump($rezultat);
+echo '</pre>';
+
+
+slobamiric
+  8:22 PM
+<?php 
+$konekcija = mysqli_connect('localhost', 'root', '', 'konferencija') or die('Greska u konekciji sa bazom');
+
+$baza = "SELECT * FROM predavaci";
+
+$upit = mysqli_query($konekcija, $baza);
+
+$rezultat = mysqli_fetch_all($upit, MYSQLI_ASSOC);
+
+foreach($rezultat as $red) {
+    echo $red['ime'] . '<br>';
+    echo $red['tema'] . '<hr>';
+}
+
+mysqli_close($konekcija);
+
+
+slobamiric
+  8:43 PM
+<?php 
+include 'konekcija.php';
+
+$ime = $_POST['ime'];
+$tema = $_POST['tema'];
+
+$baza = "INSERT INTO predavaci VALUES (NULL, '$ime', '$tema')";
+
+$upit = mysqli_query($konekcija, $baza);
+
+if($upit) {
+    header('Location: index.php');
+}
+
+
+slobamiric
+  8:57 PM
+<?php 
+include 'konekcija.php';
+
+$id = $_GET['id'];
+$baza = "DELETE FROM predavaci WHERE id = $id";
+$upit = mysqli_query($konekcija, $baza);
+header('Location: index.php');
+
+
+slobamiric
+  9:18 PM
+<?php 
+include 'konekcija.php';
+
+$id = $_POST['id'];
+$ime = $_POST['ime'];
+$tema = $_POST['tema'];
+
+$baza = "UPDATE predavaci SET ime = '$ime', tema = '$tema' WHERE id = $id";
+$upit = mysqli_query($konekcija, $baza);
+
+header('Location: index.php');
+
+
+slobamiric
+  9:25 PM
+Zip
+ 
+
+konferencija.zip
+Zip
+
+
+9:26
+konferencija.sql
+ 
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+Click to expand inline (72 lines)
+
+
+9:31
+<?php 
+$konekcija = mysqli_connect('localhost', 'root', '', 'wpapa') or die('Greska u povezivanju sa bazom podataka');
+
+$baza = "SELECT * FROM tim";
+$upit = mysqli_query($konekcija, $baza);
+$rezultat = mysqli_fetch_all($upit, MYSQLI_ASSOC);
+
+foreach($rezultat as $red) {
+    echo $red['ime'] . '<br>';
+    //echo $red['pozicija'] . '<hr>';
+}
+
+mysqli_close($konekcija);
+9:32
+Probajte za domaci CRUD sa ovim podacima i da dodate jos par ljudi poslacu vam ja koji su ljudi i vi probajte da odradite po videu sa ovog casa i exportujete posle bazu i posaljete mi :slightly_smiling_face:
+9:33
+UNOS Goran Petrovic - VOlonteri,  Goran Miric - Hrana i pice, Slavisa Dekan - PR i prevodioc
+Pinned by 
+slobamiric
+
+
+slobamiric
+  8:22 AM
+PHP i MySQL CRUD snimak https://www.youtube.com/watch?v=4T-iAxdID8U

@@ -1,0 +1,44 @@
+slobamiric
+  7:26 AM
+Vidimo se danas u 8 https://us02web.zoom.us/j/81763571107?pwd=eXdhUDlVaTZrWStCWE05RS9uUmM0dz09
+Meeting ID: 817 6357 1107
+Passcode: 436097
+
+
+slobamiric
+  8:56 PM
+3 files
+ 
+tipovi_komandi.png
+
+
+between.png
+
+
+operatori.png
+
+
+
+
+Ninoslav Veljković
+  9:11 PM
+INSERT INTO datum (datum, ime) VALUES ('2024-02-14', 'Ivana Stimac');
+
+
+slobamiric
+  9:12 PM
+INSERT INTO datum (datum, ime) VALUES ('2023-06-14', 'Danijela Rakic'), ('2023-06-24', 'Dejan Pavlovic'), ('2023-06-04', 'Dejan Cvetinovic'), ('2023-05-12', 'Dimitrije Jovanovic'), ('2023-05-22', 'Kristina Zivojevic'), ('2023-04-19', 'Mirela Milovanovic'), ('2023-04-29', 'Danijel Babic'), ('2023-04-19', 'Igor Popov'), ('2023-03-11', 'Jelena Zujovic'), ('2023-03-26', 'Marko Milosevic'), ('2023-03-10', 'Mila Dimitrijevic'), ('2023-03-14', 'Pavle Baljevic'), ('2023-03-24', 'Tijana Cuk'), ('2023-04-29', 'Ana Pavlovic'), ('2023-04-19', 'Iva Dragojievic'), ('2023-03-11', 'Jelena Calic'), ('2023-03-26', 'Kristina Antic'), ('2023-03-10', 'Marko Spasic'), ('2023-03-14', 'Predrag Stojadinovic'), ('2023-03-24', 'Tijana Budimirovic');
+
+
+slobamiric
+  9:18 PM
+INSERT INTO termini (ime, start) VALUES ('HTML i CSS', '08:00:00');
+INSERT INTO termini (ime, start) VALUES ('PHP i MySQL', '08:00:00');
+INSERT INTO termini (ime, start) VALUES ('JS i React', '070000');
+Pinned by 
+slobamiric
+
+
+slobamiric
+  9:09 AM
+SNimak MySQL 5 https://www.youtube.com/watch?v=GIOHVZfbE2M

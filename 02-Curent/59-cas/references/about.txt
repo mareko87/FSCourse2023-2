@@ -1,3 +1,3 @@
-Title:
-Date: 30.10.2023.
-Video Link: 
+Title: FS4 PHP i MySQL - Online kurs app - Logovanje i registracija
+Date: 21.02.2024.
+Video Link: https://www.youtube.com/watch?v=Bb8a-hRo2pM

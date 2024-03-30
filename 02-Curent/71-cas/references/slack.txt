@@ -1,0 +1,50 @@
+Danijel Basaric
+  5:07 PM
+WebsitesWorkshop is inviting you to a scheduled Zoom meeting.
+Join Zoom Meeting
+https://us06web.zoom.us/j/86836212339?pwd=IueXA0f4wsVMWF3XFIiYahRtqAf3Zq.1
+Meeting ID: 868 3621 2339
+Passcode: 179987
+
+
+Danijel Basaric
+  8:14 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lekcija 11</title>
+</head>
+<body>
+    <h1 id="glavni-naslov">Naslov</h1>
+    <div class="container">
+        <div class="main">
+            <h2 class="naslov">Neki naslov</h2>
+            <form class="forma">
+                <input type="text" class="form-control">
+                <input type="submit" value="Submit">
+            </form>
+            <h3 class="naslov">Neki drugi naslov</h3>
+            <ul id="stavke">
+                <li class="stavka">Stavka 1</li>
+                <li class="stavka">Stavka 2</li>
+                <li class="stavka">Stavka 3</li>
+                <li class="stavka">Stavka 4</li>
+            </ul>
+            <h4 id="samo-za-test" class="naredni sibling">Jos neki naslov</h4>
+        </div>
+    </div>
+    <script src="./lekcija11.js"></script>
+</body>
+</html>
+
+
+Danijel Basaric
+  9:47 PM
+kod sa vecerasnje lekcije (edited) 
+Zip
+ 
+
+Lekcija11.zip
+Download Zip

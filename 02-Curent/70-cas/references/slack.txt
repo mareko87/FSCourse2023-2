@@ -1,0 +1,53 @@
+Danijel Basaric
+  5:54 PM
+WebsitesWorkshop is inviting you to a scheduled Zoom meeting.
+Join Zoom Meeting
+https://us06web.zoom.us/j/82061839497?pwd=qo4fnNa0dV1aoSjsKTIaX0zBVFXJ2n.1
+Meeting ID: 820 6183 9497
+Passcode: 761840
+
+
+DaRe
+  5:58 PM
+I ako nisam kompetentan da idem ispred Danijela, ali bukvalno sam sad uradio isti zadatak tj ovaj prvi i radi, kod tebe ovde nigdje ne vidim u raru sliku Ninoslave, moras to da ubacis u fajl zajedno sa index-om i js fajlom (edited) 
+5:58
+I da otkucas preciznu putanju u fetch-u (edited) 
+6:00
+Bukvalno sad bas gledam identican nam je kod nista nisam uradio sto to nisi, jedino ovo sto sam primjetio
+6:01
+Javi ako sam uspio pomoci
+
+
+Ninoslav Veljković
+  6:06 PM
+Jesi, a i već je Danijel pogledao, uopšte nisam ni bio video da nisam stavio sliku a što se tiče slika sa kučićima tu nisam zatvorio navodnike... Jako glupe greške ali hvala puno i tebi i Danijelu na pomoći
+
+
+DaRe
+  6:08 PM
+Opet sa druge strane moramo biti oprezni, jer to je mn npr zeznulo kada sam kucao putanju slika je bila jpg, a ja kucao jpeg u fetch-u, sreca brzo sam skontao sta je problem i odma je proradilo
+6:09
+Nista, uvjek :slightly_smiling_face:
+
+
+Ninoslav Veljković
+  6:10 PM
+Naravno upravo zbog manjka opreznosti pravim ovakve greške često..
+
+
+DaRe
+  6:13 PM
+Sve je to sitno... Dok razumijemo sta se predaje nema zime...
+:+1:
+1
+
+
+
+Danijel Basaric
+  10:20 PM
+kod sa vecerasnje lekcije (edited) 
+Zip
+ 
+
+Lekcija10.zip
+Download Zip

@@ -1,0 +1,29 @@
+.nekiDiv {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+#deda {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#otac {
+    width: 140px;
+    height: 140px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dete {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}

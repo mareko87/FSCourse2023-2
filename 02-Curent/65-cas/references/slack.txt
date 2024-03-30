@@ -1,0 +1,75 @@
+Danijel Basaric
+  6:12 PM
+WebsitesWorkshop is inviting you to a scheduled Zoom meeting.
+Join Zoom Meeting
+https://us06web.zoom.us/j/87334693516?pwd=U0tGkBmeLT6L6Gg7uEagzrsyFuCvlO.1
+Meeting ID: 873 3469 3516
+Passcode: 815080
+
+
+Danijel Basaric
+  8:14 PM
+bg.jpg
+ 
+bg.jpg
+
+
+
+
+Danijel Basaric
+  8:29 PM
+body {
+    background-image: url("./slike/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    margin-top: 150px;
+}
+table :first-child {
+    width: 100%;
+}
+New
+
+
+Nikola Perjanica
+  9:47 PM
+Sto se tice casa u petak, ja mogu da prisustvujem :white_check_mark:
+:+1:
+2
+
+
+
+Danijel Basaric
+  9:48 PM
+kod sa vecerasnje lekcije (edited) 
+Zip
+ 
+
+Lekcija05.zip
+Zip
+
+
+
+
+Vladimir Pešić
+  10:23 PM
+I ja mogu u petak
+:+1:
+1
+
+
+
+Medin Jusufović
+  8:21 AM
+Petak može
+:+1:
+1
+
+
+
+
+
+
